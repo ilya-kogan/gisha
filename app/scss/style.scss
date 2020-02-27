@@ -468,22 +468,22 @@ footer.main-footer .footer-socials {
 	opacity: .7;
 }
 
-.footer-menu {
+footer.main-footer .footer-menu {
 	width: 60%;
 	display: flex;
   	justify-content: space-between;
 }
 
-.footer-menu ul li {
+footer.main-footer .footer-menu ul li {
 	display: block;
 	border-bottom: 1px solid transparent;
 }
 
-.footer-menu ul li:first-child {
+footer.main-footer .footer-menu ul li:first-child {
 	margin-bottom: 16px;
 }
 
-.footer-menu ul li a {
+footer.main-footer .footer-menu ul li a {
 	color: #FFFFFF;
 	font-family: "Narkiss Block";
 	font-size: 18px;
@@ -493,7 +493,7 @@ footer.main-footer .footer-socials {
 	transition: .3s all ease-in-out;
 }
 
-.footer-menu ul li a:hover {
+footer.main-footer .footer-menu ul li a:hover {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
@@ -610,6 +610,7 @@ footer.main-footer .footer-socials {
 }
 
 .main-content {
+	margin-bottom: 200px;
 	width: 600px;
 	font-family: "Narkiss Block";
 	font-size: 20px;
