@@ -61,7 +61,7 @@ a{color:inherit;background-color:transparent;text-decoration:none;outline:0}
 header.main-header{width:100%;background-color:#008f7e}
 footer.main-footer ul,header.main-header ul{margin:0;padding:0;list-style:none}
 footer.main-footer ul li,header.main-header ul li{display:inline-block}
-.inner-header{padding:20px 28px 12px 35px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.inner-header{padding:20px 28px 15px 35px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .footer-top-logo a,.logo a{-webkit-transition:.3s all;transition:.3s all}
 .footer-top-logo a:hover,.logo a:hover{opacity:.7}
 .top-menu{margin-bottom:25px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
@@ -141,8 +141,7 @@ footer.main-footer .footer-menu ul li a:hover{border-bottom:1px solid rgba(255,2
 .labels li{position:relative;margin-left:6px;height:28px;display:inline-block;background-color:#0dbfa7;cursor:pointer;-webkit-transition:.3s all;transition:.3s all}
 .labels li:last-child{margin-left:0}
 .labels li:before{content:"";position:absolute;left:0;width:0;height:0;border-style:solid;border-width:28px 10px 0 0;border-color:rgba(0,0,0,.3) transparent transparent transparent}
-.labels li:hover{opacity:.7}
-.labels li:hover a{color:rgba(0,0,0,.5)}
+.labels li:hover{background-color:#008f7e}
 .labels li a{padding:5px 8px 5px 18px;display:inline-block;color:#fff;font-size:16px;font-weight:700;line-height:16px;text-decoration:none;-webkit-transition:.3s all;transition:.3s all}
 .posts-widget h2{margin-bottom:10px}
 .posts-widget .post-item{padding:30px 0 10px;border-top:1px solid #ccc}
@@ -152,14 +151,18 @@ footer.main-footer .footer-menu ul li a:hover{border-bottom:1px solid rgba(255,2
 .posts-widget .post-item .post-item-img img{-webkit-transition:-webkit-transform .5s ease;transition:-webkit-transform .5s ease;transition:transform .5s ease;transition:transform .5s ease,-webkit-transform .5s ease}
 .posts-widget .post-item .post-item-img:hover img{-webkit-transform:scale(1.15);transform:scale(1.15);-webkit-backface-visibility:hidden;backface-visibility:hidden}
 .posts-widget .post-item span{position:absolute;bottom:0;right:0;max-width:200px;padding:6px 13px;display:inline-block;height:30px;background-color:#0dbfa7;color:#fff;font-size:16px;font-weight:700;line-height:21px;-webkit-transition:.3s all;transition:.3s all}
-.posts-widget .post-item span:before{content:"";position:absolute;top:0;left:-10px;width:0;height:0;border-style:solid;border-width:0 0 30px 10px;border-color:transparent transparent #0dbfa7 transparent}
+.posts-widget .post-item span:before{content:"";position:absolute;top:0;left:-10px;width:0;height:0;border-style:solid;border-width:0 0 30px 10px;border-color:transparent transparent #0dbfa7 transparent;-webkit-transition:.3s all;transition:.3s all}
+.posts-widget .post-item span:hover{background-color:#008f7e}
+.posts-widget .post-item span:hover:before{border-color:transparent transparent #008f7e transparent}
 .posts-widget .post-item p{color:#393746;font-size:18px;font-weight:700;line-height:20px}
+.posts-widget .post-item p:hover{text-decoration:underline}
 .subscription-widget{margin-bottom:33px;padding:20px 15px 30px;background-color:#c4ebe7;text-align:center}
 .subscription-widget h3{margin:5px 0 15px;font-size:40px;font-weight:900;line-height:40px}
 .subscription-widget p{margin-bottom:20px;font-size:16px;line-height:21px}
 .subscription-widget form input[type=text]{margin-bottom:20px;width:170px;height:35px;border:1px solid #008f7e;-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
 .subscription-widget form input[type=text]:focus{-webkit-box-shadow:0 0 10 0 rgba(0,0,0,.75);box-shadow:0 0 10 0 rgba(0,0,0,.75)}
-.subscription-widget form input[type=submit]{padding:3px 16px;background-color:#000;color:#9defe0;font-size:18px;font-weight:700;line-height:26px}
+.subscription-widget form input[type=submit]{padding:3px 16px;background-color:#000;color:#9defe0;font-size:18px;font-weight:700;line-height:26px;border:none;cursor:pointer;-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
+.subscription-widget form input[type=submit]:hover{opacity:.7}
 .donation-widget{padding:20px 15px 30px;background-color:#008f7e;color:#fff;text-align:center}
 .donation-widget h3{margin:5px 0 15px;font-size:40px;font-weight:900;line-height:40px}
 .donation-widget p{margin-bottom:20px;font-size:16px;line-height:21px}
