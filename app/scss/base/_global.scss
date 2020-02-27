@@ -1,0 +1,22 @@
+/* Global */
+*,
+:after,
+:before {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+html {
+	border: 12px solid #0DBFA7;
+	font-family: 'Narkiss Block';
+	direction: rtl;
+}
+
+.container {
+    margin: 0 auto;
+	width: 100%;
+    max-width: 1160px;
+}

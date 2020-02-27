@@ -1,0 +1,67 @@
+/* Fonts */
+@font-face {
+  font-family: 'Narkiss Block';
+  src: url('../fonts/narkiss-block/NarkissBlock-Regular.eot');
+  src: url('../fonts/narkiss-block/NarkissBlock-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/narkiss-block/NarkissBlock-Regular.woff2') format('woff2'),
+  url('../fonts/narkiss-block/NarkissBlock-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Narkiss Block';
+  src: url('../fonts/narkiss-block/NarkissBlock-Bold.eot');
+  src: url('../fonts/narkiss-block/NarkissBlock-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/narkiss-block/NarkissBlock-Bold.woff2') format('woff2'),
+  url('../fonts/narkiss-block/NarkissBlock-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Narkiss Block';
+  src: url('../fonts/narkiss-block/NarkissBlock-Light.eot');
+  src: url('../fonts/narkiss-block/NarkissBlock-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/narkiss-block/NarkissBlock-Light.woff2') format('woff2'),
+  url('../fonts/narkiss-block/NarkissBlock-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gisha';
+  src:  url('../fonts/gisha/Gisha.eot?suy8gq');
+  src:  url('../fonts/gisha/Gisha.eot?suy8gq#iefix') format('embedded-opentype'),
+    url('../fonts/gisha/Gisha.woff2?suy8gq') format('woff2'),
+    url('../fonts/gisha/Gisha.ttf?suy8gq') format('truetype'),
+    url('../fonts/gisha/Gisha.woff?suy8gq') format('woff'),
+    url('../fonts/gisha/Gisha.svg?suy8gq#Gisha') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+    font-family: 'Miriam Libre';
+    src: url('../fonts/miriam-libre/MiriamLibre-Bold.eot');
+    src: url('../fonts/miriam-libre/MiriamLibre-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/miriam-libre/MiriamLibre-Bold.woff2') format('woff2'),
+        url('../fonts/miriam-libre/MiriamLibre-Bold.woff') format('woff'),
+        url('../fonts/miriam-libre/MiriamLibre-Bold.ttf') format('truetype'),
+        url('../fonts/miriam-libre/MiriamLibre-Bold.svg#MiriamLibre-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Miriam Libre';
+    src: url('../fonts/miriam-libre/MiriamLibre-Regular.eot');
+    src: url('../fonts/miriam-libre/MiriamLibre-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/miriam-libre/MiriamLibre-Regular.woff2') format('woff2'),
+        url('../fonts/miriam-libre/MiriamLibre-Regular.woff') format('woff'),
+        url('../fonts/miriam-libre/MiriamLibre-Regular.ttf') format('truetype'),
+        url('../fonts/miriam-libre/MiriamLibre-Regular.svg#MiriamLibre-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

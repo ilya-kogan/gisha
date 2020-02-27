@@ -1,0 +1,63 @@
+/* Icons */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Gisha' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+    content: "\ea18";
+}
+
+.icon-english:before {
+  content: "\e955";
+}
+.icon-hebrew:before {
+  content: "\e956";
+}
+.icon-arabic:before {
+  content: "\e957";
+}
+
+.icon-facebook:before {
+    content: "\e915";
+}
+
+.icon-twitter:before {
+    content: "\e914";
+}
+
+.icon-arrow-down:before {
+    content: "\ea16";
+}
+
+.icon-arrow-down-bold:before {
+    content: "\ea17";
+}
+
+.icon-instagram-copy:before {
+    content: "\e96c";
+}
+
+.icon-mail:before {
+    content: "\e919";
+}
+
+.icon-whatsapp:before {
+    content: "\e913";
+}
+
+._type_link .icon:before {
+	content: "\e966";
+}
+
+._type_document .icon:before {
+    content: "\e968";
+}
