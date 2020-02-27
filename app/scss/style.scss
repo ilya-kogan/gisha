@@ -336,10 +336,6 @@ footer.main-footer ul li {
 }
 
 /* Main Menu */
-.submenu {
-	display: none;
-}
-
 .main-menu .icon-arrow-down-bold {
 	position: relative;
 	top: 2px;
@@ -348,12 +344,13 @@ footer.main-footer ul li {
 	transition: .3s all ease-in-out;
 }
 
-.main-menu li a:hover .icon-arrow-down-bold {
+.main-menu li:hover a .icon-arrow-down-bold {
 	transform: rotate(180deg);
 }
 
 .main-menu li {
 	padding: 5px 30px;
+	position: relative;
 	border-bottom: 1px solid transparent;
 }
 
@@ -362,7 +359,6 @@ footer.main-footer ul li {
 }
 
 .main-menu li a {
-	font-family: "Narkiss Block";
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 20px;
@@ -372,8 +368,53 @@ footer.main-footer ul li {
 	border-bottom: 2px solid transparent;
 }
 
-.main-menu li a:hover {
+.main-menu li:hover a {
 	border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.main-menu li:hover > ul.submenu,
+.main-menu li:hover > ul.submenu:hover {
+  display: block;
+	visibility: visible;
+	opacity: 1;
+}
+
+.main-menu li ul.submenu {
+	position: absolute;
+	min-width: 154px;
+	padding-top: 21px;
+	display: none;
+	right: 28px;
+	background-color: transparent;
+	transition: all 0.5s ease;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 10;
+}
+
+.main-menu .submenu li {
+	padding: 10px 20px 10px 10px;
+	display: flex;
+	width: 100%;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	background-color: #0dbfa7;
+	cursor: pointer;
+  clear: both;
+}
+
+.main-menu .submenu li:last-child {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);	
+}
+
+.main-menu .submenu li:hover {
+	background-color: #259885;
+}
+
+.main-menu .submenu li a {
+	font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  border: none;
 }
 
 .main-menu li a.btn-donation {
@@ -612,7 +653,6 @@ footer.main-footer .footer-menu ul li a:hover {
 .main-content {
 	margin-bottom: 200px;
 	width: 600px;
-	font-family: "Narkiss Block";
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 30px;
