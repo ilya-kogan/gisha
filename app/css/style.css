@@ -41,6 +41,7 @@ template{display:none}
 @font-face{font-family:'Miriam Libre';src:url(../fonts/miriam-libre/MiriamLibre-Regular.eot);src:url(../fonts/miriam-libre/MiriamLibre-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/miriam-libre/MiriamLibre-Regular.woff2) format("woff2"),url(../fonts/miriam-libre/MiriamLibre-Regular.woff) format("woff"),url(../fonts/miriam-libre/MiriamLibre-Regular.ttf) format("truetype"),url(../fonts/miriam-libre/MiriamLibre-Regular.svg#MiriamLibre-Regular) format("svg");font-weight:400;font-style:normal}
 *,:after,:before{box-sizing:border-box;-webkit-box-sizing:border-box;font-smoothing:antialiased;-webkit-font-smoothing:antialiased}
 html{border:12px solid #0dbfa7;font-family:'Narkiss Block';direction:rtl}
+a{color:inherit;background-color:transparent;text-decoration:none;outline:0}
 .container{margin:0 auto;width:100%;max-width:1160px}
 [class*=" icon-"],[class^=icon-]{font-family:Gisha!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-search:before{content:"\ea18"}
@@ -54,8 +55,9 @@ html{border:12px solid #0dbfa7;font-family:'Narkiss Block';direction:rtl}
 .icon-instagram-copy:before{content:"\e96c"}
 .icon-mail:before{content:"\e919"}
 .icon-whatsapp:before{content:"\e913"}
-._type_link .icon:before{content:"\e966"}
-._type_document .icon:before{content:"\e968"}
+._type_link .icon-media:before{content:"\e966"}
+._type_document .icon-media:before{content:"\e968"}
+.icon-media{padding-left:20px;font-size:20px;line-height:20px}
 header.main-header{width:100%;background-color:#008f7e}
 footer.main-footer ul,header.main-header ul{margin:0;padding:0;list-style:none}
 footer.main-footer ul li,header.main-header ul li{display:inline-block}
@@ -115,19 +117,51 @@ footer.main-footer .footer-socials{margin-right:37px;display:inline-block}
 .underline{margin:5px 0 20px;color:#797979;font-size:20px;font-weight:600;line-height:24px}
 .date{margin:5px 0 52px;color:#74737c;font-family:"Miriam Libre";font-size:15px;letter-spacing:2px;line-height:15px}
 .media .caption{color:#74737c;font-size:16px;line-height:20px}
+.text-content h3{margin:15px 0;font-size:30px;font-weight:700;line-height:32px}
 .article-section{display:-webkit-box;display:-ms-flexbox;display:flex}
 .main-content{width:600px;font-family:"Narkiss Block";font-size:20px;font-weight:300;line-height:30px}
 .text-content{margin-bottom:20px;padding-bottom:35px;border-bottom:1px solid #ccc}
+.wp-caption-text{color:#74737c;font-size:16px;line-height:20px}
 .media-aside{margin-left:70px;width:200px}
 .article-share{padding:20px 0 15px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;text-align:center}
 .article-share ul{margin:0 0 5px;padding:0}
-.article-share ul li{margin-left:-4px;margin-right:13px;display:inline-block;width:40px;height:40px;border:1px solid #0dbfa7;border-radius:20px;text-align:center;list-style:none;cursor:pointer;-webkit-transition:.5s all ease-in-out;transition:.5s all ease-in-out}
+.article-share ul li{margin-left:-4px;margin-right:13px;display:inline-block;width:40px;height:40px;border:1px solid #0dbfa7;border-radius:20px;text-align:center;list-style:none;cursor:pointer;-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
 .article-share ul li:first-child{margin-right:0}
 .article-share ul li:hover{background-color:#0dbfa7}
 .article-share ul li:hover a{color:#fff}
-.article-share ul li a{color:#0dbfa7;font-size:18px;line-height:38px;text-decoration:none}
+.article-share ul li a{color:#0dbfa7;font-size:18px;line-height:38px;text-decoration:none;-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
 .article-share .icon-arrow-down-bold{color:#0dbfa7;font-size:24px;text-decoration:none;-webkit-transition:.3s all;transition:.3s all}
 .article-share .icon-arrow-down-bold:hover{opacity:.5}
 .article-media ul{margin:0;padding:0}
-.article-media ul li{padding:20px 0;list-style:none;border-bottom:1px solid #ccc}
+.article-media ul li{padding:20px 0;list-style:none;border-bottom:1px solid #ccc;-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
 .article-media ul li a{color:#0dbfa7;font-size:16px;font-weight:700;line-height:20px;text-decoration:none}
+.article-media ul li:hover{opacity:.5}
+.article-labels p{font-size:18px;letter-spacing:2px;line-height:20px}
+.labels{margin:20px 0;padding:0;list-style:none}
+.labels li{position:relative;margin-left:6px;height:28px;display:inline-block;background-color:#0dbfa7;cursor:pointer;-webkit-transition:.3s all;transition:.3s all}
+.labels li:last-child{margin-left:0}
+.labels li:before{content:"";position:absolute;left:0;width:0;height:0;border-style:solid;border-width:28px 10px 0 0;border-color:rgba(0,0,0,.3) transparent transparent transparent}
+.labels li:hover{opacity:.7}
+.labels li:hover a{color:rgba(0,0,0,.5)}
+.labels li a{padding:5px 8px 5px 18px;display:inline-block;color:#fff;font-size:16px;font-weight:700;line-height:16px;text-decoration:none;-webkit-transition:.3s all;transition:.3s all}
+.posts-widget h2{margin-bottom:10px}
+.posts-widget .post-item{padding:30px 0 10px;border-top:1px solid #ccc}
+.posts-widget .post-item:last-child{border-bottom:1px solid #ccc}
+.posts-widget .post-item div{position:relative;margin-bottom:18px;width:200px;height:133px}
+.posts-widget .post-item .post-item-img{display:block;height:100%;overflow:hidden}
+.posts-widget .post-item .post-item-img img{-webkit-transition:-webkit-transform .5s ease;transition:-webkit-transform .5s ease;transition:transform .5s ease;transition:transform .5s ease,-webkit-transform .5s ease}
+.posts-widget .post-item .post-item-img:hover img{-webkit-transform:scale(1.15);transform:scale(1.15);-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.posts-widget .post-item span{position:absolute;bottom:0;right:0;max-width:200px;padding:6px 13px;display:inline-block;height:30px;background-color:#0dbfa7;color:#fff;font-size:16px;font-weight:700;line-height:21px;-webkit-transition:.3s all;transition:.3s all}
+.posts-widget .post-item span:before{content:"";position:absolute;top:0;left:-10px;width:0;height:0;border-style:solid;border-width:0 0 30px 10px;border-color:transparent transparent #0dbfa7 transparent}
+.posts-widget .post-item p{color:#393746;font-size:18px;font-weight:700;line-height:20px}
+.subscription-widget{margin-bottom:33px;padding:20px 15px 30px;background-color:#c4ebe7;text-align:center}
+.subscription-widget h3{margin:5px 0 15px;font-size:40px;font-weight:900;line-height:40px}
+.subscription-widget p{margin-bottom:20px;font-size:16px;line-height:21px}
+.subscription-widget form input[type=text]{margin-bottom:20px;width:170px;height:35px;border:1px solid #008f7e;-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
+.subscription-widget form input[type=text]:focus{-webkit-box-shadow:0 0 10 0 rgba(0,0,0,.75);box-shadow:0 0 10 0 rgba(0,0,0,.75)}
+.subscription-widget form input[type=submit]{padding:3px 16px;background-color:#000;color:#9defe0;font-size:18px;font-weight:700;line-height:26px}
+.donation-widget{padding:20px 15px 30px;background-color:#008f7e;color:#fff;text-align:center}
+.donation-widget h3{margin:5px 0 15px;font-size:40px;font-weight:900;line-height:40px}
+.donation-widget p{margin-bottom:20px;font-size:16px;line-height:21px}
+.donation-widget a.btn-donation{padding:4px 20px;border-bottom:0;color:#000;font-size:18px;font-weight:700;line-height:26px;background-color:#9defe0;-webkit-box-shadow:3px 3px 0 0 #0dbfa7,5px 5px 15px 5px transparent;box-shadow:3px 3px 0 0 #0dbfa7,5px 5px 15px 5px transparent;-webkit-transition:.7s all;transition:.7s all}
+.donation-widget a.btn-donation:hover{color:#0b7769;-webkit-box-shadow:1px 1px 0 0 #0dbfa7,5px 5px 15px 5px transparent;box-shadow:1px 1px 0 0 #0dbfa7,5px 5px 15px 5px transparent}
