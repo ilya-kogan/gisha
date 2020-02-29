@@ -10,6 +10,7 @@ var gulp = require("gulp"),
   cache = require("gulp-cache"),
   autoprefixer = require("gulp-autoprefixer"),
   ftp = require("vinyl-ftp"),
+  sassGlob = require('gulp-sass-glob');
   notify = require("gulp-notify");
 rimraf = require("rimraf");
 
@@ -80,6 +81,7 @@ function code(cb) {
 function sass(cb) {
   gulp
     .src("app/scss/**/*.scss")
+    .pipe(sassGlob())
     .pipe(gulpSass().on("error", notify.onError()))
     // .pipe(rename({
     // 	suffix: '.min',
