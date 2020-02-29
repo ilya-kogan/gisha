@@ -1,0 +1,30 @@
+footer.main-footer .footer-socials {
+	margin-right: 37px;
+	display: inline-block;
+}
+
+.footer-socials li {
+	margin-right: 20px;
+	width: 40px;
+	height: 37px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	text-align: center;
+	transition: .3s all;
+	cursor: pointer;
+}
+
+.footer-socials li:first-child {
+	margin-right: 0;
+}
+
+.footer-socials li a {
+	color: #fff;
+	font-size: 18px;
+	line-height: 34px;
+	text-decoration: none;
+}
+
+.footer-socials li:hover {
+	opacity: .7;
+}

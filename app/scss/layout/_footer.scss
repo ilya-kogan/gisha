@@ -4,6 +4,15 @@ footer.main-footer {
 	background-color: #008F7E;
 }
 
+footer.main-footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+footer.main-footer ul li {
+	display: inline-block;
+}
+
 .inner-footer {
 	max-width: 1157px;
 	margin: auto;
@@ -13,7 +22,7 @@ footer.main-footer {
 
 .footer-item {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -23,84 +32,16 @@ footer.main-footer {
 	border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-.btn-donation-white {
-	padding: 6px 37px;
-	display: inline-block;
-	color: #fff;
-	font-size: 24px;
-	font-weight: bold;
-	line-height: 20px;
-	text-decoration: none;
-	border: 1px solid #FFFFFF;
-	background-color: #0DBFA7;
-	box-shadow: 1px 1px 0 0 #008F7E, 2px 2px 0 0 #FFFFFF;
-	transition: .7s all;
-}
-
-.btn-donation-white:hover {
-	opacity: .7;
-	-webkit-box-shadow: 1px 1px 0 0 #008F7E, 1px 1px 7px 1px rgba(0, 0, 0, 0); 
-	box-shadow: 1px 1px 0 0 #008F7E, 1px 1px 7px 1px rgba(0, 0, 0, 0);
-}
-
-footer.main-footer .footer-socials {
-	margin-right: 37px;
-	display: inline-block;
-}
-
-.footer-socials li {
-	margin-right: 20px;
-	width: 40px;
-	height: 37px;
-	border: 1px solid #fff;
-	border-radius: 20px;
-	text-align: center;
+.footer-top-logo a {
 	transition: .3s all;
-	cursor: pointer;
 }
 
-.footer-socials li:first-child {
-	margin-right: 0;
-}
-
-.footer-socials li a {
-	color: #fff;
-	font-size: 18px;
-	line-height: 34px;
-	text-decoration: none;
-}
-
-.footer-socials li:hover {
+.footer-top-logo a:hover {
 	opacity: .7;
 }
 
-.footer-menu {
-	width: 60%;
-	display: flex;
-  	justify-content: space-between;
-}
-
-.footer-menu ul li {
-	display: block;
-	border-bottom: 1px solid transparent;
-}
-
-.footer-menu ul li:first-child {
-	margin-bottom: 16px;
-}
-
-.footer-menu ul li a {
-	color: #FFFFFF;
-	font-family: "Narkiss Block";
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 20px;
-	text-decoration: none;
-	transition: .3s all ease-in-out;
-}
-
-.footer-menu ul li a:hover {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+.footer-top-logo {
+  font-size: 0;
 }
 
 .footer-middle-subscribe p {

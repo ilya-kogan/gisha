@@ -1,0 +1,62 @@
+/* Top Menu */
+.top-menu {
+	margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top-bar-item {
+	padding: 4px 30px;
+	display: inline-block;
+	color: #fff;
+	border-right: 1px solid #fff; 
+}
+
+.top-bar-item:first-child {
+	border-right: none;
+}
+
+.top-bar-item .icon-search,
+.top-bar-item .icon-facebook,
+.top-bar-item .icon-twitter {
+	font-size: 14px;
+	line-height: 14px;
+    transition: .3s all;
+}
+
+.top-bar-item .icon-search {
+	position: relative;
+    top: 0;
+    padding-right: 8px;
+}
+
+.top-bar-item .icon-facebook {
+	padding-right: 10px;
+	padding-left: 15px;
+}
+
+.top-bar-item .icon-search:hover,
+.top-bar-item .icon-facebook:hover,
+.top-bar-item .icon-twitter:hover {
+	opacity: .7;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+.top-bar-item a,
+.top-bar-item span {
+	position: relative;
+	top: 2px;
+	font-size: 16px;
+  	line-height: 18px;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: .3s all;
+}
+
+.top-bar-item a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}

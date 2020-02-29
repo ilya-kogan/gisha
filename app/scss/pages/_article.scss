@@ -17,6 +17,10 @@
 	margin-bottom: 45px;
 }
 
+.label {
+	margin-bottom: 20px;
+}
+
 .label a {
 	margin-bottom: 20px;
 	color: #0DBFA7;
@@ -55,6 +59,7 @@
 }
 
 .media .caption {
+	margin: 7px 0;
 	color: #74737C;
 	font-size: 16px;
 	line-height: 20px;
@@ -65,33 +70,28 @@
 }
 
 .main-content {
+	margin-bottom: 200px;
 	width: 600px;
-	font-family: "Narkiss Block";
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 30px;
 }
 
-.text-content {
-	margin-bottom: 20px;
-	padding-bottom: 35px;
-	border-bottom: 1px solid #ccc;
-}
-
 .media-aside {
+  margin-top: 8px;
 	margin-left: 70px;
 	width: 200px;
 }
 
 .article-share {
-	padding: 20px 0 15px;
+	padding: 20px 0 19px;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	text-align: center;
 }
 
 .article-share ul {
-	margin: 0 0 5px;
+	margin: 0 0 9px;
 	padding: 0;
 }
 
@@ -106,7 +106,7 @@
   	text-align: center;
 	list-style: none;
 	cursor: pointer;
-	transition: .5s all ease-in-out;
+	transition: .3s all ease-in-out;
 }
 
 .article-share ul li:first-child {
@@ -126,6 +126,7 @@
 	font-size: 18px;
 	line-height: 38px;
 	text-decoration: none;
+	transition: .3s all ease-in-out;
 }
 
 .article-share .icon-arrow-down-bold {
@@ -145,9 +146,10 @@
 }
 
 .article-media ul li {
-	padding: 20px 0;
+	padding: 18px 0;
 	list-style: none;
 	border-bottom: 1px solid #ccc;
+	transition: .3s all ease-in-out;
 }
 
 .article-media ul li a {
@@ -158,6 +160,6 @@
 	text-decoration: none;
 }
 
-.article-media ul li a:hover {
-
+.article-media ul li:hover {
+	opacity: .5;
 }

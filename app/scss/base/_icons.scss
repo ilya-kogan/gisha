@@ -1,6 +1,5 @@
 /* Icons */
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Gisha' !important;
   speak: none;
   font-style: normal;
@@ -54,10 +53,16 @@
     content: "\e913";
 }
 
-._type_link .icon:before {
-	content: "\e966";
+._type_link .icon-media:before {
+  content: "\e966";
 }
 
-._type_document .icon:before {
+._type_document .icon-media:before {
     content: "\e968";
+}
+
+.icon-media {
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 20px;
 }

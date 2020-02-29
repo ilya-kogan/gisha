@@ -1,0 +1,28 @@
+footer.main-footer .footer-menu {
+	width: 60%;
+	display: flex;
+  	justify-content: space-between;
+}
+
+footer.main-footer .footer-menu ul li {
+	display: block;
+	border-bottom: 1px solid transparent;
+}
+
+footer.main-footer .footer-menu ul li:first-child {
+	margin-bottom: 11px;
+}
+
+footer.main-footer .footer-menu ul li a {
+	color: #FFFFFF;
+	font-family: "Narkiss Block";
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
+	text-decoration: none;
+	transition: .3s all ease-in-out;
+}
+
+footer.main-footer .footer-menu ul li a:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}

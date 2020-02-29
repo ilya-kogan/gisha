@@ -1,0 +1,19 @@
+.btn-donation-white {
+	padding: 6px 37px;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 20px;
+	text-decoration: none;
+	border: 1px solid #FFFFFF;
+	background-color: #0DBFA7;
+	box-shadow: 1px 1px 0 0 #008F7E, 2px 2px 0 0 #FFFFFF;
+	transition: .7s all;
+}
+
+.btn-donation-white:hover {
+	opacity: .7;
+	-webkit-box-shadow: 1px 1px 0 0 #008F7E, 1px 1px 7px 1px rgba(0, 0, 0, 0); 
+	box-shadow: 1px 1px 0 0 #008F7E, 1px 1px 7px 1px rgba(0, 0, 0, 0);
+}
