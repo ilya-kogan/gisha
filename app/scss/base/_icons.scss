@@ -26,35 +26,44 @@
 }
 
 .icon-facebook:before {
-    content: "\e915";
+  content: "\e915";
 }
 
 .icon-twitter:before {
-    content: "\e914";
+  content: "\e914";
 }
 
 .icon-arrow-down:before {
-    content: "\ea16";
+  content: "\ea16";
 }
 
 .icon-arrow-down-bold:before {
-    content: "\ea17";
+  content: "\ea17";
 }
 
 .icon-instagram-copy:before {
-    content: "\e96c";
+  content: "\e96c";
 }
 
 .icon-mail:before {
-    content: "\e919";
+  content: "\e919";
 }
 
 .icon-whatsapp:before {
-    content: "\e913";
+  content: "\e913";
 }
 
 .icon-close-search:before {
   content: "\e90c";
+}
+
+.icon-mobile-menu:before {
+  content: "\e923";
+}
+
+.icon-close-menu:before,
+._menu-burger_active .menu-burger span:before {
+  content: "\e924";  
 }
 
 ._type_link .icon-media:before {

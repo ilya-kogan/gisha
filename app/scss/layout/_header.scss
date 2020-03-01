@@ -14,10 +14,12 @@ header.main-header ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	user-select: none;
 }
 
 header.main-header ul li {
 	display: inline-block;
+	user-select: none;
 }
 
 .inner-header {
@@ -48,6 +50,25 @@ header.main-header ul li {
   justify-content: flex-end;
 }
 
+.menu-burger {
+	padding-right: 35px;
+	display: none;
+}
+
+.menu-burger span {
+	display: inline-block;
+	width: 21px;
+	color: #fff;
+  font-size: 28px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: .3s all;
+  user-select: none;
+}
+
+.menu-burger span:hover {
+	opacity: .7;
+}
 
 /* Sticky */
 .sticky-header header.main-header .inner-header {
@@ -66,4 +87,28 @@ header.main-header ul li {
 
 .sticky-header header.main-header .top-menu {
   margin-bottom: 0;
+}
+
+.sticky-header header.main-header .menu-burger {
+	display: block;
+}
+
+
+/* Burger Active */
+header.main-header._menu-burger_active .inner-header {
+	padding: 20px 28px 17px 35px;
+	height: 120px;
+	transition: none;
+}
+
+header.main-header._menu-burger_active .logo {
+	height: 100%;
+}
+
+header.main-header._menu-burger_active .top-menu {
+	margin-bottom: 25px;
+}
+
+header.main-header._menu-burger_active .bottom-menu {
+	display: none;
 }
