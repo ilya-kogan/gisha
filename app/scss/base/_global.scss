@@ -10,20 +10,21 @@
 }
 
 html {
+	padding-top: 132px;
 	border: 12px solid #0DBFA7;
 	font-family: 'Narkiss Block';
 	direction: rtl;
 }
 
 a {
-    color: inherit;
-    background-color: transparent;
-    text-decoration: none;
-    outline: 0;
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  outline: 0;
 }
 
 .container {
-    margin: 0 auto;
+  margin: 0 auto;
 	width: 100%;
-    max-width: 1160px;
+  max-width: 1160px;
 }

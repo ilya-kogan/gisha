@@ -1,7 +1,13 @@
 /* Header */
 header.main-header {
-	width: 100%;
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 12px solid #0dbfa7;
+  border-bottom: none;
   background-color: #008F7E;
+  z-index: 15;
 }
 
 header.main-header ul {
@@ -15,10 +21,16 @@ header.main-header ul li {
 }
 
 .inner-header {
-	padding: 20px 28px 15px 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	padding: 20px 28px 17px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  transition: none;
+}
+
+.logo {
+	font-size: 0;
 }
 
 .logo a {
@@ -34,4 +46,24 @@ header.main-header ul li {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+
+/* Sticky */
+.sticky-header header.main-header .inner-header {
+	padding: 10px 35px;
+	height: 60px;
+	transition: .3s all;
+}
+
+.sticky-header header.main-header .logo img {
+	height: 40px;
+}
+
+.sticky-header header.main-header .bottom-menu {
+	display: none;
+}
+
+.sticky-header header.main-header .top-menu {
+  margin-bottom: 0;
 }
