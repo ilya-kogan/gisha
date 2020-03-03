@@ -10,10 +10,17 @@
 }
 
 html {
-	padding-top: 132px;
 	border: 12px solid #0DBFA7;
 	font-family: 'Narkiss Block';
 	direction: rtl;
+}
+
+body {
+  padding-top: 120px;
+}
+
+body.article-type-special {
+  padding-top: 0;
 }
 
 a {
@@ -32,7 +39,7 @@ ul li a:hover {
 }
 
 .container {
-  margin: 47px auto 60px;
+  margin: 60px auto;
 	width: 100%;
   max-width: 1160px;
 }

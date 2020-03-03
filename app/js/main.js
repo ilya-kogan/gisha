@@ -26,7 +26,7 @@ rgb = {
     });
   },
   stickyHeader: function () {
-    if (rgb.isMobile()) {
+    if (rgb.isSpecialArticle() === false) {
       return;
     }
 
@@ -61,6 +61,11 @@ rgb = {
         $('header.main-header .bottom-menu').hide();
       }
     });
+  },
+  isSpecialArticle: function () {
+    if ( $('body').hasClass('article-type-special') ) {
+      return false;
+    }
   }
 };
 jQuery(document).ready(rgb.init);

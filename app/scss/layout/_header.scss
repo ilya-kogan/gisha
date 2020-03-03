@@ -112,3 +112,17 @@ header.main-header._menu-burger_active .top-menu {
 header.main-header._menu-burger_active .bottom-menu {
 	display: none;
 }
+
+
+/* Header Small */
+header.main-header.main-header-small {
+  background: none;
+}
+
+header.main-header.main-header-small .inner-header {
+  height: 88px;
+}
+
+.main-header-small .top-menu {
+  margin-bottom: 0;
+}
