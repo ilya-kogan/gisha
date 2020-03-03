@@ -139,7 +139,7 @@ header.main-header._menu-burger_active .bottom-menu{display:none}
 .date{margin:5px 0 52px;color:#74737c;font-family:"Miriam Libre";font-size:15px;letter-spacing:2px;line-height:15px}
 .media .caption{margin:7px 0;color:#74737c;font-size:16px;line-height:20px}
 .article-section{display:-webkit-box;display:-ms-flexbox;display:flex}
-.main-content{margin-bottom:200px;width:600px;font-size:20px;font-weight:300;line-height:30px}
+.main-content{margin-bottom:100px;width:600px;font-size:20px;font-weight:300;line-height:30px}
 .media-aside{margin-top:8px;margin-left:70px;width:200px}
 .article-share{padding:20px 0 19px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;text-align:center}
 .article-share ul{margin:0 0 9px;padding:0}
