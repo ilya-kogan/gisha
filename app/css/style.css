@@ -42,8 +42,8 @@ footer.main-footer .footer-socials{margin-right:34px;display:inline-block}
 .footer-socials li a{color:#fff;font-size:18px;line-height:34px;text-decoration:none}
 .footer-socials li:hover{opacity:.7}
 .footer-middle-subscribe p{margin:0;color:#fff;font-family:"Narkiss Block";font-size:18px;letter-spacing:2px;line-height:20px}
-.footer-subscription input[type=text]{margin-left:-4px;padding:10px 16px;width:264px;height:34px;border:none}
-.footer-subscription input[type=submit]{position:relative;top:-1px;padding:4px 22px;height:34px;background-color:#000;border:none;color:#9defe0;font-family:"Narkiss Block";font-size:18px;font-weight:700;line-height:26px;cursor:pointer;-webkit-transition:.3s all;transition:.3s all}
+.footer-subscription input[type=text]{margin-left:-4px;padding:10px 16px;width:264px;height:34px;border:none;color:#8c8c8c;font-size:16px}
+.footer-subscription input[type=submit]{position:relative;top:-2px;padding:4px 22px;height:34px;background-color:#000;border:none;color:#9defe0;font-family:"Narkiss Block";font-size:18px;font-weight:700;line-height:26px;cursor:pointer;-webkit-transition:.3s all;transition:.3s all}
 .footer-subscription input[type=submit]:hover{opacity:.7}
 .article-labels p{font-size:18px;letter-spacing:2px;line-height:20px}
 .labels{margin:20px 0;padding:0;list-style:none}
