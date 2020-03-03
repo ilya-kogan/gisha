@@ -9,6 +9,8 @@
 *,:after,:before{box-sizing:border-box;-webkit-box-sizing:border-box;font-smoothing:antialiased;-webkit-font-smoothing:antialiased}
 html{padding-top:132px;border:12px solid #0dbfa7;font-family:'Narkiss Block';direction:rtl}
 a{color:inherit;background-color:transparent;text-decoration:none;outline:0}
+ul li a{color:#008f7e}
+ul li a:hover{text-decoration:underline}
 .container{margin:47px auto 60px;width:100%;max-width:1160px}
 ._align_center{text-align:center}
 ._align_default{text-align:initial}
