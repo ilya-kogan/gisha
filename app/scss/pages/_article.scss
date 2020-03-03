@@ -1,7 +1,6 @@
 /* Article */
 .article-single {
-	margin-top: 60px;
-    display: flex;
+  display: flex;
 }
 
 .article-single-col {
@@ -26,12 +25,14 @@
 	color: #0DBFA7;
 	font-size: 16px;
 	font-weight: bold;
-	line-height: 18px;
+	line-height: 24px;
 	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: .3s all;
 }
 
 .label a:hover {
-	text-decoration: underline;
+	border-bottom: 2px solid #0DBFA7;
 }
 
 .headline h1 {
@@ -162,4 +163,21 @@
 
 .article-media ul li:hover {
 	opacity: .5;
+}
+
+
+/* Feature */
+.article-feature-col {
+	max-width: 1160px;
+}
+
+.article-feature .headline h1 {
+	margin-bottom: 16px;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+}
+
+.article-feature .date {
+	margin-bottom: 45px;
 }

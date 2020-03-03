@@ -24,11 +24,15 @@ a {
 }
 
 .container {
-  margin: 60px auto;
+  margin: 47px auto 60px;
 	width: 100%;
   max-width: 1160px;
 }
 
 ._align_center {
 	text-align: center;
+}
+
+._align_default {
+  text-align: initial;
 }

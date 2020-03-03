@@ -1,14 +1,16 @@
 @font-face{font-family:'Narkiss Block';src:url(../fonts/narkiss-block/NarkissBlock-Regular.eot);src:url(../fonts/narkiss-block/NarkissBlock-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/narkiss-block/NarkissBlock-Regular.woff2) format("woff2"),url(../fonts/narkiss-block/NarkissBlock-Regular.woff) format("woff");font-weight:400;font-style:normal}
-@font-face{font-family:'Narkiss Block';src:url(../fonts/narkiss-block/NarkissBlock-Bold.eot);src:url(../fonts/narkiss-block/NarkissBlock-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/narkiss-block/NarkissBlock-Bold.woff2) format("woff2"),url(../fonts/narkiss-block/NarkissBlock-Bold.woff) format("woff");font-weight:700;font-style:normal}
 @font-face{font-family:'Narkiss Block';src:url(../fonts/narkiss-block/NarkissBlock-Light.eot);src:url(../fonts/narkiss-block/NarkissBlock-Light.eot?#iefix) format("embedded-opentype"),url(../fonts/narkiss-block/NarkissBlock-Light.woff2) format("woff2"),url(../fonts/narkiss-block/NarkissBlock-Light.woff) format("woff");font-weight:300;font-style:normal}
+@font-face{font-family:'Narkiss Block';src:url(../fonts/narkiss-block/NarkissBlock-Bold.eot);src:url(../fonts/narkiss-block/NarkissBlock-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/narkiss-block/NarkissBlock-Bold.woff2) format("woff2"),url(../fonts/narkiss-block/NarkissBlock-Bold.woff) format("woff");font-weight:700;font-style:normal}
+@font-face{font-family:'Narkiss Block';src:url(../fonts/narkiss-block/NarkissBlock-Heavy.eot);src:url(../fonts/narkiss-block/NarkissBlock-Heavy.eot?#iefix) format("embedded-opentype"),url(../fonts/narkiss-block/NarkissBlock-Heavy.woff2) format("woff2"),url(../fonts/narkiss-block/NarkissBlock-Heavy.woff) format("woff");font-weight:900;font-style:normal}
 @font-face{font-family:Gisha;src:url(../fonts/gisha/Gisha.eot?suy8gq);src:url(../fonts/gisha/Gisha.eot?suy8gq#iefix) format("embedded-opentype"),url(../fonts/gisha/Gisha.woff2?suy8gq) format("woff2"),url(../fonts/gisha/Gisha.ttf?suy8gq) format("truetype"),url(../fonts/gisha/Gisha.woff?suy8gq) format("woff"),url(../fonts/gisha/Gisha.svg?suy8gq#Gisha) format("svg");font-weight:400;font-style:normal;font-display:block}
 @font-face{font-family:'Miriam Libre';src:url(../fonts/miriam-libre/MiriamLibre-Bold.eot);src:url(../fonts/miriam-libre/MiriamLibre-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/miriam-libre/MiriamLibre-Bold.woff2) format("woff2"),url(../fonts/miriam-libre/MiriamLibre-Bold.woff) format("woff"),url(../fonts/miriam-libre/MiriamLibre-Bold.ttf) format("truetype"),url(../fonts/miriam-libre/MiriamLibre-Bold.svg#MiriamLibre-Bold) format("svg");font-weight:700;font-style:normal}
 @font-face{font-family:'Miriam Libre';src:url(../fonts/miriam-libre/MiriamLibre-Regular.eot);src:url(../fonts/miriam-libre/MiriamLibre-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/miriam-libre/MiriamLibre-Regular.woff2) format("woff2"),url(../fonts/miriam-libre/MiriamLibre-Regular.woff) format("woff"),url(../fonts/miriam-libre/MiriamLibre-Regular.ttf) format("truetype"),url(../fonts/miriam-libre/MiriamLibre-Regular.svg#MiriamLibre-Regular) format("svg");font-weight:400;font-style:normal}
 *,:after,:before{box-sizing:border-box;-webkit-box-sizing:border-box;font-smoothing:antialiased;-webkit-font-smoothing:antialiased}
 html{padding-top:132px;border:12px solid #0dbfa7;font-family:'Narkiss Block';direction:rtl}
 a{color:inherit;background-color:transparent;text-decoration:none;outline:0}
-.container{margin:60px auto;width:100%;max-width:1160px}
+.container{margin:47px auto 60px;width:100%;max-width:1160px}
 ._align_center{text-align:center}
+._align_default{text-align:initial}
 [class*=" icon-"],[class^=icon-]{font-family:Gisha!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-search:before{content:"\ea18"}
 .icon-english:before{content:"\e955"}
@@ -92,6 +94,7 @@ footer.main-footer .footer-socials{margin-right:34px;display:inline-block}
 .text-content{margin-bottom:20px;padding-bottom:35px;border-bottom:1px solid #ccc}
 .text-content p{margin:0 0 30px}
 .text-content h3{margin:10px 0 30px;font-size:30px;font-weight:700;line-height:32px}
+.text-content h4{margin:0;font-size:20px;font-weight:700;line-height:30px}
 .wp-caption{margin-bottom:30px}
 .wp-caption-text{color:#74737c;font-size:16px;line-height:20px}
 footer.main-footer{width:100%;background-color:#008f7e}
@@ -124,13 +127,13 @@ header.main-header._menu-burger_active .inner-header{padding:20px 28px 17px 35px
 header.main-header._menu-burger_active .logo{height:100%}
 header.main-header._menu-burger_active .top-menu{margin-bottom:25px}
 header.main-header._menu-burger_active .bottom-menu{display:none}
-.article-single{margin-top:60px;display:-webkit-box;display:-ms-flexbox;display:flex}
+.article-single{display:-webkit-box;display:-ms-flexbox;display:flex}
 .article-single-col{width:880px}
 .article-single-sidebar{margin-right:80px;width:200px}
 .article-header{margin-bottom:45px}
 .label{margin-bottom:20px}
-.label a{margin-bottom:20px;color:#0dbfa7;font-size:16px;font-weight:700;line-height:18px;text-decoration:none}
-.label a:hover{text-decoration:underline}
+.label a{margin-bottom:20px;color:#0dbfa7;font-size:16px;font-weight:700;line-height:24px;text-decoration:none;border-bottom:2px solid transparent;-webkit-transition:.3s all;transition:.3s all}
+.label a:hover{border-bottom:2px solid #0dbfa7}
 .headline h1{margin:5px 0 20px;font-size:60px;font-weight:900;line-height:60px}
 .underline{margin:5px 0 20px;color:#797979;font-size:20px;font-weight:600;line-height:24px}
 .date{margin:5px 0 52px;color:#74737c;font-family:"Miriam Libre";font-size:15px;letter-spacing:2px;line-height:15px}
@@ -151,6 +154,9 @@ header.main-header._menu-burger_active .bottom-menu{display:none}
 .article-media ul li{padding:18px 0;list-style:none;border-bottom:1px solid #ccc;-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
 .article-media ul li a{color:#0dbfa7;font-size:16px;font-weight:700;line-height:20px;text-decoration:none}
 .article-media ul li:hover{opacity:.5}
+.article-feature-col{max-width:1160px}
+.article-feature .headline h1{margin-bottom:16px;font-size:72px;font-weight:900;line-height:72px}
+.article-feature .date{margin-bottom:45px}
 .search-results{max-width:750px}
 .search-results-header h2{margin-bottom:60px;text-align:center;color:#797979;font-size:50px;font-weight:300;line-height:52px}
 .search-results-header span{color:#0dbfa7;font-size:50px;font-weight:900;line-height:52px}

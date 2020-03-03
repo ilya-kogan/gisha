@@ -11,6 +11,16 @@
 
 @font-face {
   font-family: 'Narkiss Block';
+  src: url('../fonts/narkiss-block/NarkissBlock-Light.eot');
+  src: url('../fonts/narkiss-block/NarkissBlock-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/narkiss-block/NarkissBlock-Light.woff2') format('woff2'),
+  url('../fonts/narkiss-block/NarkissBlock-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Narkiss Block';
   src: url('../fonts/narkiss-block/NarkissBlock-Bold.eot');
   src: url('../fonts/narkiss-block/NarkissBlock-Bold.eot?#iefix') format('embedded-opentype'),
   url('../fonts/narkiss-block/NarkissBlock-Bold.woff2') format('woff2'),
@@ -21,13 +31,15 @@
 
 @font-face {
   font-family: 'Narkiss Block';
-  src: url('../fonts/narkiss-block/NarkissBlock-Light.eot');
-  src: url('../fonts/narkiss-block/NarkissBlock-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/narkiss-block/NarkissBlock-Light.woff2') format('woff2'),
-  url('../fonts/narkiss-block/NarkissBlock-Light.woff') format('woff');
-  font-weight: 300;
+  src: url('../fonts/narkiss-block/NarkissBlock-Heavy.eot');
+  src: url('../fonts/narkiss-block/NarkissBlock-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/narkiss-block/NarkissBlock-Heavy.woff2') format('woff2'),
+  url('../fonts/narkiss-block/NarkissBlock-Heavy.woff') format('woff');
+  font-weight: 900;
   font-style: normal;
 }
+
+
 
 @font-face {
   font-family: 'Gisha';
