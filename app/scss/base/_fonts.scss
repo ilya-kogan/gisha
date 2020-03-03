@@ -21,6 +21,16 @@
 
 @font-face {
   font-family: 'Narkiss Block';
+  src: url('../fonts/narkiss-block/NarkissBlock-Medium.eot');
+  src: url('../fonts/narkiss-block/NarkissBlock-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/narkiss-block/NarkissBlock-Medium.woff2') format('woff2'),
+  url('../fonts/narkiss-block/NarkissBlock-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Narkiss Block';
   src: url('../fonts/narkiss-block/NarkissBlock-Bold.eot');
   src: url('../fonts/narkiss-block/NarkissBlock-Bold.eot?#iefix') format('embedded-opentype'),
   url('../fonts/narkiss-block/NarkissBlock-Bold.woff2') format('woff2'),

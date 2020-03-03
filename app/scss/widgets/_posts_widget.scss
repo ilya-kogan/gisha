@@ -84,3 +84,14 @@
 .posts-widget .post-item p:hover {
 	text-decoration: underline;
 }
+
+
+/* Item without image */
+.posts-widget .post-item.no-img {
+  padding: 60px 0 18px;
+}
+
+.posts-widget .post-item.no-img div {
+	width: auto;
+	height: auto;
+}

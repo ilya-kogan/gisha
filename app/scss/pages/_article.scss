@@ -154,6 +154,7 @@
 }
 
 .article-media ul li a {
+	position: relative;
 	color: #0DBFA7;
 	font-size: 16px;
 	font-weight: bold;
@@ -165,6 +166,13 @@
 	opacity: .5;
 }
 
+.article-media ul li a span {
+	position: relative;
+	top: 2px;
+	padding-left: 17px;
+  font-size: 20px;
+  line-height: 20px;
+}
 
 /* Feature */
 .article-feature-col {
@@ -180,4 +188,25 @@
 
 .article-feature .date {
 	margin-bottom: 45px;
+}
+
+/* Legal */
+.article-legal .article-header {
+	margin-bottom: 37px;	
+}
+
+.article-legal .headline h1 {
+  margin: 27px 0 28px;
+  color: #008F7E;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.article-legal .date {
+	margin-bottom: 37px;
+}
+
+.article-legal .article-single-sidebar {
+  margin-top: 4px;
 }
