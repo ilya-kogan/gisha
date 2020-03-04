@@ -74,7 +74,7 @@
 
 .main-content {
 	margin-bottom: 100px;
-	width: 600px;
+	max-width: 600px;
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 30px;
@@ -180,6 +180,10 @@
 	padding-left: 0;
 }
 
+.article-footer {
+  border-top: 1px solid #ccc;
+}
+
 /* Feature */
 .article-feature-col {
 	max-width: 1160px;
@@ -223,12 +227,15 @@
 	padding: 0;
 	width: 100%;
 	max-width: 100%;
+  overflow: hidden;
 }
 
 .article-special .article-header {
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: #fff;
+  position: relative;
+  margin-bottom: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
 }
 
 .article-special .article-header .article-header-inner {
@@ -291,4 +298,81 @@
 	color: #74737C;
   font-size: 16px;
   line-height: 20px;
+}
+
+.article-special-main {
+  margin-bottom: 100px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+
+/* Article Special Section */
+.article-special-section {
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.special-header .special-header-meta {
+  margin: auto;
+  max-width: 600px;
+}
+
+.special-header .pre-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.special-header .title {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 79px;
+}
+
+.special-header .subtitle {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+.special-header .header-image .caption {
+  margin: 0 0 30px;
+  color: #74737C;
+  font-size: 16px;
+  line-height: 20px;  
+}
+
+.article-special .article-preview,
+.article-special .text-content {
+  margin: auto;
+  max-width: 600px;
+  border-bottom: none;
+}
+
+.article-special-main .text-content {
+  margin-left: 0;
+}
+
+.article-special-main-content {
+  display: flex;
+}
+
+.article-special .article-single-sidebar {
+  margin-top: 65px;
+}
+
+.article-special-main,
+.special-header {
+  margin: 0 auto;
+  padding-bottom: 0;
+  max-width: 1160px;
+}
+
+.article-table {
+  margin-bottom: 30px;
+  background-color: #EDF1EE;
+  text-align: center;
 }

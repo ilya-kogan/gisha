@@ -30,14 +30,6 @@ a {
   outline: 0;
 }
 
-ul li a {
-  color: #008F7E;
-}
-
-ul li a:hover {
-  text-decoration: underline;
-}
-
 .container {
   margin: 60px auto;
 	width: 100%;
@@ -50,4 +42,12 @@ ul li a:hover {
 
 ._align_default {
   text-align: initial;
+}
+
+._margin_auto {
+  margin: auto !important;
+}
+
+._margin_right_none {
+  margin-right: 0 !important;
 }
