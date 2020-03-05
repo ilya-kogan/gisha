@@ -7,9 +7,14 @@
 @font-face{font-family:'Miriam Libre';src:url(../fonts/miriam-libre/MiriamLibre-Bold.eot);src:url(../fonts/miriam-libre/MiriamLibre-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/miriam-libre/MiriamLibre-Bold.woff2) format("woff2"),url(../fonts/miriam-libre/MiriamLibre-Bold.woff) format("woff"),url(../fonts/miriam-libre/MiriamLibre-Bold.ttf) format("truetype"),url(../fonts/miriam-libre/MiriamLibre-Bold.svg#MiriamLibre-Bold) format("svg");font-weight:700;font-style:normal}
 @font-face{font-family:'Miriam Libre';src:url(../fonts/miriam-libre/MiriamLibre-Regular.eot);src:url(../fonts/miriam-libre/MiriamLibre-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/miriam-libre/MiriamLibre-Regular.woff2) format("woff2"),url(../fonts/miriam-libre/MiriamLibre-Regular.woff) format("woff"),url(../fonts/miriam-libre/MiriamLibre-Regular.ttf) format("truetype"),url(../fonts/miriam-libre/MiriamLibre-Regular.svg#MiriamLibre-Regular) format("svg");font-weight:400;font-style:normal}
 *,:after,:before{box-sizing:border-box;-webkit-box-sizing:border-box;font-smoothing:antialiased;-webkit-font-smoothing:antialiased}
-html{border:12px solid #0dbfa7;font-family:'Narkiss Block';direction:rtl}
+html{font-family:'Narkiss Block';direction:rtl}
 body{padding-top:120px}
 body.article-type-special{padding-top:0}
+body:after,body:before{content:"";position:fixed;background:#0dbfa7;left:0;right:0;height:10px}
+body:before{top:0}
+body:after{bottom:0}
+body{border-left:12px solid #0dbfa7;border-right:12px solid #0dbfa7}
+input{font-family:'Narkiss Block'}
 a{color:inherit;background-color:transparent;text-decoration:none;outline:0}
 .container{margin:60px auto;width:100%;max-width:1160px}
 ._display_flex{display:-webkit-box;display:-ms-flexbox;display:flex}
@@ -53,7 +58,7 @@ footer.main-footer .footer-socials{margin-right:34px;display:inline-block}
 .footer-socials li:hover{opacity:.7}
 .footer-middle-subscribe p{margin:0;color:#fff;font-family:"Narkiss Block";font-size:18px;letter-spacing:2px;line-height:20px}
 .footer-subscription input[type=text]{margin-left:-4px;padding:10px 16px;width:264px;height:34px;border:none;color:#8c8c8c;font-size:16px}
-.footer-subscription input[type=submit]{position:relative;top:-2px;padding:4px 22px;height:34px;background-color:#000;border:none;color:#9defe0;font-family:"Narkiss Block";font-size:18px;font-weight:700;line-height:26px;cursor:pointer;-webkit-transition:.3s all;transition:.3s all}
+.footer-subscription input[type=submit]{padding:4px 22px;height:34px;background-color:#000;border:none;color:#9defe0;font-size:18px;font-weight:700;line-height:26px;cursor:pointer;-webkit-transition:.3s all;transition:.3s all}
 .footer-subscription input[type=submit]:hover{opacity:.7}
 .history-slider{margin:60px auto 5px;padding-top:23px;max-width:1160px;border-top:1px solid #ccc}
 .history-slider-title{margin:0 0 7px 0;font-size:40px;font-weight:700;line-height:42px}
@@ -161,6 +166,7 @@ header.main-header.main-header-small .inner-header{height:88px}
 .article-single-col{width:880px}
 .article-single-sidebar{margin-right:80px;width:200px}
 .article-header{margin-bottom:45px}
+.article-header .media img{max-width:100%}
 .label{margin-bottom:20px}
 .label a{margin-bottom:20px;color:#0dbfa7;font-size:16px;font-weight:700;line-height:24px;text-decoration:none;border-bottom:2px solid transparent;-webkit-transition:.3s all;transition:.3s all}
 .label a:hover{border-bottom:2px solid #0dbfa7}

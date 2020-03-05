@@ -10,7 +10,6 @@
 }
 
 html {
-	border: 12px solid #0DBFA7;
 	font-family: 'Narkiss Block';
 	direction: rtl;
 }
@@ -21,6 +20,34 @@ body {
 
 body.article-type-special {
   padding-top: 0;
+}
+
+/* Border */
+body:before,
+body:after {
+  content: "";
+  position: fixed;
+  background: #0DBFA7;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+body:before {
+  top: 0;
+}
+
+body:after {
+  bottom: 0;
+}
+
+body {
+  border-left: 12px solid #0DBFA7;
+  border-right: 12px solid #0DBFA7;  
+}
+
+input {
+  font-family: 'Narkiss Block';
 }
 
 a {
