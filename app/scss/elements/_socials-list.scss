@@ -1,0 +1,38 @@
+ul.socials-list {
+  margin: 0 0 9px;
+  padding: 0;
+}
+
+ul.socials-list li {
+  margin-left: -4px;
+  margin-right: 13px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #0DBFA7;
+  border-radius: 20px;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+ul.socials-list li:first-child {
+  margin-right: 0;
+}
+
+ul.socials-list li:hover {
+  background-color: #0DBFA7;
+}
+
+ul.socials-list li:hover a {
+  color: #fff;
+}
+
+ul.socials-list li a {
+  color: #0DBFA7;
+  font-size: 18px;
+  line-height: 38px;
+  text-decoration: none;
+  transition: .3s all ease-in-out;
+}

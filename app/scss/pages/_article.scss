@@ -97,45 +97,6 @@
 	text-align: center;
 }
 
-.article-share ul {
-	margin: 0 0 9px;
-	padding: 0;
-}
-
-.article-share ul li {
-	margin-left: -4px;
-	margin-right: 13px;
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	border: 1px solid #0DBFA7;
-  	border-radius: 20px;
-  	text-align: center;
-	list-style: none;
-	cursor: pointer;
-	transition: .3s all ease-in-out;
-}
-
-.article-share ul li:first-child {
-	margin-right: 0;
-}
-
-.article-share ul li:hover {
-	background-color: #0DBFA7;
-}
-
-.article-share ul li:hover a {
-	color: #fff;
-}
-
-.article-share ul li a {
-	color: #0DBFA7;
-	font-size: 18px;
-	line-height: 38px;
-	text-decoration: none;
-	transition: .3s all ease-in-out;
-}
-
 .article-share .icon-arrow-down-bold {
 	color: #0DBFA7;
 	font-size: 24px;

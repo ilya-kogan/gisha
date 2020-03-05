@@ -7,7 +7,7 @@
 }
 
 .labels {
-	margin: 20px 0;
+	margin: 19px 0 20px;
 	padding: 0;
 	list-style: none;
 }
@@ -15,6 +15,7 @@
 .labels li {
 	position: relative;
 	margin-left: 6px;
+	margin-bottom: 10px;
 	height: 28px; 
 	display: inline-block;
 	background-color: #0DBFA7;
@@ -42,12 +43,12 @@
 }
 
 .labels li a {
-	padding: 5px 8px 5px 18px;
+	padding: 4px 10.3px 4px 18px;
 	display: inline-block;
 	color: #fff;
 	font-size: 16px;
-	font-weight: bold;
-	line-height: 20px;
+	font-weight: 700;
+	line-height: 23px;
 	text-decoration: none;
 	transition: .3s all;
 }
