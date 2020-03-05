@@ -1,6 +1,5 @@
 .text-content {
 	margin-bottom: 20px;
-	padding-bottom: 35px;
 }
 
 .text-content p {
@@ -9,6 +8,21 @@
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
+}
+
+.text-content p.small {
+	font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.text-content a {
+	color: #238f7f;
+	text-decoration: underline;
+}
+
+.text-content a:hover {
+	text-decoration: none;
 }
 
 .text-content h3 {
@@ -59,6 +73,7 @@
 
 /* Special */
 .article-special .text-content h3 {
+	margin-top: 30px;
 	font-size: 40px;
   font-weight: bold;
   line-height: 42px;

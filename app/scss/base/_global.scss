@@ -36,6 +36,10 @@ a {
   max-width: 1160px;
 }
 
+._display_flex {
+  display: flex;
+}
+
 ._align_center {
 	text-align: center;
 }
@@ -50,4 +54,8 @@ a {
 
 ._margin_right_none {
   margin-right: 0 !important;
+}
+
+._backround_red {
+  background-color: #FA5454 !important;
 }
