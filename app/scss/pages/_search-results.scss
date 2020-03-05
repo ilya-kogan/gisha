@@ -95,6 +95,10 @@
 	margin: 0 0 10px 0; 
 }
 
+.search-results-items .item-content .headline h2:hover {
+	text-decoration: underline;
+}
+
 .search-results-items .item-content .text-content {
 	margin: 0;
 	padding-bottom: 30px;
