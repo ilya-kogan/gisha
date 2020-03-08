@@ -1,3 +1,7 @@
+.custom-select {
+  margin: 20px 0;
+}
+
 .custom-select select {
   display: none;
 }
@@ -14,7 +18,7 @@
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  line-height: 23px;
+  line-height: 22px;
   text-decoration: none;
   transition: .3s all;
   user-select: none;
@@ -47,8 +51,8 @@
 
 .custom-select-arrow {
   position: absolute;
-  top: 7px;
-  left: 11px;
+  top: 6px;
+  left: 15px;
 }
 
 .custom-select-item {
