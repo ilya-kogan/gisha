@@ -10,6 +10,7 @@ rgb = {
     rgb.topBarSearchForm();
     rgb.stickyHeader();
     rgb.mobileMenu();
+    rgb.customSelect();
   },
   topBarSearchForm: function () {
     $('.js-open-search, .js-close-search').click(function(e){
@@ -66,6 +67,22 @@ rgb = {
     if ( $('body').hasClass('article-type-special') ) {
       return false;
     }
+  },
+  customSelect: function () {
+    $('.js-custom-select').click(function(){
+      $(this).find('.custom-select-list').stop().slideToggle(300);
+    });
+
+    $('.custom-select-item').click(function() {
+      var optionText = $(this).text();
+      var optionVal = $(this).data('val');
+      var option = '<option value="' + optionVal + '">' + optionText + '</option>';
+
+      $(this).parents('.custom-select').find('select option').remove();
+      $(this).parents('.custom-select').find('select').append( option );
+      $(this).parents('.custom-select').find('.custom-select-title').text( optionText );
+      $(this).parents('.custom-select').find('select').val( optionVal );
+    });
   }
 };
 jQuery(document).ready(rgb.init);

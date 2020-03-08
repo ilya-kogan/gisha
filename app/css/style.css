@@ -37,6 +37,7 @@ a{color:inherit;background-color:transparent;text-decoration:none;outline:0}
 .icon-whatsapp:before{content:"\e913"}
 .icon-close-search:before{content:"\e90c"}
 .icon-mobile-menu:before{content:"\e923"}
+.icon-black-arrow-down:before{content:"\e93b"}
 ._menu-burger_active .menu-burger span:before,.icon-close-menu:before{content:"\e924"}
 ._type_link .icon-media:before{content:"\e966"}
 ._type_document .icon-media:before{content:"\e968"}
@@ -102,6 +103,14 @@ footer.main-footer .footer-socials{margin-right:34px;display:inline-block}
 .main-menu .submenu li a{font-size:16px;font-weight:700;line-height:20px;border:none}
 .main-menu li a.btn-donation{padding:4px 20px;border-bottom:0;color:#000;background-color:#9defe0;-webkit-box-shadow:3px 3px 0 0 #0dbfa7,5px 5px 15px 5px transparent;box-shadow:3px 3px 0 0 #0dbfa7,5px 5px 15px 5px transparent;-webkit-transition:.7s all;transition:.7s all}
 .main-menu li a.btn-donation:hover{color:#0b7769;-webkit-box-shadow:1px 1px 0 0 #0dbfa7,5px 5px 15px 5px transparent;box-shadow:1px 1px 0 0 #0dbfa7,5px 5px 15px 5px transparent}
+.custom-select select{display:none}
+.custom-select-inner{position:relative;margin-left:6px;margin-bottom:10px;padding:5px 16px 5px 45px;height:28px;display:inline-block;background-color:#0dbfa7;cursor:pointer;color:#fff;font-size:16px;font-weight:500;line-height:23px;text-decoration:none;-webkit-transition:.3s all;transition:.3s all;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.custom-select-inner:before{content:"";position:absolute;top:0;left:0;width:0;height:0;border-style:solid;border-width:28px 10px 0 0;border-color:rgba(0,0,0,.3) transparent transparent transparent;z-index:10}
+.custom-select-inner:hover{background-color:#008f7e}
+.custom-select-list{position:absolute;display:none;top:28px;right:0;z-index:10}
+.custom-select-arrow{position:absolute;top:7px;left:11px}
+.custom-select-item{padding:5px 16px 5px 45px;background-color:#0dbfa7;border-top:1px solid rgba(255,255,255,.5)}
+.custom-select-item:hover{background-color:#008f7e}
 ul.socials-list{margin:0 0 9px;padding:0}
 ul.socials-list li{margin-left:-4px;margin-right:13px;display:inline-block;width:40px;height:40px;border:1px solid #0dbfa7;border-radius:20px;text-align:center;list-style:none;cursor:pointer;-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
 ul.socials-list li:first-child{margin-right:0}

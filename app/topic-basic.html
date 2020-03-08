@@ -220,12 +220,22 @@
           <p class="filter-title">שנים</p>
 
           <form>
-            <select>
-              <option>שנה</option>
-              <option>2019</option>
-              <option>2018</option>
-              <option>2017</option>
-            </select>
+            <div class="custom-select js-custom-select">
+              <select name="filter-year">
+                <option></option>
+              </select>
+
+              <div class="custom-select-inner">
+                <span class="custom-select-title">שנה</span>
+                <span class="custom-select-arrow icon-black-arrow-down"></span>
+                
+                <div class="custom-select-list">
+                  <div class="custom-select-item" data-val="">שנה</div>
+                  <div class="custom-select-item" data-val="2020">2020</div>
+                  <div class="custom-select-item" data-val="2019">2019</div>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
 
