@@ -42,6 +42,16 @@
 	background-color: #008f7e;
 }
 
+.labels li.active {
+	background-color: #000;
+	cursor: default;
+}
+
+.labels li.active a {
+	color: #C4EBE7;
+	cursor: default;
+}
+
 .labels li a {
 	padding: 4px 10.3px 4px 18px;
 	display: inline-block;

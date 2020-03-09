@@ -77,11 +77,21 @@ rgb = {
       var optionText = $(this).text();
       var optionVal = $(this).data('val');
       var option = '<option value="' + optionVal + '">' + optionText + '</option>';
-
+      
       $(this).parents('.custom-select').find('select option').remove();
       $(this).parents('.custom-select').find('select').append( option );
       $(this).parents('.custom-select').find('.custom-select-title').text( optionText );
       $(this).parents('.custom-select').find('select').val( optionVal );
+
+      if ( optionVal == '' ) {
+        $(this).parents('.custom-select').removeClass('_type_selected');
+      } else {
+        $(this).parents('.custom-select').addClass('_type_selected');
+      }
+    });
+
+    $('.filters .filters-list li.active a').click(function(e) {
+      e.preventDefault();
     });
   }
 };

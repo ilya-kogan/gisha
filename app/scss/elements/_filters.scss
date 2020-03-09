@@ -3,7 +3,7 @@
 }
 
 .filters h2 {
-  margin: 10px 0 17px;
+  margin: 0 0 17px;
 }
 
 .filter-item {
@@ -17,4 +17,58 @@
   font-size: 18px;
   letter-spacing: 2px;
   line-height: 20px;
+}
+
+.filters-selected {
+  margin-bottom: 56px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.filters-selected-list {
+  display: inline-block;
+}
+
+.filters-selected-list .filter-selected-item {
+  position: relative;
+  margin-left: 17px;
+  padding: 5px 14px 5px 34px;
+  display: inline-block;
+  height: 28px;
+  color: #0DBFA7;
+  border: 1px solid #0DBFA7;
+  cursor: pointer;
+  transition: .3s all;
+  color: #0DBFA7;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  user-select: none;
+}
+
+.filters-selected-list .filter-selected-item:hover {
+  color: #fff;
+  background-color: #0DBFA7;
+}
+
+.filter-selected-item:before {
+  content: "\e924";
+  position: absolute;
+  left: 11px;
+  font-family: 'Gisha' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.filters-selected-inner span {
+  color: #0DBFA7;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
 }

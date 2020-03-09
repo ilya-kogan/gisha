@@ -37,6 +37,10 @@
   z-index: 10;
 }
 
+.custom-select._type_selected .custom-select-inner:before {
+  content: none;
+}
+
 .custom-select-inner:hover {
   background-color: #008f7e;
 }
