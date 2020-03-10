@@ -18,7 +18,8 @@ body {
   padding-top: 120px;
 }
 
-body.article-type-special {
+body.article-type-special,
+body.topic-type-special {
   padding-top: 0;
 }
 
@@ -31,6 +32,7 @@ body:after {
   left: 0;
   right: 0;
   height: 10px;
+  z-index: 16;
 }
 
 body:before {

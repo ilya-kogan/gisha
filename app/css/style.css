@@ -9,8 +9,8 @@
 *,:after,:before{box-sizing:border-box;-webkit-box-sizing:border-box;font-smoothing:antialiased;-webkit-font-smoothing:antialiased}
 html{font-family:'Narkiss Block';direction:rtl}
 body{padding-top:120px}
-body.article-type-special{padding-top:0}
-body:after,body:before{content:"";position:fixed;background:#0dbfa7;left:0;right:0;height:10px}
+body.article-type-special,body.topic-type-special{padding-top:0}
+body:after,body:before{content:"";position:fixed;background:#0dbfa7;left:0;right:0;height:10px;z-index:16}
 body:before{top:0}
 body:after{bottom:0}
 body{border-left:12px solid #0dbfa7;border-right:12px solid #0dbfa7}
@@ -128,6 +128,10 @@ ul.socials-list li:first-child{margin-right:0}
 ul.socials-list li:hover{background-color:#0dbfa7}
 ul.socials-list li:hover a{color:#fff}
 ul.socials-list li a{color:#0dbfa7;font-size:18px;line-height:38px;text-decoration:none;-webkit-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
+ul.socials-list._color_white li{border-color:#fff}
+ul.socials-list._color_white li a{color:#fff}
+ul.socials-list._color_white li:hover{background-color:#fff}
+ul.socials-list._color_white li:hover a{color:rgba(0,0,0,.5)}
 .top-bar{position:relative;margin:0 30px}
 .top-bar-item{padding:4px 30px;display:inline-block;color:#fff;border-right:1px solid #fff}
 .top-bar-item:first-child{padding-right:0;border-right:none}
@@ -192,10 +196,16 @@ header.main-header._menu-burger_active .bottom-menu{display:none}
 header.main-header.main-header-small{position:absolute;background:0 0}
 header.main-header.main-header-small .inner-header{height:88px}
 .main-header-small .top-menu{margin-bottom:0}
-.archive-header{text-align:center;padding-top:17px}
+header._type_transparent{background:0 0}
+.archive-header{position:relative;text-align:center;padding-top:17px}
+.archive-header._type_white .archive-header-inner{margin:auto;margin-bottom:59px;padding-bottom:73px;position:relative;max-width:1160px;min-height:60vh;display:-webkit-box;display:-ms-flexbox;display:flex;color:#fff;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;z-index:10}
+.archive-header._type_white:before{content:"";position:absolute;top:0;left:0;height:100%;width:100%;background-color:rgba(0,0,0,.5);z-index:10}
 .archive-header h1{margin:0 0 10px;color:#0dbfa7;font-size:72px;font-weight:900;line-height:72px}
-.archive-description{margin:0 auto 80px;max-width:750px}
+.archive-header._type_white h1{color:#fff}
+.archive-description{margin:0 auto 80px;max-width:750px;text-align:center}
 .archive-description p{font-size:20px;font-weight:300;line-height:30px}
+.archive-read-more{margin:0;display:block;color:#008f7e;text-decoration:underline;font-size:20px;line-height:23px;font-weight:400}
+.archive-read-more:hover{text-decoration:none}
 .archive-main{margin-top:50px;display:-webkit-box;display:-ms-flexbox;display:flex}
 .archive-articles{margin-right:110px;width:750px}
 .archive-article{margin-bottom:30px;padding-bottom:30px;display:-webkit-box;display:-ms-flexbox;display:flex;border-bottom:1px solid #ccc}
@@ -245,7 +255,7 @@ header.main-header.main-header-small .inner-header{height:88px}
 .article-legal .article-single-sidebar{margin-top:4px}
 .article-special.container{margin:0 auto;padding:0;width:100%;max-width:100%;overflow:hidden}
 .article-special .article-header{position:relative;margin-bottom:70px;background-repeat:no-repeat;background-size:cover;color:#fff}
-.article-special .article-header .article-header-inner{margin:auto;position:relative;max-width:1160px;min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.article-special .article-header .article-header-inner{margin:auto;position:relative;max-width:1160px;min-height:85vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .article-special .article-header:before{content:"";position:absolute;top:0;left:0;height:100%;width:100%;background-color:rgba(0,0,0,.5);z-index:10}
 .article-special .headline h1{position:relative;margin:0 auto 11px;max-width:980px;color:#fff;font-size:120px;font-weight:900;line-height:120px;z-index:11}
 .article-special .underline{position:relative;margin:0 auto 25px;max-width:980px;color:#fff;font-size:24px;font-weight:300;line-height:30px;z-index:11}

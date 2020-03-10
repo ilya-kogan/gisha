@@ -36,3 +36,20 @@ ul.socials-list li a {
   text-decoration: none;
   transition: .3s all ease-in-out;
 }
+
+/* White */
+ul.socials-list._color_white li {
+  border-color: #fff;
+}
+
+ul.socials-list._color_white li a {
+  color: #fff;
+}
+
+ul.socials-list._color_white li:hover {
+  background-color: #fff;
+}
+
+ul.socials-list._color_white li:hover a {
+  color: rgba(0, 0, 0, 0.5);
+}
