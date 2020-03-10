@@ -194,14 +194,15 @@ header.main-header.main-header-small .inner-header{height:88px}
 .main-header-small .top-menu{margin-bottom:0}
 .archive-header{text-align:center;padding-top:17px}
 .archive-header h1{margin:0 0 10px;color:#0dbfa7;font-size:72px;font-weight:900;line-height:72px}
+.archive-description{margin:0 auto 80px;max-width:750px}
+.archive-description p{font-size:20px;font-weight:300;line-height:30px}
 .archive-main{margin-top:50px;display:-webkit-box;display:-ms-flexbox;display:flex}
 .archive-articles{margin-right:110px;width:750px}
 .archive-article{margin-bottom:30px;padding-bottom:30px;display:-webkit-box;display:-ms-flexbox;display:flex;border-bottom:1px solid #ccc}
-.archive-article .img-preview{width:360px;height:240px}
+.archive-article .img-preview{margin-left:30px;width:360px;height:240px}
 .archive-article .img-preview a{display:block;height:100%;overflow:hidden}
 .archive-article .img-preview a img{-webkit-transition:-webkit-transform .5s ease;transition:-webkit-transform .5s ease;transition:transform .5s ease;transition:transform .5s ease,-webkit-transform .5s ease}
 .archive-article .img-preview a img:hover{-webkit-transform:scale(1.15);transform:scale(1.15);-webkit-backface-visibility:hidden;backface-visibility:hidden}
-.article-content{margin-right:30px}
 .article-content .info{color:#0dbfa7;font-size:16px;line-height:23px}
 .article-content .info a{color:#0dbfa7;font-size:16px;font-weight:700;line-height:18px;border-bottom:1px solid transparent;-webkit-transition:.3s all;transition:.3s all}
 .article-content .info a:hover{border-bottom:1px solid #0dbfa7}
