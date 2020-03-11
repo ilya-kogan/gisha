@@ -93,3 +93,11 @@ a {
 ._backround_red {
   background-color: #FA5454 !important;
 }
+
+a.underline-link {
+  text-decoration: underline;
+}
+
+a.underline-link:hover {
+  text-decoration: none !important;
+}

@@ -24,6 +24,8 @@ a{color:inherit;background-color:transparent;text-decoration:none;outline:0}
 ._margin_right_none{margin-right:0!important}
 ._magrin_bottom_none{margin-bottom:0!important}
 ._backround_red{background-color:#fa5454!important}
+a.underline-link{text-decoration:underline}
+a.underline-link:hover{text-decoration:none!important}
 [class*=" icon-"],[class^=icon-]{font-family:Gisha!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-search:before{content:"\ea18"}
 .icon-english:before{content:"\e955"}
