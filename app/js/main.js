@@ -8,7 +8,8 @@ rgb = {
   subdomain : 'dev',
   init: function () {
     rgb.topBarSearchForm();
-    rgb.stickyHeader();
+    rgb.activateStickyHeader();
+    rgb.stickyHeaderOnScroll();
     rgb.mobileMenu();
     rgb.customSelect();
     rgb.contentDropdown();
@@ -27,7 +28,7 @@ rgb = {
       $(this).parents('form').submit();
     });
   },
-  stickyHeader: function () {
+  stickyHeaderOnScroll: function () {
     $(window).on('scroll', function () {
       rgb.activateStickyHeader();
     });
