@@ -11,7 +11,6 @@ rgb = {
     rgb.stickyHeader();
     rgb.mobileMenu();
     rgb.customSelect();
-    rgb.contentDropdown();
   },
   topBarSearchForm: function () {
     $('.js-open-search, .js-close-search').click(function(e){
@@ -93,13 +92,6 @@ rgb = {
 
     $('.filters .filters-list li.active a').click(function(e) {
       e.preventDefault();
-    });
-  },
-  contentDropdown: function () {
-    $('.js-content-dropdown .content-dropdown-header').click(function() {
-      $(this).parents('.js-content-dropdown').find('.content-dropdown-text').stop().slideToggle();
-      $(this).parents('.js-content-dropdown').toggleClass('active');
-      $(this).parents('.js-content-dropdown').removeClass('current');
     });
   }
 };
