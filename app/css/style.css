@@ -63,7 +63,7 @@ a{color:inherit;background-color:transparent;text-decoration:none;outline:0}
 .content-dropdown-title{color:#0dbfa7;font-size:24px;font-weight:700;line-height:30px}
 .content-dropdown-icon{position:absolute;top:-2px;right:-45px;color:#0dbfa7;font-size:24px;line-height:30px;-webkit-transform:rotate(90deg);transform:rotate(90deg);-webkit-transition:-webkit-transform .3s ease-in-out;transition:-webkit-transform .3s ease-in-out;transition:transform .3s ease-in-out;transition:transform .3s ease-in-out,-webkit-transform .3s ease-in-out}
 .content-dropdown-text{display:none;color:#000;font-size:20px;font-weight:300;line-height:30px}
-.content-dropdown-text p{margin:0}
+.content-dropdown .content-dropdown-text p{margin:0}
 .content-dropdown.active .content-dropdown-icon{-webkit-transform:rotate(0);transform:rotate(0);-webkit-transition:-webkit-transform .3s ease-in-out;transition:-webkit-transform .3s ease-in-out;transition:transform .3s ease-in-out;transition:transform .3s ease-in-out,-webkit-transform .3s ease-in-out}
 .content-dropdown.current .content-dropdown-text{display:block}
 .filters{width:300px}
