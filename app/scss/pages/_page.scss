@@ -85,3 +85,13 @@
 .page-content strong {
   font-weight: 500;
 }
+
+.page-content a {
+  color: #0DBFA7;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.page-content a:hover {
+  text-decoration: underline;
+}

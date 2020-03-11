@@ -22,6 +22,7 @@ a{color:inherit;background-color:transparent;text-decoration:none;outline:0}
 ._align_default{text-align:initial}
 ._margin_auto{margin:auto!important}
 ._margin_right_none{margin-right:0!important}
+._magrin_bottom_none{margin-bottom:0!important}
 ._backround_red{background-color:#fa5454!important}
 [class*=" icon-"],[class^=icon-]{font-family:Gisha!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-search:before{content:"\ea18"}
@@ -303,6 +304,8 @@ header._type_transparent{background:0 0}
 .page-content h3{margin-top:0;color:#000;font-size:30px;font-weight:700;line-height:32px}
 .page-content p{margin-bottom:30px;color:#000;font-size:20px;font-weight:300;line-height:30px}
 .page-content strong{font-weight:500}
+.page-content a{color:#0dbfa7;font-size:20px;line-height:30px}
+.page-content a:hover{text-decoration:underline}
 .search-results{max-width:750px}
 .search-results-header h2{margin-bottom:60px;text-align:center;color:#797979;font-size:50px;font-weight:300;line-height:52px}
 .search-results-header span{color:#0dbfa7;font-size:50px;font-weight:900;line-height:52px}
