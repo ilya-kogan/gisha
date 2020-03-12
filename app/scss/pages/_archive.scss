@@ -97,6 +97,11 @@
   height: 240px;
 }
 
+.archive-article .img-preview.img-preview-small {
+  width: 130px;
+  height: 130px; 
+}
+
 .archive-article .img-preview a {
   display: block;
   height: 100%;
@@ -158,4 +163,15 @@
   color: #393746;
   font-size: 16px;
   line-height: 21px;
+}
+
+.article-content .article-text a {
+  color: #008F7E;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: underline;
+}
+
+.article-content .article-text a:hover {
+  text-decoration: none;
 }

@@ -230,6 +230,7 @@ header._type_transparent{background:0 0}
 .archive-articles{margin-right:110px;width:750px}
 .archive-article{margin-bottom:30px;padding-bottom:30px;display:-webkit-box;display:-ms-flexbox;display:flex;border-bottom:1px solid #ccc}
 .archive-article .img-preview{margin-left:30px;width:360px;height:240px}
+.archive-article .img-preview.img-preview-small{width:130px;height:130px}
 .archive-article .img-preview a{display:block;height:100%;overflow:hidden}
 .archive-article .img-preview a img{-webkit-transition:-webkit-transform .5s ease;transition:-webkit-transform .5s ease;transition:transform .5s ease;transition:transform .5s ease,-webkit-transform .5s ease}
 .archive-article .img-preview a img:hover{-webkit-transform:scale(1.15);transform:scale(1.15);-webkit-backface-visibility:hidden;backface-visibility:hidden}
@@ -241,6 +242,8 @@ header._type_transparent{background:0 0}
 .article-content .headline h2{margin-top:14px;margin:14px 0;font-size:26px;font-weight:700;line-height:30px}
 .article-content .headline h2:hover{text-decoration:underline}
 .article-content .article-text{color:#393746;font-size:16px;line-height:21px}
+.article-content .article-text a{color:#008f7e;font-size:16px;line-height:21px;text-decoration:underline}
+.article-content .article-text a:hover{text-decoration:none}
 .article-feature,.article-legal,.article-single{display:-webkit-box;display:-ms-flexbox;display:flex}
 .article-single-col{width:880px}
 .article-single-sidebar{margin-right:80px;width:200px}
