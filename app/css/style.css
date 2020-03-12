@@ -59,6 +59,9 @@ a.underline-link:hover{text-decoration:none!important}
 .btn-donation-white:hover{opacity:.7;-webkit-box-shadow:1px 1px 0 0 #008f7e,1px 1px 7px 1px transparent;box-shadow:1px 1px 0 0 #008f7e,1px 1px 7px 1px transparent}
 .btn-white{padding:5px 33px;display:inline-block;border:1px solid #0dbfa7;color:#000;-webkit-box-shadow:1px 1px 0 0 #0dbfa7,2px 2px 0 0 #fff;box-shadow:1px 1px 0 0 #0dbfa7,2px 2px 0 0 #fff;-webkit-transition:.5s all;transition:.5s all}
 .btn-white:hover{color:#fff;background-color:#0dbfa7;-webkit-box-shadow:1px 1px 0 0 #0dbfa7,1px 1px 7px 1px transparent;box-shadow:1px 1px 0 0 #0dbfa7,1px 1px 7px 1px transparent}
+.contact-us-form{padding:43px 34px;background-color:#c4ebe7}
+.contact-us-form label{display:inline-block;width:50%}
+.contact-us-form label input{width:100%}
 .content-dropdown{position:relative;margin-right:40px;margin-bottom:40px}
 .content-dropdown-header{cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-transition:.3s all;transition:.3s all}
 .content-dropdown-header:hover{opacity:.6}
@@ -307,6 +310,7 @@ header._type_transparent{background:0 0}
 .page-content-section{margin:0 110px 50px 0;width:750px}
 .page-content h2{margin-top:0;color:#000;font-size:48px;font-weight:700;line-height:48px}
 .page-content h3{margin-top:0;color:#000;font-size:30px;font-weight:700;line-height:32px}
+.page-content h4{font-size:24px;font-weight:500;line-height:30px}
 .page-content p{margin-bottom:30px;color:#000;font-size:20px;font-weight:300;line-height:30px}
 .page-content strong{font-weight:500}
 .page-content a{color:#0dbfa7;font-size:20px;line-height:30px}
