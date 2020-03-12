@@ -308,6 +308,7 @@ header._type_transparent{background:0 0}
 .page-content strong{font-weight:500}
 .page-content a{color:#0dbfa7;font-size:20px;line-height:30px}
 .page-content a:hover{text-decoration:underline}
+.page-title{margin:0 0 60px;font-size:48px;font-weight:700;line-height:48px}
 .search-results{max-width:750px}
 .search-results-header h2{margin-bottom:60px;text-align:center;color:#797979;font-size:50px;font-weight:300;line-height:52px}
 .search-results-header span{color:#0dbfa7;font-size:50px;font-weight:900;line-height:52px}
