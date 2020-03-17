@@ -4,10 +4,41 @@
 }
 
 .contact-us-form label {
-  display: inline-block;
   width: 50%;
 }
 
-.contact-us-form label input {
+.contact-us-form input[type="text"],
+.contact-us-form input[type="email"] {
+  margin: 0 0 40px 20px;
+  padding: 13px 15px;
+  flex: 0 48.5%;
+  height: 36px;
+}
+
+.contact-us-form input[type="text"],
+.contact-us-form input[type="email"],
+.contact-us-form textarea {
+  color: #8C8C8C;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.contact-us-form input:nth-child(2n) {
+  margin-left: 0;
+}
+
+.contact-us-form .contact-us-form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-us-form textarea {
+  margin-bottom: 40px;
+  padding: 18px 15px;
   width: 100%;
+  min-height: 150px;
+}
+
+.contact-us-form input[type="submit"] {
+  margin-top: 40px;
 }

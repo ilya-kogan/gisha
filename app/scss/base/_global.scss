@@ -49,7 +49,8 @@ body {
   border-right: 12px solid #0DBFA7;  
 }
 
-input {
+input,
+textarea {
   font-family: 'Narkiss Block';
 }
 
@@ -70,6 +71,10 @@ a {
   display: flex;
 }
 
+._width_full {
+  width: 100%;
+}
+
 ._align_center {
 	text-align: center;
 }
@@ -80,6 +85,10 @@ a {
 
 ._margin_auto {
   margin: auto !important;
+}
+
+._margin_auto_in > * {
+  margin: auto; 
 }
 
 ._margin_right_none {
