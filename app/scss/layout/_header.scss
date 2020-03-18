@@ -1,13 +1,14 @@
 /* Header */
 header.main-header {
 	position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border: 12px solid #0dbfa7;
-  border-bottom: none;
-  background-color: #008F7E;
-  z-index: 15;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border: 12px solid #0dbfa7;
+	border-bottom: none;
+	background-color: #008F7E;
+	z-index: 15;
+	transition: .3s all;
 }
 
 header.main-header ul {
@@ -133,4 +134,12 @@ header.main-header.main-header-small .inner-header {
 /* Topic Special */
 header._type_transparent {
   background: transparent;
+}
+
+header._type_transparent {
+	background: transparent;
+}
+
+header._type_transparent._background_green {
+	background-color: #008f7e;
 }
