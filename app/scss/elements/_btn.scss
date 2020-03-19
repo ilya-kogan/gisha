@@ -68,3 +68,29 @@
 .btn-gray:hover {
 	opacity: .8;
 }
+
+.btn-large {
+	display: inline-block;
+	margin: 0 50px 50px 0;
+	padding: 30px 50px;
+	width: 300px;
+	color: #FFF !important;
+	font-size: 40px !important;
+	font-weight: bold !important;
+	line-height: 42px !important;
+	text-align: center;
+	background-color: #FA5454;
+	box-shadow: 6px 6px 0 0 #C90507;
+	transition: .3s all;
+	cursor: pointer;
+}
+
+.btn-large:hover {
+	color: rgb(248, 192, 192) !important;
+	text-decoration: none !important;
+	box-shadow: none;
+}
+
+.btn-large:nth-child(2n+1) {
+	margin-right: 0;
+}
