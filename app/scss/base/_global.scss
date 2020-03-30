@@ -67,12 +67,20 @@ a {
   max-width: 1160px;
 }
 
+._container_padding {
+  padding: 60px 0;
+}
+
 ._display_flex {
   display: flex;
 }
 
 ._width_full {
   width: 100%;
+}
+
+.col-half {
+  width: 50%;
 }
 
 ._align_center {
@@ -97,6 +105,10 @@ a {
 
 ._magrin_bottom_none {
   margin-bottom: 0 !important;
+}
+
+._backround_gray {
+  background-color: #EDF1EE;
 }
 
 ._backround_red {

@@ -1,0 +1,36 @@
+.home-articles-item {
+    margin-right: 40px;
+    width: 33.33%;
+    border-bottom: 1px solid #ccc;
+}
+
+.home-articles-item:first-child {
+    margin-right: 0;
+}
+
+.home-articles-item img {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.home-articles-item .headline {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 26px;
+}
+
+.home-articles-item .underline {
+    margin-bottom: 25px;
+    color: #393746;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+.home-articles-item  .date {
+    margin: 0 0 10px;
+    color: #74737D;
+    font-size: 14px;
+    line-height: 15px;
+}
