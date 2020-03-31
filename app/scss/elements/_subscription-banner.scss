@@ -1,5 +1,46 @@
 .subscription-banner {
     margin-left: 20px;
-    padding: 31px 48px 49px;
+    padding: 31px 64px 49px;
     background-color: #C4EBE7;
+    text-align: center;
+}
+
+.subscription-banner h3 {
+    margin: 0 0 12px;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+.subscription-banner p {
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.subscription-banner form {
+    display: flex;
+}
+
+.subscription-banner form input[type="email"] {
+    padding: 3px 7px;
+    width: 100%;
+    border: 1px solid #008F7E;
+}
+
+.subscription-banner form input[type="submit"] {
+    padding: 3px 16px;
+    background-color: #000;
+    color: #9defe0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+}
+
+.subscription-banner input[type="submit"]:hover {
+    opacity:.7
 }

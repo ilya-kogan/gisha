@@ -30,10 +30,15 @@
 	border-style: solid;
 	border-width: 0 0 28px 10px;
 	border-color: transparent transparent #0DBFA7 transparent;
+	transition: .3s all;
 }
 
 .labels-home li:hover {
 	background-color: #008f7e;
+}
+
+.labels-home li:hover:before{
+	border-color: transparent transparent #008f7e transparent;
 }
 
 .labels-home li.active {

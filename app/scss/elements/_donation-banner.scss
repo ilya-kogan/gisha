@@ -1,6 +1,90 @@
 .donation-banner {
     margin-right: 20px;
-    padding: 31px 25px 29px;
     color: #fff;
     background-color: #008F7E;
+}
+
+.donation-banner-wrapper {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: row-reverse;
+}
+
+.donation-banner-triangle {
+    position: relative;
+    width: 215px;
+}
+
+.triangle-1 {
+    position: absolute;
+    top: 0;
+    right: 74px;
+    width: 50px;
+    height: 100%;
+    background-color: #71E1C5;
+}
+
+.triangle-1:before {
+    content: "";
+	position: absolute;
+	top: 0;
+	right: 50px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 120px 70px 120px 0;
+	border-color: transparent #71E1C5 transparent transparent;	
+}
+
+.triangle-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 88px;
+    height: 100%;
+    background-color: #9DEFE0;
+}
+
+.triangle-2:before {
+    content: "";
+	position: absolute;
+	top: 0;
+	right: 88px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 120px 70px 120px 0;
+	border-color: transparent #9DEFE0 transparent transparent;
+}
+
+.triangle-3:before {
+    content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 120px 70px 120px 0;
+	border-color: transparent #008f7e transparent transparent;	
+}
+
+.donation-banner-content {
+    padding: 28px 25px 28px 0;
+    width: 318px;
+    box-sizing: content-box;
+}
+
+.donation-banner h3 {
+    margin: 0 0 12px;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+.donation-banner p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
 }

@@ -2,38 +2,19 @@
 .donation-widget {
 	padding: 20px 15px 30px;
 	background-color: #008F7E;
-  color: #fff;
-  text-align: center;
+	color: #fff;
+	text-align: center;
 }
 
 .donation-widget h3 {
 	margin: 5px 0 15px;
 	font-size: 40px;
-  font-weight: 900;
-  line-height: 40px;
+	font-weight: 900;
+	line-height: 40px;
 }
 
 .donation-widget p {
 	margin-bottom: 20px;
 	font-size: 16px;
-  line-height: 21px;
-}
-
-.donation-widget a.btn-donation {
-	padding: 4px 20px;
-	border-bottom: 0;
-	color: #000;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
-	background-color: #9DEFE0;
-	-webkit-box-shadow: 3px 3px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0); 
-	box-shadow: 3px 3px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-	transition: .7s all;
-}
-
-.donation-widget a.btn-donation:hover {
-	color: #0b7769;
-	-webkit-box-shadow: 1px 1px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0); 
-	box-shadow: 1px 1px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  	line-height: 21px;
 }

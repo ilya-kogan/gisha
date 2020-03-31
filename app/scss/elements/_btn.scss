@@ -18,6 +18,25 @@
 	box-shadow: 1px 1px 0 0 #008F7E, 1px 1px 7px 1px rgba(0, 0, 0, 0);
 }
 
+.btn-donation {
+	padding: 4px 20px;
+	border-bottom: 0;
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 26px;
+	background-color: #9DEFE0;
+	-webkit-box-shadow: 3px 3px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0); 
+	box-shadow: 3px 3px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+	transition: .7s all;
+}
+
+.btn-donation:hover {
+	color: #0b7769;
+	-webkit-box-shadow: 1px 1px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0); 
+	box-shadow: 1px 1px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
 .btn-white {
 	padding: 5px 33px;
 	display: inline-block;
