@@ -1,0 +1,32 @@
+.latest-articles-header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.latest-articles-header-text {
+  color: #0DBFA7;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+.latest-articles-header-link {
+  color: #0DBFA7;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  transition: .3s all;
+}
+
+.latest-articles-header-link:hover {
+  opacity: .7;
+}
+
+.latest-articles-header-icon {
+  position: relative;
+  top: 2px;
+  padding-right: 10px;
+  font-size: 20px;
+}

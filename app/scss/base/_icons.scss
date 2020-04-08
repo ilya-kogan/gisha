@@ -79,5 +79,21 @@
 }
 
 ._type_document .icon-media:before {
-    content: "\e968";
+  content: "\e968";
+}
+
+.icon-slider-arrow-left:before {
+  content: "\e918";
+}
+
+.icon-slider-arrow-right:before {
+  content: "\e91a";
+}
+
+.icon-long-arrow-left:before {
+  content: "\e92b";
+}
+
+.icon-long-arrow-right:before {
+  content: "\e92a"; 
 }

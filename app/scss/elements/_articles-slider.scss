@@ -3,10 +3,51 @@
     background-color: #393745;
 }
 
+.articles-slider-wrapper {
+    position: relative;
+    margin: 0 auto;
+    direction: ltr;
+}
+
 .articles-slide {
     color: #fff;
+    user-select: none;
 }
 
 .articles-slide.home-article-full .underline {
     color: #fff;
+}
+
+.articles-slider-arrow {
+    position: absolute;
+    top: 200px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.articles-slider-arrow:hover {
+    opacity: .5;
+}
+
+.articles-slider-arrow-left {
+    left: -48px;
+
+}
+
+.articles-slider-arrow-right {
+    right: -48px;
+}
+
+/* Slick */
+.articles-slider .slick-initialized .slick-slide {
+    display: flex;
+    direction: rtl;
+}
+
+.articles-slider .slick-initialized .slick-arrow.slick-disabled {
+    opacity: .5;
+    cursor: default;
 }

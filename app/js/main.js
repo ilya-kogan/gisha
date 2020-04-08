@@ -13,6 +13,7 @@ rgb = {
     rgb.mobileMenu();
     rgb.customSelect();
     rgb.contentDropdown();
+    rgb.articlesSlider();
   },
   topBarSearchForm: function () {
     $('.js-open-search, .js-close-search').click(function(e){
@@ -115,6 +116,20 @@ rgb = {
       $(this).parents('.js-content-dropdown').toggleClass('active');
       $(this).parents('.js-content-dropdown').removeClass('current');
     });
+  },
+  articlesSlider: function () {
+    $('.js-articles-slider').slick({
+		  infinite: true,
+		  slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      infinite: false,
+      speed: 300,
+      centerMode: true,
+      variableWidth: true,
+      prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>',
+      nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>'
+		});
   }
 };
 jQuery(document).ready(rgb.init);
