@@ -187,8 +187,10 @@ footer.main-footer .footer-socials{margin-right:34px;display:inline-block}
 .lang-switch li.active,.lang-switch li:hover{background-color:rgba(255,255,255,.2)}
 .lang-switch li.active,.lang-switch li.active a{cursor:default}
 .lang-switch li a{color:#fff;text-decoration:none;font-family:Gisha;font-size:14px;line-height:19px}
+.latest-articles{margin-bottom:50px}
+._latest-articles-second{margin-top:50px}
 .latest-articles-header{margin-bottom:20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-.latest-articles-header-text{color:#0dbfa7;font-size:40px;font-weight:700;line-height:42px}
+.latest-articles-header-text{color:#0dbfa7;font-size:40px;font-weight:700;line-height:25px}
 .latest-articles-header-link{color:#0dbfa7;font-size:16px;font-weight:600;line-height:16px;-webkit-transition:.3s all;transition:.3s all}
 .latest-articles-header-link:hover{opacity:.7}
 .latest-articles-header-icon{position:relative;top:2px;padding-right:10px;font-size:20px}
