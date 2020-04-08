@@ -55,7 +55,7 @@ rgb = {
     }
 
     if ( $('header.main-header').hasClass('_type_transparent') ) {
-      var articleHeaderHeight = $('.archive-header, .page-header').height();
+      var articleHeaderHeight = $('.home-header, .archive-header, .page-header').height();
 
       if (scrollTop > (articleHeaderHeight - headerHeight) ) {
         $('header.main-header').addClass('_background_green');
