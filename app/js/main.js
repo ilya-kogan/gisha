@@ -118,18 +118,20 @@ rgb = {
     });
   },
   articlesSlider: function () {
-    $('.js-articles-slider').slick({
-		  infinite: true,
-		  slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: false,
-      infinite: false,
-      speed: 300,
-      centerMode: true,
-      variableWidth: true,
-      prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>',
-      nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>'
-		});
+    if ( $('.js-articles-slider').length ) {
+      $('.js-articles-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        infinite: false,
+        speed: 300,
+        centerMode: true,
+        variableWidth: true,
+        prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>',
+        nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>'
+      });
+    }
   }
 };
 jQuery(document).ready(rgb.init);

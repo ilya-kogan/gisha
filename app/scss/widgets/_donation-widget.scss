@@ -1,20 +1,19 @@
-/* Donation Widget */
 .donation-widget {
 	padding: 20px 15px 30px;
 	background-color: #008F7E;
 	color: #fff;
 	text-align: center;
-}
 
-.donation-widget h3 {
-	margin: 5px 0 15px;
-	font-size: 40px;
-	font-weight: 900;
-	line-height: 40px;
-}
-
-.donation-widget p {
-	margin-bottom: 20px;
-	font-size: 16px;
-  	line-height: 21px;
+	h3 {
+		margin: 5px 0 15px;
+		font-size: 40px;
+		font-weight: 900;
+		line-height: 40px;
+	}
+	
+	p {
+		margin-bottom: 20px;
+		font-size: 16px;
+		line-height: 21px;
+	}
 }
