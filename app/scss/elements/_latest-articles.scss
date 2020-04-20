@@ -28,8 +28,13 @@
   transition: .3s all;
 }
 
-.latest-articles-header-link:hover {
-  opacity: .7;
+.latest-articles-header-link-text {
+  border-bottom: 2px solid transparent;
+  transition: .3s all;
+}
+
+.latest-articles-header-link:hover .latest-articles-header-link-text {
+  border-bottom: 2px solid #0dbfa7;
 }
 
 .latest-articles-header-icon {

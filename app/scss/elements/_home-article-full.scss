@@ -8,10 +8,24 @@
     width: 760px;
 }
 
+.home-article-full-img a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+
 .home-article-full-img img {
     display: block;
     width: 100%;
     max-height: 470px;
+    transition: transform .5s ease;
+}
+
+.home-article-full-img a:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .home-article-full-content {
@@ -27,6 +41,10 @@
     font-size: 45px;
     font-weight: 900;
     line-height: 45px;
+}
+
+.home-article-full .headline h2 a:hover {
+    text-decoration: underline;
 }
 
 .home-article-full .underline {
