@@ -7,51 +7,51 @@ footer {
 			margin: 0;
 			padding: 0;
 			list-style: none;
-			
+
 			li {
 				display: inline-block;
 			}
 		}
-	}
-}
 
-.inner-footer {
-	max-width: 1157px;
-	margin: auto;
-	padding-top: 32px;
-	padding-bottom: 35px;
-}
+		.inner-footer {
+			max-width: 1157px;
+			margin: auto;
+			padding-top: 32px;
+			padding-bottom: 35px;
 
-.footer-item {
-	display: flex;
-	align-items: flex-end;
-	justify-content: space-between;
-}
+			.footer-item {
+				display: flex;
+				align-items: flex-end;
+				justify-content: space-between;
+			}
 
-.footer-top {
-	margin-bottom: 36px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
-}
+			.footer-top {
+				margin-bottom: 36px;
+				padding-bottom: 30px;
+				border-bottom: 1px solid rgba(255,255,255,0.2);
 
-.footer-top-logo {
-	font-size: 0;
+				.footer-top-logo {
+					font-size: 0;
+	
+					a {
+						transition: .3s all;
+						&:hover {
+							opacity: .7;
+						}
+					}
+				}
+			}
 
-	a {
-		transition: .3s all;
-		&:hover {
-			opacity: .7;
+			.footer-bottom {
+				.copyright {
+					margin: 52px 0 0;
+					color: #FFFFFF;
+					font-family: "Narkiss Block";
+					font-size: 12px;
+					line-height: 16px;
+					text-align: center;
+				}
+			}
 		}
-	}
-}
-
-.footer-bottom {
-	.copyright {
-		margin: 52px 0 0;
-		color: #FFFFFF;
-		font-family: "Narkiss Block";
-		font-size: 12px;
-		line-height: 16px;
-		text-align: center;
 	}
 }
