@@ -51,6 +51,9 @@
 .page-main {
 	margin-top: 81px;
 	display: flex;
+	&._margin_small {
+		margin-top: 60px;
+	}
 }
 
 .page-content-section {
@@ -70,7 +73,7 @@
 		font-size: 48px;
 		font-weight: bold;
 		line-height: 48px;
-  }
+  	}
   
 	h3 {
 		margin-top: 0;
@@ -78,13 +81,13 @@
 		font-size: 30px;
 		font-weight: bold;
 		line-height: 32px;
-  }
+  	}
   
 	h4 {
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 30px;
-  }
+  	}
   
 	p {
 		margin-bottom: 30px;
@@ -92,11 +95,20 @@
 		font-size: 20px;
 		font-weight: 300;
 		line-height: 30px;
-  }
+  	}
   
-	strong {
-		font-weight: 500;
-  }
+	._bold_content {
+	    margin-top: 11px;
+    	margin-bottom: 42px;
+		color: #393745;
+		font-size: 24px;
+		line-height: 32px;
+		font-weight: 600;
+  	}
+
+  	strong {
+  		font-weight: bold;
+  	}
   
 	a {
 		color: $second_color;
