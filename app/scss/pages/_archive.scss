@@ -148,9 +148,10 @@
 		h2 {
 			margin-top: 14px;
 			margin: 14px 0;
-			font-size: 26px;
-			font-weight: bold;
-			line-height: 30px;
+			color: $archive_article_headline_color;
+			font-size: $archive_article_headline_font_size;
+			font-weight: $archive_article_headline_font_weight;
+			line-height: $archive_article_headline_line_height;
 			&:hover {
 				text-decoration: underline;
 			}
@@ -158,14 +159,15 @@
   }
   
 	.article-text {
-		color: #393746;
-		font-size: 16px;
-    line-height: 21px;
+		color: $archive_article_text_color;
+		font-size: $archive_article_text_font_size;
+    	line-height: $archive_article_text_line_height;
+    	font-weight: $archive_article_text_font_weight;
     
 		a {
 			color: $main_color;
-			font-size: 16px;
-			line-height: 21px;
+			font-size: $archive_article_text_font_size;
+    		line-height: $archive_article_text_line_height;
 			text-decoration: underline;
 			&:hover {
 				text-decoration: none;

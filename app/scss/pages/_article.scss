@@ -44,18 +44,19 @@
 .headline {
 	h1 {
 		margin: 5px 0 20px;
-		font-size: 60px;
-		font-weight: 900;
-		line-height: 60px;
+		color: $single_headline_color;
+		font-size: $single_headline_font_size;
+		font-weight: $single_headline_font_weight;
+		line-height: $single_headline_line_height;		
 	}
 }
 
 .underline {
 	margin: 5px 0 20px;
-	color: #797979;
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 24px;
+	color: $single_underline_color;
+	font-size: $single_underline_font_size;
+	font-weight: $single_underline_font_weight;
+	line-height: $single_underline_line_height;
 }
 
 .date {

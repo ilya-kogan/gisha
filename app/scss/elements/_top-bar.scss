@@ -25,13 +25,13 @@
 .top-bar-item .icon-twitter {
 	font-size: 14px;
 	line-height: 14px;
-  transition: .3s all;
+  	transition: .3s all;
 }
 
 .top-bar-item .icon-search {
 	position: relative;
-  top: 2;
-  padding-right: 8px;
+	top: 2;
+	padding-right: 8px;
 }
 
 .top-bar-item .icon-facebook {
@@ -52,7 +52,7 @@
 	position: relative;
 	top: 2px;
 	font-size: 16px;
-  line-height: 18px;
+  	line-height: 18px;
 	color: #fff;
 	text-decoration: none;
 	border-bottom: 1px solid transparent;
@@ -60,9 +60,17 @@
 	z-index: 1;
 }
 
-.top-bar-item a:hover {
+.top-bar-item a:not(.top-search-icon):not(.icon-twitter):not(.icon-facebook):hover {
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.top-bar-item a.top-search-icon:hover {
+	opacity: .7;
+}
+
+.top-bar-item a.top-search-icon {
+	top: 0;
 }
 
 .top-bar-search form {
@@ -84,7 +92,7 @@
 	position: absolute;
 	top: 7px;
 	left: 10px;
-  z-index: 11;
+  	z-index: 11;
 }
 
 .top-bar-search .submit-search-icon .icon-search {
@@ -92,7 +100,7 @@
 }
 
 .top-bar-search form input {
-	padding: 6px 10px 6px 30px;
+	padding: 10px 10px 6px 30px;
 	width: 100%;
 	height: 30px;
 	font-size: 16px;

@@ -1,3 +1,4 @@
+/* Colors */
 $main_color: #008f7e;
 $second_color: #0dbfa7;
 $third_color: #9defe0;
@@ -6,8 +7,22 @@ $third_color: #9defe0;
 /* Single Article */
 $single_headline_font_size: 60px;
 $single_headline_line_height: 60px;
+$single_headline_font_weight: 900;
 $single_headline_color: #000;
 
 $single_underline_font_size: 20px;
 $single_underline_line_height: 24px;
+$single_underline_font_weight: 600;
 $single_underline_color: #797979;
+
+
+/* Archive Article */
+$archive_article_headline_font_size: 26px;
+$archive_article_headline_line_height: 30px;
+$archive_article_headline_font_weight: 700;
+$archive_article_headline_color: #000;
+
+$archive_article_text_font_size: 16px;
+$archive_article_text_line_height: 21px;
+$archive_article_text_font_weight: 400;
+$archive_article_text_color: #393746;
