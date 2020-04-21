@@ -28,7 +28,7 @@
 
 	a {
 		margin-bottom: 20px;
-		color: #0DBFA7;
+		color: $second_color;
 		font-size: 16px;
 		font-weight: bold;
 		line-height: 24px;
@@ -36,7 +36,7 @@
 		border-bottom: 2px solid transparent;
 		transition: .3s all;
 		&:hover {
-			border-bottom: 2px solid #0DBFA7;
+			border-bottom: 2px solid $second_color;
 		}
 	}
 }
@@ -101,7 +101,7 @@
 	text-align: center;
 
 	.icon-arrow-down-bold {
-		color: #0DBFA7;
+		color: $second_color;
 		font-size: 24px;
 		text-decoration: none;
 		transition: .3s all;
@@ -124,7 +124,7 @@
 
 			a {
 				position: relative;
-				color: #0DBFA7;
+				color: $second_color;
 				font-size: 16px;
 				font-weight: bold;
 				line-height: 20px;
@@ -183,7 +183,7 @@
 	.headline {
 		h1 {
 			margin: 27px 0 28px;
-			color: #008F7E;
+			color: $main_color;
 			font-size: 48px;
 			font-weight: 500;
 			line-height: 48px;

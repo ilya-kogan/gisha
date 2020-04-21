@@ -9,7 +9,7 @@ ul.socials-list li {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border: 1px solid #0DBFA7;
+  border: 1px solid $second_color;
   border-radius: 20px;
   text-align: center;
   list-style: none;
@@ -22,7 +22,7 @@ ul.socials-list li:first-child {
 }
 
 ul.socials-list li:hover {
-  background-color: #0DBFA7;
+  background-color: $second_color;
 }
 
 ul.socials-list li:hover a {
@@ -30,7 +30,7 @@ ul.socials-list li:hover a {
 }
 
 ul.socials-list li a {
-  color: #0DBFA7;
+  color: $second_color;
   font-size: 18px;
   line-height: 38px;
   text-decoration: none;

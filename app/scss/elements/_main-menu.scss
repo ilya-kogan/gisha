@@ -60,7 +60,7 @@
 	display: flex;
 	width: 100%;
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
-	background-color: #0dbfa7;
+	background-color: $second_color;
 	cursor: pointer;
   clear: both;
 }
@@ -84,14 +84,14 @@
 	padding: 4px 20px;
 	border-bottom: 0;
 	color: #000;
-	background-color: #9DEFE0;
-	-webkit-box-shadow: 3px 3px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0); 
-	box-shadow: 3px 3px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+	background-color: $third_color;
+	-webkit-box-shadow: 3px 3px 0 0 $second_color, 5px 5px 15px 5px rgba(0, 0, 0, 0); 
+	box-shadow: 3px 3px 0 0 $second_color, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 	transition: .7s all;
 }
 
 .main-menu li a.btn-donation:hover {
 	color: #0b7769;
-	-webkit-box-shadow: 1px 1px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0); 
-	box-shadow: 1px 1px 0 0 #0DBFA7, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+	-webkit-box-shadow: 1px 1px 0 0 $second_color, 5px 5px 15px 5px rgba(0, 0, 0, 0); 
+	box-shadow: 1px 1px 0 0 $second_color, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }

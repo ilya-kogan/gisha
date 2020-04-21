@@ -1,21 +1,21 @@
-var gulp = require("gulp"),
-  gutil = require("gulp-util"),
-  gulpSass = require("gulp-sass"),
-  browserSync = require("browser-sync"),
-  concat = require("gulp-concat"),
-  uglify = require("gulp-uglify"),
-  cleanCSS = require("gulp-clean-css"),
-  rename = require("gulp-rename"),
-  gulpImagemin = require("gulp-imagemin"),
-  cache = require("gulp-cache"),
-  autoprefixer = require("gulp-autoprefixer"),
-  ftp = require("vinyl-ftp"),
-  sassGlob = require('gulp-sass-glob');
-  notify = require("gulp-notify");
-rimraf = require("rimraf");
+var gulp = require("gulp");
+var gutil = require("gulp-util");
+var gulpSass = require("gulp-sass");
+var browserSync = require("browser-sync");
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
+var cleanCSS = require("gulp-clean-css");
+var rename = require("gulp-rename");
+var gulpImagemin = require("gulp-imagemin");
+var cache = require("gulp-cache");
+var autoprefixer = require("gulp-autoprefixer");
+var ftp = require("vinyl-ftp");
+var sassGlob = require('gulp-sass-glob');
+var notify = require("gulp-notify");
+var rimraf = require("rimraf");
+var sourcemaps = require('gulp-sourcemaps');
 
-// scripts
-
+//Scripts
 var sassPaths = [
   "app/libs/normalize.scss/sass",
   "app/libs/foundation-sites/scss",
@@ -25,9 +25,6 @@ var sassPaths = [
 function commonJs(cb) {
   gulp
     .src(["app/js/common.js"])
-    // .pipe(concat('common.min.js'))
-    // .pipe(uglify())
-    // .pipe(gulp.dest('app/js'))
     .pipe(
       browserSync.reload({
         stream: true
@@ -40,10 +37,6 @@ function js(cb) {
   gulp
     .src([
       "app/libs/jquery/dist/jquery.min.js"
-      // 'app/libs/what-input/dist/what-input.min.js',
-      // 'app/libs/foundation-sites/dist/js/foundation.min.js',
-      // 'app/libs/sweetalert2/dist/sweetalert2.min.js',
-      // 'app/js/common.min.js',
     ])
     .pipe(concat("scripts.min.js"))
     // .pipe(uglify())
@@ -62,9 +55,6 @@ function browser(cb) {
       baseDir: "app"
     },
     notify: false
-    // ghostMode: false
-    // tunnel: true,
-    // tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
   });
   cb();
 }
@@ -81,18 +71,16 @@ function code(cb) {
 function sass(cb) {
   gulp
     .src("app/scss/**/*.scss")
+    .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(gulpSass().on("error", notify.onError()))
-    // .pipe(rename({
-    // 	suffix: '.min',
-    // 	prefix: ''
-    // }))
     .pipe(autoprefixer(["last 2 versions"]))
     .pipe(
       cleanCSS({
         format: "keep-breaks"
       })
-    ) // comment on debug
+    )
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest("app/css"))
     .pipe(
       browserSync.reload({
@@ -104,7 +92,6 @@ function sass(cb) {
 
 function watch(cb) {
   gulp.watch("app/scss/**/*.scss", gulp.parallel(sass));
-  // gulp.watch('libs/**/*.js', gulp.parallel(js));
   gulp.watch("app/js/common.js", gulp.parallel(commonJs));
   gulp.watch("app/**/*.html", gulp.parallel(code));
   cb();
@@ -141,7 +128,6 @@ function files(cb) {
     .src(
       [
         "app/**/*.html"
-        // 'app/.htaccess',
       ],
       {
         allowEmpty: true

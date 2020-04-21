@@ -25,13 +25,13 @@
 .subscription-banner form input[type="email"] {
     padding: 3px 7px;
     width: 100%;
-    border: 1px solid #008F7E;
+    border: 1px solid $main_color;
 }
 
 .subscription-banner form input[type="submit"] {
     padding: 3px 16px;
     background-color: #000;
-    color: #9defe0;
+    color: $third_color;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;

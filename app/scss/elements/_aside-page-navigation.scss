@@ -18,7 +18,7 @@
 }
 
 .aside-page-navigation-list ul li a {
-  color: #0DBFA7;
+  color: $second_color;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
@@ -32,7 +32,7 @@
 }
 
 .aside-page-navigation-list ul li a:hover {
-  border-bottom: 1px solid #0DBFA7;
+  border-bottom: 1px solid $second_color;
 }
 
 .aside-page-navigation-list ul li a.active:hover {

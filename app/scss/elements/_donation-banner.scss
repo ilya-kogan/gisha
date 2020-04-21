@@ -1,7 +1,7 @@
 .donation-banner {
     margin-right: 20px;
     color: #fff;
-    background-color: #008F7E;
+    background-color: $main_color;
 }
 
 .donation-banner-wrapper {
@@ -43,7 +43,7 @@
     right: 0;
     width: 88px;
     height: 100%;
-    background-color: #9DEFE0;
+    background-color: $third_color;
 }
 
 .triangle-2:before {
@@ -55,7 +55,7 @@
 	height: 0;
 	border-style: solid;
 	border-width: 120px 70px 120px 0;
-	border-color: transparent #9DEFE0 transparent transparent;
+	border-color: transparent $third_color transparent transparent;
 }
 
 .triangle-3:before {
@@ -67,7 +67,7 @@
 	height: 0;
 	border-style: solid;
 	border-width: 120px 70px 120px 0;
-	border-color: transparent #008f7e transparent transparent;	
+	border-color: transparent $main_color transparent transparent;	
 }
 
 .donation-banner-content {

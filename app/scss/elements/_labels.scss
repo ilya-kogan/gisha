@@ -18,7 +18,7 @@
 	margin-bottom: 10px;
 	height: 28px; 
 	display: inline-block;
-	background-color: #0DBFA7;
+	background-color: $second_color;
 	cursor: pointer;
 	transition: .3s all;
 }
@@ -39,7 +39,7 @@
 }
 
 .labels li:hover {
-	background-color: #008f7e;
+	background-color: $main_color;
 }
 
 .labels li.active {

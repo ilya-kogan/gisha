@@ -14,14 +14,14 @@
 }
 
 .latest-articles-header-text {
-  color: #0DBFA7;
+  color: $second_color;
   font-size: 40px;
   font-weight: bold;
   line-height: 25px;
 }
 
 .latest-articles-header-link {
-  color: #0DBFA7;
+  color: $second_color;
   font-size: 16px;
   font-weight: 600;
   line-height: 16px;
@@ -34,7 +34,7 @@
 }
 
 .latest-articles-header-link:hover .latest-articles-header-link-text {
-  border-bottom: 2px solid #0dbfa7;
+  border-bottom: 2px solid $second_color;
 }
 
 .latest-articles-header-icon {

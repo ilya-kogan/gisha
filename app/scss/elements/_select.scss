@@ -13,7 +13,7 @@
   padding: 5px 16px 5px 45px;
   height: 28px; 
   display: inline-block;
-  background-color: #0DBFA7;
+  background-color: $second_color;
   cursor: pointer;
   color: #fff;
   font-size: 16px;
@@ -42,7 +42,7 @@
 }
 
 .custom-select-inner:hover {
-  background-color: #008f7e;
+  background-color: $main_color;
 }
 
 .custom-select-list {
@@ -61,10 +61,10 @@
 
 .custom-select-item {
   padding: 5px 16px 5px 45px;
-  background-color: #0DBFA7;
+  background-color: $second_color;
   border-top: 1px solid rgba(255,255,255,.5);
 }
 
 .custom-select-item:hover {
-  background-color: #008f7e; 
+  background-color: $main_color; 
 }

@@ -41,7 +41,7 @@
   
 	h1 {
 		margin: 0 0 10px;
-		color: #0DBFA7;
+		color: $second_color;
 		font-size: 72px;
 		font-weight: 900;
 		line-height: 72px;
@@ -99,7 +99,7 @@
   }
   
 	a {
-		color: #0DBFA7;
+		color: $second_color;
 		font-size: 20px;
 		line-height: 30px;
 		&:hover {

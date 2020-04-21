@@ -42,7 +42,7 @@
   
 	h1 {
 		margin: 0 0 10px;
-		color: #0DBFA7;
+		color: $second_color;
 		font-size: 72px;
 		font-weight: 900;
 		line-height: 72px;
@@ -64,7 +64,7 @@
 .archive-read-more {
 	margin: 0;
 	display: block;
-	color: #008F7E;
+	color: $main_color;
 	text-decoration: underline;
 	font-size: 20px;
 	line-height: 23px;
@@ -117,18 +117,18 @@
 
 .article-content {
 	.info {
-		color: #0DBFA7;
+		color: $second_color;
 		font-size: 16px;
 		line-height: 23px;
 		a {
-			color: #0DBFA7;
+			color: $second_color;
 			font-size: 16px;
 			font-weight: bold;
 			line-height: 18px;
 			border-bottom: 1px solid transparent;
 			transition: .3s all;
 			&:hover {
-				border-bottom: 1px solid #0DBFA7;
+				border-bottom: 1px solid $second_color;
 			}
     }
     
@@ -163,7 +163,7 @@
     line-height: 21px;
     
 		a {
-			color: #008F7E;
+			color: $main_color;
 			font-size: 16px;
 			line-height: 21px;
 			text-decoration: underline;

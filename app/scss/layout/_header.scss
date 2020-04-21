@@ -5,9 +5,9 @@ header {
 		top: 0;
 		left: 0;
 		width: 100%;
-		border: 12px solid #0dbfa7;
+		border: 12px solid $second_color;
 		border-bottom: none;
-		background-color: #008F7E;
+		background-color: $main_color;
 		z-index: 15;
 		transition: .3s all;
 
@@ -156,7 +156,7 @@ header {
 		background: transparent;
 		background: transparent;
 		&._background_green {
-			background-color: #008f7e;
+			background-color: $main_color;
 		}
 	}
 }
