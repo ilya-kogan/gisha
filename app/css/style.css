@@ -57,7 +57,7 @@ a.underline-link:hover{text-decoration:none!important}
 .attachment-full{width:100%}
 .wp-caption img{width:100%}
 .articles-slider{padding:60px 140px;background-color:#393745}
-.articles-slider .home-article-full{margin-bottom:0}
+.articles-slider .home-article-full{margin-top:0;margin-bottom:0}
 .articles-slider .home-article-full-img{margin-left:52px}
 .articles-slider-wrapper{position:relative;margin:0 auto;direction:ltr}
 .articles-slide{color:#fff;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
