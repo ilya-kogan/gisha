@@ -34,6 +34,7 @@
 }
 
 .home-article-full-content {
+    position: relative;
     display: flex;
     align-items: end;
     flex-direction: column;
@@ -42,7 +43,7 @@
 }
 
 .home-article-full .headline h2 {
-    margin: 0 0 20px;
+    margin: 0 0 15px;
     font-size: 45px;
     font-weight: 900;
     line-height: 45px;
@@ -62,6 +63,8 @@
 }
 
 .home-article-full .date {
+    position: absolute;
+    bottom: 0;
     margin-bottom: 20px;
     color: #74737D;
     font-family: "Miriam Libre";

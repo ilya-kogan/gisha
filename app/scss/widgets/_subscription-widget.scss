@@ -5,17 +5,18 @@
   text-align: center;
   
 	h3 {
-		margin: 5px 0 15px;
+		margin: 5px 0 0;
 		font-size: 40px;
 		font-weight: 900;
 		line-height: 40px;
-  }
+  	}
   
 	p {
-		margin-bottom: 20px;
+		margin-top: 8px;
+		margin-bottom: 19px;
 		font-size: 16px;
 		line-height: 21px;
-  }
+  	}
   
 	form {
 		input[type="text"] {
@@ -25,11 +26,11 @@
 			height: 35px;
 			border: 1px solid $main_color;
 			transition: .3s all ease-in-out;
-    }
+    	}
     
 		input[type="text"]:focus {
 			box-shadow: 0 0 10 0 rgba(0, 0, 0, 0.75);
-    }
+   		}
     
 		input[type="submit"] {
 			padding: 3px 16px;
@@ -41,7 +42,7 @@
 			border: none;
 			cursor: pointer;
 			transition: .3s all ease-in-out;
-    }
+    	}
     
 		input[type="submit"]:hover {
 			opacity: .7;

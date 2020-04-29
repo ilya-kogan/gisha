@@ -5,11 +5,11 @@
 	&._type_white {
 		.home-header-inner {
 			margin: auto;
-			margin-bottom: 59px;
-			padding-bottom: 73px;
+			margin-bottom: 60px;
+			padding-bottom: 60px;
 			position: relative;
 			max-width: 1160px;
-			min-height: 80vh;
+		    min-height: 75vh;
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
@@ -40,6 +40,8 @@
   }
   
 	h1 {
+		position: relative;
+    	top: 17px;
 		margin: 0 0 10px;
 		color: $second_color;
 		font-size: 70px;
@@ -57,4 +59,8 @@
 
 .home-articles-list {
 	display: flex;
+}
+
+.home-banners {
+	margin: 75px auto 115px;
 }

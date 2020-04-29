@@ -1,5 +1,5 @@
 .btn-donation-white {
-	padding: 6px 37px 6px 36.5px;
+	padding: 9px 37px 6px 36.5px;
 	display: inline-block;
 	color: #fff;
 	font-size: 24px;
@@ -13,7 +13,7 @@
 }
 
 .btn-donation-white:hover {
-	opacity: .7;
+	color: #000;
 	-webkit-box-shadow: 1px 1px 0 0 $main_color, 1px 1px 7px 1px rgba(0, 0, 0, 0); 
 	box-shadow: 1px 1px 0 0 $main_color, 1px 1px 7px 1px rgba(0, 0, 0, 0);
 }
@@ -38,10 +38,13 @@
 }
 
 .btn-white {
-	padding: 5px 33px;
-	display: inline-block;
-	border: 1px solid $second_color;
-	color: #000;
+	padding: 7px 33px 3px;
+    display: inline-block;
+    border: 1px solid $second_color;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
 	box-shadow: 1px 1px 0 0 $second_color, 2px 2px 0 0 #FFFFFF;
 	transition: .5s all;
 }

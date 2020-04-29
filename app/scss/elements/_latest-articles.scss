@@ -1,13 +1,18 @@
 .latest-articles {
+  margin-top: 75px;
   margin-bottom: 50px;
 }
 
 ._latest-articles-second {
-  margin-top: 50px;
+  margin-top: 65px;
+
+  .latest-articles-header {
+    margin-bottom: 32px;
+  }
 }
 
 .latest-articles-header {
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   display: flex;
   align-items: center;
   justify-content: space-between;

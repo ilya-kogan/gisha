@@ -1,7 +1,7 @@
 /* Top Bar */
 .top-bar {
 	position: relative;
-	margin: 0 30px;
+	margin: 0 30px 0 50px;
 }
 
 .top-bar-item {
@@ -12,6 +12,7 @@
 }
 
 .top-bar-item:first-child {
+	padding-left: 25px;
 	padding-right: 0;
 	border-right: none;
 }

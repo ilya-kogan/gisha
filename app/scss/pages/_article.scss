@@ -1,7 +1,20 @@
 .article-single,
 .article-feature,
 .article-legal {
+	margin-top: 70px;
 	display: flex;
+}
+
+.article-single {
+	.article-header {
+		margin-bottom: 40px;
+	}
+}
+
+.article-feature {
+	.article-header {
+	    margin-bottom: 37px;
+	}
 }
 
 .article-single-col {
