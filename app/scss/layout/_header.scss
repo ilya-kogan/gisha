@@ -151,12 +151,9 @@ header {
 
 
 /* Topic Special */
-header {
-	&._type_transparent {
-		background: transparent;
-		background: transparent;
-		&._background_green {
-			background-color: $main_color;
-		}
+.transparent-header header {
+	background: transparent;
+	&._background_green {
+		background-color: $main_color;
 	}
 }

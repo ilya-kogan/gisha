@@ -54,7 +54,7 @@ rgb = {
       $('.logo img').attr('src', logoLarge);
     }
 
-    if ( $('header.main-header').hasClass('_type_transparent') ) {
+    if ( $('body').hasClass('transparent-header') ) {
       var articleHeaderHeight = $('.home-header, .archive-header, .page-header').height();
 
       if (scrollTop > (articleHeaderHeight - headerHeight) ) {

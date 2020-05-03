@@ -36,9 +36,9 @@ function commonJs(cb) {
 function js(cb) {
   gulp
     .src([
-      "app/libs/jquery/dist/jquery.min.js"
+      "app/libs/slick-slider/slick.min.js"
     ])
-    .pipe(concat("scripts.min.js"))
+    .pipe(concat("libs.min.js"))
     // .pipe(uglify())
     .pipe(gulp.dest("app/js"))
     .pipe(
@@ -70,7 +70,10 @@ function code(cb) {
 
 function sass(cb) {
   gulp
-    .src("app/scss/**/*.scss")
+    .src([
+      "app/scss/**/*.scss",
+      "app/libs/slick-slider/slick.min.css"
+    ])
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(gulpSass().on("error", notify.onError()))
@@ -81,6 +84,7 @@ function sass(cb) {
       })
     )
     .pipe(sourcemaps.write('.'))
+    .pipe(concat("style.css"))
     .pipe(gulp.dest("app/css"))
     .pipe(
       browserSync.reload({
