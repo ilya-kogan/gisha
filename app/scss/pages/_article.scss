@@ -13,11 +13,18 @@
 
 .article-feature {
 	.article-header {
-	    margin-bottom: 37px;
+		margin-bottom: 37px;
+		text-align: center;
+
+		.caption {
+			text-align: initial;
+		}
 	}
 }
 
-.article-single-col {
+.article-single-col,
+.article-feature-col,
+.article-legal-col {
 	width: 880px;
 }
 
