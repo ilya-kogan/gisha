@@ -23,9 +23,12 @@
 }
 
 .article-single-col,
-.article-feature-col,
 .article-legal-col {
 	width: 880px;
+}
+
+.article-feature-col {
+	max-width: 1160px;
 }
 
 .article-single-sidebar {
@@ -175,10 +178,6 @@
 	margin: 10px auto 60px;
 	max-width: 600px;
 	border-top: 1px solid #ccc;
-}
-
-.article-feature-col {
-	max-width: 1160px;
 }
 
 .article-feature {

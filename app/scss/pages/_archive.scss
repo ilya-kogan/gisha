@@ -105,6 +105,8 @@
       overflow: hidden;
       
 			img {
+				width: 360px;
+    		height: 240px;
 				transition: transform .5s ease;
 				&:hover {
 					transform: scale(1.15);
@@ -161,8 +163,8 @@
 	.article-text {
 		color: $archive_article_text_color;
 		font-size: $archive_article_text_font_size;
-    	line-height: $archive_article_text_line_height;
-    	font-weight: $archive_article_text_font_weight;
+		line-height: $archive_article_text_line_height;
+		font-weight: $archive_article_text_font_weight;
     
 		a {
 			color: $main_color;
