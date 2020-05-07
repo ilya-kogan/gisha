@@ -55,7 +55,8 @@
 
 .labels li.active a {
 	color: #C4EBE7;
-	cursor: default;
+	cursor: not-allowed;
+	user-select: none;
 }
 
 .labels li a {
