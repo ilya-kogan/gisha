@@ -22,6 +22,7 @@
 .filters-selected {
   margin-bottom: 56px;
   padding-bottom: 16px;
+  display: none;
   border-bottom: 1px solid #ccc;
 }
 
@@ -31,7 +32,7 @@
 
 .filters-selected-list .filter-selected-item {
   position: relative;
-  margin: 0 0 0 17px;
+  margin: 0 0 10px 17px;
   padding: 5px 14px 5px 34px;
   display: inline-block;
   height: 28px;
@@ -67,8 +68,16 @@
 }
 
 .filters-selected-inner span {
+  display: inline-block;
   color: $second_color;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: .3s all;
+}
+
+.filters-selected-inner span:hover {
+  border-color: $second_color;
 }

@@ -11,11 +11,13 @@
 
 html {
 	font-family: 'Narkiss Block';
-	direction: rtl;
+	direction: $direction;
 }
 
 body {
   padding-top: 120px;
+  border-left: 12px solid $second_color;
+  border-right: 12px solid $second_color; 
 }
 
 body.article-type-special,
@@ -43,11 +45,6 @@ body:before {
 
 body:after {
   bottom: 0;
-}
-
-body {
-  border-left: 12px solid $second_color;
-  border-right: 12px solid $second_color;  
 }
 
 input,
@@ -106,6 +103,10 @@ a {
 
 ._magrin_bottom_none {
   margin-bottom: 0 !important;
+}
+
+._padding_none {
+  padding: 0;
 }
 
 ._backround_gray {

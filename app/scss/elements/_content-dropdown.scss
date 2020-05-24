@@ -21,15 +21,25 @@
   line-height: 30px;
 }
 
-.content-dropdown-icon {
+.content-dropdown-header::before {
   position: absolute;
-  top: -2px;
+  top: 1px;
   right: -45px;
   color: $second_color;
   font-size: 24px;
   line-height: 30px;
   transform: rotate(90deg);
   transition: transform .3s ease-in-out;
+  font-family: 'Gisha' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\ea17";
 }
 
 .content-dropdown-text {
@@ -45,7 +55,7 @@
 }
 
 /* Active */
-.content-dropdown.active .content-dropdown-icon {
+.content-dropdown.active .content-dropdown-header::before {
   transform: rotate(0deg);
   transition: transform .3s ease-in-out;
 }

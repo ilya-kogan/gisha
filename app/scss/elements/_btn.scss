@@ -39,14 +39,36 @@
 
 .btn-white {
 	padding: 7px 33px 3px;
-    display: inline-block;
-    border: 1px solid $second_color;
-    color: #000;
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 700;
+	display: inline-block;
+	border: 1px solid $second_color;
+	color: #000;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 700;
 	box-shadow: 1px 1px 0 0 $second_color, 2px 2px 0 0 #FFFFFF;
 	transition: .5s all;
+
+	&.ajax-loader:after {
+		content: '  ';
+		position: absolute;
+    font-size: 18px;
+		animation: dots 2s steps(4, end) infinite;
+	}
+}
+
+@keyframes dots {
+	0%, 20% {
+		content: '. ';
+	}
+	40% {
+		content: '. . ';
+	}
+	60% {
+		content: '. . . ';
+	}
+	90%, 100% {
+		content: ' ';
+	}
 }
 
 .btn-white:hover {

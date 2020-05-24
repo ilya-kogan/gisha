@@ -2,6 +2,23 @@
     padding: 60px 140px;
     background-color: #393745;
 
+    &._backround_gray {
+        margin-top: 60px;
+        margin-bottom: 83px;
+        background-color: #EDF1EE;
+        
+        .home-article-full {
+            .headline,
+            .underline {
+                color: #000;
+            }
+        }
+
+        .articles-slider-arrow {
+            color: #000;
+        }
+    }
+
     .home-article-full {
         margin-top: 0;
         margin-bottom: 0;

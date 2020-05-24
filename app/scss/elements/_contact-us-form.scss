@@ -1,6 +1,7 @@
 .contact-us-form {
   padding: 43px 34px;
   background-color: #C4EBE7;
+  direction: $direction;
 }
 
 .contact-us-form label {
@@ -9,10 +10,10 @@
 
 .contact-us-form input[type="text"],
 .contact-us-form input[type="email"] {
-  margin: 0 0 40px 20px;
   padding: 13px 15px;
-  flex: 0 48.5%;
+  width: 100%;
   height: 36px;
+  direction: $direction;
 }
 
 .contact-us-form input[type="text"],
@@ -23,7 +24,13 @@
   line-height: 16px;
 }
 
-.contact-us-form input:nth-child(2n) {
+.contact-us-form .contact-us-form-row:first-child span {
+  margin: 0 0 40px 20px;
+  display: block;
+  flex: 0 48.5%;
+}
+
+.contact-us-form .contact-us-form-row:first-child span:nth-child(2n) {
   margin-left: 0;
 }
 

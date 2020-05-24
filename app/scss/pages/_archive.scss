@@ -79,7 +79,16 @@
 	display: flex;
 }
 
+.archive-article-loader {
+	position: absolute;
+	top: 74px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
 .archive-articles {
+	position: relative;
 	margin-right: 110px;
 	width: 750px;
 }

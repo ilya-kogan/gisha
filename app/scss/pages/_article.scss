@@ -29,6 +29,24 @@
 
 .article-feature-col {
 	max-width: 1160px;
+	margin: auto;
+}
+
+.single-graph {
+	.article-feature-col {
+		max-width: none;
+		width: 100%;
+	}
+}
+
+.graph-section {
+	padding: 63px 0 51px;
+	background: #EDF1EE;
+
+	.graph-container {
+		max-width: 1160px;
+		margin: auto;
+	}	
 }
 
 .article-single-sidebar {
@@ -43,6 +61,43 @@
 		img {
 			max-width: 100%;
 		}
+
+		&.media-video {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 25px;
+			max-width: 100%;
+
+			embed,
+			iframe,
+			object {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&.media-map {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 25px;
+			max-width: 100%;
+
+			iframe {
+				position: absolute;
+    		top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	.slick-slider div,
+	.slick-slide img {
+		direction: ltr;
 	}
 }
 
@@ -89,6 +144,15 @@
 	font-size: 15px;
 	letter-spacing: 2px;
 	line-height: 15px;
+}
+
+.single-graph {
+	.headline,
+	.underline,
+	.date {
+		max-width: 1160px;
+		margin: auto;
+	}
 }
 
 .media {

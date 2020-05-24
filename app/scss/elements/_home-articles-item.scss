@@ -1,4 +1,5 @@
 .home-articles-item {
+    position: relative;
     margin-right: 40px;
     width: 33.33%;
     border-bottom: 1px solid #ccc;
@@ -78,14 +79,16 @@
 }
 
 .home-articles-item .underline {
-    margin-bottom: 31px;
+    margin-bottom: 50px;
     color: #393746;
     font-size: 16px;
     font-weight: normal;
     line-height: 21px;
 }
 
-.home-articles-item  .date {
+.home-articles-item .date {
+    position: absolute;
+    bottom: 0;
     margin: 0 0 10px;
     color: #74737D;
     font-size: 14px;

@@ -2,10 +2,6 @@
   margin: 20px 0;
 }
 
-.custom-select select {
-  display: none;
-}
-
 .custom-select-inner {
   position: relative;
   margin-left: 6px;
@@ -61,6 +57,7 @@
 
 .custom-select-item {
   padding: 5px 16px 5px 45px;
+  display: block;
   background-color: $second_color;
   border-top: 1px solid rgba(255,255,255,.5);
 }
