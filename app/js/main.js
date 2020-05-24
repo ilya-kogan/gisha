@@ -23,6 +23,8 @@ rgb = {
       rgb.IS.init();
       rgb.rgbIsEditor();
       rgb.anchorLink();
+      rgb.moveArticleSections();
+      rgb.articlesWidgetSlider();
     }
   },
   topBarSearchForm: function () {
@@ -143,6 +145,17 @@ rgb = {
       });
     }
   },
+  articlesWidgetSlider: function () {
+    if ( $('.js-posts-widget-slider').length ) {
+      $('.js-posts-widget-slider').slick({
+        rtl: true,
+        infinite: false,
+        slidesToShow: 1.5,
+        prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>',
+        nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>'        
+      });
+    }
+  },
   articleSingleSlideshow: function () {
     if ( $('.media.rslides').length ) {
       $('.media.rslides').slick({
@@ -155,6 +168,11 @@ rgb = {
         cssEase: 'linear',
         rtl: false
       });
+    }
+  },
+  moveArticleSections: function() {
+    if ( rgb.isMobile() ) {
+      $('.article-media').appendTo('.main-content');
     }
   },
   anchorLink : function() {

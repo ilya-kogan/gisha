@@ -1,0 +1,256 @@
+/* Global */
+body {
+  padding-top: 60px;
+  border-left-width: 6px;
+  border-right-width: 6px; 
+}
+
+body:after,
+body:before {
+  height: 6px;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+/* Header */
+header.main-header {
+  border-width: 6px;
+}
+
+header.main-header .inner-header,
+.sticky-header header.main-header .inner-header {
+  padding: 10px 20px;
+  height: 60px;
+}
+
+header.main-header .inner-header .menu {
+  display: none;
+}
+
+header.main-header .inner-header .logo img {
+  max-width: 146px;
+}
+
+
+/* Article */
+.article-feature,
+.article-legal,
+.article-single {
+  margin-top: 30px;
+  display: block;
+}
+
+.article-legal-col,
+.article-single-col {
+  width: 100%;
+}
+
+.article-single-sidebar {
+  margin: 0;
+  max-width: 335px;
+}
+
+.article-section {
+  flex-direction: column;
+}
+
+.article-single .article-header {
+  margin-bottom: 30px;
+}
+
+.article-footer {
+  margin-bottom: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.media-aside {
+  margin: 0;
+  width: 100%;
+  order: 1;
+}
+
+.main-content {
+  margin-bottom: 0;
+  order: 2;
+}
+
+.article-share {
+  text-align: right;
+  border-bottom: 0;
+}
+
+.article-share .icon-arrow-down-bold {
+  display: none;
+}
+
+.article-media {
+  margin-bottom: 74px;
+}
+
+.article-single-sidebar {
+  max-width: 100%;
+  width: 100%;
+}
+
+
+/* Article Slider */
+.posts-widget-slider .articles-slider-arrow {
+  font-size: 28px;
+  color: #0DBFA7;
+}
+
+.posts-widget-slider .articles-slider-arrow.slick-disabled {
+  color: #BEBEBE;
+}
+
+.posts-widget-slider .articles-slider-arrow.articles-slider-arrow-left {  
+  top: -35px;
+  left: 0;
+}
+
+.posts-widget-slider .articles-slider-arrow.articles-slider-arrow-right {
+  top: -35px;
+  left: 37px;
+  right: 0;
+  text-align: left;
+}
+
+.posts-widget-slider .post-item {
+  margin-right: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Article Info */
+.label a {
+  font-size: 16px;
+}
+
+.headline h1 {
+  font-size: 34px;
+  line-height: 36px;
+}
+
+.date {
+  margin-bottom: 30px;
+}
+
+.media img {
+  height: auto;
+}
+
+
+/* Text Content */
+.text-content h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.wp-caption img {
+  height: auto;
+}
+
+
+/* Footer */
+footer.main-footer {
+  padding: 0 20px;
+}
+
+footer.main-footer .inner-footer .footer-item {
+  display: block;
+}
+
+footer.main-footer .inner-footer .footer-top {
+  border: none;
+}
+
+footer.main-footer .inner-footer .footer-top-socials {
+  display: flex;
+  flex-direction: column;
+}
+
+footer.main-footer .inner-footer .footer-top-socials .btn-donation-white {
+  max-width: 165px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  order: 2;
+}
+
+footer.main-footer .inner-footer .footer-top-socials .footer-socials {
+  margin: 43px auto 18px;
+  width: 100%;
+  order: 1;
+  text-align: center;
+}
+
+footer.main-footer .inner-footer .footer-top .footer-top-logo {
+  text-align: center;
+}
+
+footer.main-footer .inner-footer .footer-menu {
+  display: none;
+}
+
+footer.main-footer .inner-footer .footer-subscription {
+  text-align: center;
+}
+
+footer.main-footer .inner-footer .footer-subscription input[type=text] {
+  max-width: 221px;
+  width: 100%;
+}
+
+footer.main-footer .inner-footer .footer-bottom .copyright {
+  margin: 40px 0 0;
+}
+
+
+/* Abous US */
+main.page .page-header .page-header-inner {
+  margin-bottom: 0;
+  min-height: 45vh;
+}
+
+main.page .page-header h1 {
+  font-size: 40px;
+  line-height: 42px;
+}
+
+.page-main {
+  margin-top: 15px;
+  flex-direction: column;
+}
+
+.aside-page-navigation {
+  width: 100%;
+  order: 1;
+}
+
+.page-content-section {
+  margin: 0;
+  width: 100%;
+  order: 2;
+}
+
+.aside-page-navigation-list.about-nav-slider {
+  position: relative;
+  margin-bottom: 40px;
+  width: calc(100% + 20px);
+  border-bottom: 1px solid #ccc;
+}
+
+.aside-page-navigation-list.about-nav-slider ul {
+  display: block;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.aside-page-navigation-list.about-nav-slider ul li,
+.aside-page-navigation-list.about-nav-slider ul li:last-child {
+  margin-left: 25px;
+  padding: 0  0 15px;
+  display: inline-block;
+  border: none;
+}
