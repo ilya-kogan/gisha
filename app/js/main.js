@@ -204,16 +204,33 @@ rgb = {
     baseUrl : location.href,
     // start page params
     startPageTitleFull : document.title,
-    startPageImageUrl : $('meta[property="og:image"],meta[name="twitter:image"]').attr('content'),
-    startPageImageWidth : $('meta[property="og:image:width"]').attr('content'),
-    startPageImageHeight : $('meta[property="og:image:height"]').attr('content'),
-    startPageTitle : $('meta[property="og:title"],meta[name="twitter:title"]').attr('content'),
-    startPageType : $('meta[property="og:type"]').attr('content'),
-    startPageUrlHttp : $('meta[property="og:url"]').attr('content'),
-    startPageUrl : $('meta[property="og:url"]').attr('content'),
-    startPageDescription : $('meta[name="description"]').attr('content'),
-    firstArtcleId : $('.infinite-scrolling .is-article:first-child').data('article_id'),
-    belongToBrandedProgramId : $('body').data('branded_program'),
+    startPageImageUrl : function () {
+      return $('meta[property="og:image"],meta[name="twitter:image"]').attr('content')
+    },
+    startPageImageWidth : function () {
+      return $('meta[property="og:image:width"]').attr('content')
+    },
+    startPageImageHeight : function () {
+      return $('meta[property="og:image:height"]').attr('content')
+    },
+    startPageTitle : function () {
+      return $('meta[property="og:title"],meta[name="twitter:title"]').attr('content')
+    },
+    startPageType : function () {
+      return $('meta[property="og:type"]').attr('content')
+    },
+    startPageUrlHttp : function () {
+      return $('meta[property="og:url"]').attr('content')
+    },
+    startPageUrl : function () {
+      return $('meta[property="og:url"]').attr('content')
+    },
+    startPageDescription : function () {
+      return $('meta[name="description"]').attr('content')
+    },
+    firstArtcleId : function () {
+      return $('.infinite-scrolling main.container:first-child .is-article').data('article_id')
+    },
     init: function(){
       if ( rgb.isSingle() ) {
         rgb.IS.singleInfiniteScroll();
@@ -222,7 +239,7 @@ rgb = {
     singleInfiniteScroll: function () {
       var nextArtcleId = $('.infinite-scrolling .is-article').data('next_article_id');
       var currentArticleId = $('.infinite-scrolling .is-article').data('article_id');
-      var firstArtcleId = rgb.IS.firstArtcleId;
+      var firstArtcleId = rgb.IS.firstArtcleId();
       var scrollOffsetTop = 1;
       var callAjaxStopper = false;
       var doChangesStopper = false;
@@ -362,14 +379,14 @@ rgb = {
 
       if (isId == 'start-page') {
         document.title = rgb.IS.startPageTitleFull;
-        $('meta[property="og:image"],meta[name="twitter:image"]').attr('content', rgb.IS.startPageImageUrl);
-        $('meta[property="og:image:width"]').attr('content', rgb.IS.startPageImageWidth);
-        $('meta[property="og:image:height"]').attr('content', rgb.IS.startPageImageHeight);
-        $('meta[property="og:title"],meta[name="twitter:title"]').attr('content', rgb.IS.startPageTitle);
-        $('meta[property="og:type"]').attr('content', rgb.IS.startPageType);
-        $('meta[property="og:url"]').attr('content', rgb.IS.startPageUrlHttp);
-        $('link[rel="canonical"]').attr('href', rgb.IS.startPageUrl);
-        $('meta[property="og:description"],meta[name="twitter:description"],meta[name="description"]').attr('content', rgb.IS.startPageDescription);
+        $('meta[property="og:image"],meta[name="twitter:image"]').attr('content', rgb.IS.startPageImageUrl());
+        $('meta[property="og:image:width"]').attr('content', rgb.IS.startPageImageWidth());
+        $('meta[property="og:image:height"]').attr('content', rgb.IS.startPageImageHeight());
+        $('meta[property="og:title"],meta[name="twitter:title"]').attr('content', rgb.IS.startPageTitle());
+        $('meta[property="og:type"]').attr('content', rgb.IS.startPageType());
+        $('meta[property="og:url"]').attr('content', rgb.IS.startPageUrlHttp());
+        $('link[rel="canonical"]').attr('href', rgb.IS.startPageUrl());
+        $('meta[property="og:description"],meta[name="twitter:description"],meta[name="description"]').attr('content', rgb.IS.startPageDescription());
       }
     },
     rgbReplaceState: function (isId) {
@@ -381,14 +398,12 @@ rgb = {
         var stateObjType = $('#' + isId).data('article_type');
         var stateObj = { stateObjType: isHistoryId };
         rgb.IS.rgbReplaceStateAction(stateObj, isTitle, isUrl);
-        rgb.IS.refreshProgramMenuParams(isUrl);
       }
       if (isId == 'start-page') {
         var startPageHistoryId = $('.infinite-scroll').data('ordering_id');
         var startPageType = $('.infinite-scroll').data('ordering_type');
         var stateObj = { pageType: startPageHistoryId };
-        rgb.IS.rgbReplaceStateAction(stateObj, rgb.IS.startPageTitle, rgb.IS.startPageUrl);
-        rgb.IS.refreshProgramMenuParams(rgb.IS.startPageUrl);
+        rgb.IS.rgbReplaceStateAction(stateObj, rgb.IS.startPageTitle(), rgb.IS.startPageUrl());
       }
     },
     rgbReplaceStateAction: function (stateObj, title, url) {
@@ -398,15 +413,17 @@ rgb = {
       var url = '';
       var title = '';
       if (articleId == 'start-page') {
-        url = rgb.IS.startPageUrl;
+        url = rgb.IS.startPageUrl();
         title = rgb.IS.startPageTitleFull;
       } else {
         url = $('#' + articleId).data('article_url');
         title = $('#' + articleId).data('article_title');
       }
       var path = url.replace(document.location.origin, '');
-      ga('set', { page: path, title: title });
-      ga('send', 'pageview');
+      if (typeof ga !== 'undefined') {
+        ga('set', { page: path, title: title });
+        ga('send', 'pageview');
+      }
     },
   }
 };
