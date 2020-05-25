@@ -63,7 +63,8 @@
 
 .page-content-full-width {
 	margin: auto;
-	width: 750px;
+	max-width: 750px;
+	width: 100%;
 }
 
 .page-content {

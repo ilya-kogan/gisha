@@ -117,7 +117,8 @@
 	display: inline-block;
 	margin: 0 50px 50px 0;
 	padding: 30px 50px;
-	width: 300px;
+	max-width: 300px;
+	width: 100%;
 	color: #FFF !important;
 	font-size: 40px !important;
 	font-weight: bold !important;

@@ -248,6 +248,7 @@ footer.main-footer .inner-footer .footer-bottom .copyright {
 /* Abous US */
 main.page .page-header .page-header-inner {
   margin-bottom: 0;
+  padding-bottom: 25px;
   min-height: 45vh;
 }
 
@@ -291,4 +292,28 @@ main.page .page-header h1 {
   padding: 0  0 15px;
   display: inline-block;
   border: none;
+}
+
+
+/* Contact US */
+.mobile .contact-us-form {
+  padding: 50px 20px;
+}
+
+.mobile .contact-us-form .contact-us-form-row span {
+  margin-left: 0;
+  flex: 0 100%;
+}
+
+
+/* Btn */
+.btn-large {
+  margin: 0 0 40px 0;
+  padding: 30px;
+  font-size: 35px !important;
+  line-height: 35px !important;
+}
+
+.btn-large br {
+  display: none;
 }
