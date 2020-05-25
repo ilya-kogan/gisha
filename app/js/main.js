@@ -154,6 +154,9 @@ rgb = {
         prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>',
         nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>'        
       });
+
+      var slideHeight = $('.js-posts-widget-slider .slick-track').height();
+      $('.js-posts-widget-slider .slick-slide').css('height', slideHeight - 20 + 'px');
     }
   },
   articleSingleSlideshow: function () {
@@ -171,7 +174,7 @@ rgb = {
     }
   },
   moveArticleSections: function() {
-    if ( rgb.isMobile() ) {
+    if ( rgb.isMobile() && $('.article-media').length ) {
       $('.article-media').appendTo('.main-content');
     }
   },
