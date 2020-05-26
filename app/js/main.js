@@ -19,6 +19,12 @@ rgb = {
     rgb.articlesSlider();
     rgb.articleSingleSlideshow();
 
+
+    //Mobile
+    if ( rgb.isMobile ) {
+      rgb.mobileTagFilters();
+    }
+    
     if (rgb.isSingle()) {
       rgb.IS.init();
       rgb.rgbIsEditor();
@@ -196,6 +202,24 @@ rgb = {
         }, 200);
       }
     })
+  },
+  mobileTagFilters : function() {
+    $('.js-mobile-filter-open').prependTo('.filters-selected-list');
+
+    $('.js-mobile-filter-open').click(function(){
+      $('body').css('overflow', 'hidden');
+      $('aside.filters').fadeIn();
+    });
+
+    $('.js-mobile-filter-close, .js-mobile-filter-submit').click(function(){
+      $('body').css('overflow', 'unset');
+      $('aside.filters').fadeOut();
+    });
+
+    $('.js-mobile-filter-reset').click(function(){
+      $('.js-remove-filters').trigger('click');
+      $('aside.filters').fadeOut();
+    });
   },
 
   rgbIsEditor : function() {

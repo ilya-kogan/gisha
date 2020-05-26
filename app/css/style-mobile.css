@@ -317,3 +317,137 @@ main.page .page-header h1 {
 .btn-large br {
   display: none;
 }
+
+
+/* Arhive */
+.archive-articles {
+  margin-right: 0;
+  width: 100%;;
+}
+
+.archive-main  {
+  display: block;
+}
+
+/* .articles-list {
+  padding-top: 30px;
+  border-top: 1px solid #cccccc;
+} */
+
+.archive-article {
+  display: block;
+}
+
+.archive-article .img-preview,
+.archive-article .img-preview a img {
+  width: 100%;
+  height: auto;
+}
+
+.filters {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 5px 20px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow-y: scroll;
+  z-index: 20;
+}
+
+.filters h2 {
+  margin: 11px 33px;
+}
+
+.filters .filter-mobile-close-btn,
+.filters .filter-mobile-submit-btn {
+  display: inline-block !important;
+}
+
+.filters .filter-mobile-reset-btn {
+  display: block !important;
+}
+
+.filters .filter-mobile-reset-btn {
+  position: absolute;
+  margin: 15px 38px;
+  left: 0;
+  color: #0DBFA7;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.filters .filter-mobile-close-btn {
+  height: 40px;
+}
+
+.filters .filter-mobile-close-btn::before {
+  content: "\e924";
+  position: absolute;
+  top: 15px;
+  right: 38px;
+  color: #0DBFA7;
+  font-size: 40px;
+  font-family: 'Gisha' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.filter-mobile-open-filters-btn {
+  display: inline-block !important;
+  position: relative;
+  margin-left: 17px;
+  padding: 5px 16px 5px 40px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #0dbfa7;
+  cursor: pointer;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  transition: .3s all;
+  user-select: none;
+}
+
+.filters .filter-item {
+  margin: 0 33px;
+}
+
+.filters .filter-mobile-submit-btn {
+  padding: 20px 10px;
+  max-width: 375px;
+  width: 100%;
+  height: 55px;
+  color: #C4EBE7;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  background-color: #000000;
+}
+
+.filters-selected-remove-btn {
+  display: none !important;
+}
+
+.filters-selected {
+  display: flex !important;
+}
+
+.filters .custom-select._type_selected .custom-select-inner {
+  background-color: #000;
+}
