@@ -42,8 +42,14 @@ header.main-header .inner-header .logo img {
   display: block;
 }
 
+.article-single-col,
 .article-legal-col,
-.article-single-col {
+.article-feature-col {
+	display: block;
+}
+
+.article-legal-col .article-main,
+.article-single-col .article-main {
   width: 100%;
 }
 
@@ -320,6 +326,15 @@ main.page .page-header h1 {
 
 
 /* Arhive */
+.archive-header {
+  background-size: cover;
+}
+
+.archive-header h1 {
+  font-size: 40px;
+  line-height: 42px;
+}
+
 .archive-articles {
   margin-right: 0;
   width: 100%;;
@@ -329,10 +344,9 @@ main.page .page-header h1 {
   display: block;
 }
 
-/* .articles-list {
-  padding-top: 30px;
-  border-top: 1px solid #cccccc;
-} */
+.archive-description {
+  padding: 0 20px;
+}
 
 .archive-article {
   display: block;
@@ -450,4 +464,25 @@ main.page .page-header h1 {
 
 .filters .custom-select._type_selected .custom-select-inner {
   background-color: #000;
+}
+
+
+/* Archive About */
+.archive.about .archive-articles {
+  order: 2;
+}
+
+.archive.about .archive-article {
+  display: flex;
+}
+
+.archive.about .archive-header-inner {
+  margin-bottom: 0;
+  padding-bottom: 25px;
+  min-height: 45vh;
+}
+
+/* Page */
+.page-header {
+  background-size: cover;
 }

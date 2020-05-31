@@ -5,6 +5,12 @@
 	display: flex;
 }
 
+.article-single-col,
+.article-legal-col,
+.article-feature-col {
+	display: flex;
+}
+
 .article-single {
 	.article-header {
 		margin-bottom: 40px;
@@ -24,18 +30,24 @@
 
 .article-single-col,
 .article-legal-col {
-	width: 880px;
+	.article-main {
+		width: 880px;
+	}
 }
 
 .article-feature-col {
-	max-width: 1160px;
-	margin: auto;
+	.article-main {
+		max-width: 1160px;
+		margin: auto;
+	}
 }
 
 .single-graph {
 	.article-feature-col {
-		max-width: none;
-		width: 100%;
+		.article-main {
+			max-width: none;
+			width: 100%;
+		}
 	}
 }
 
