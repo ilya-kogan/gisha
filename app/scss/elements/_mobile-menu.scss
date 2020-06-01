@@ -1,0 +1,138 @@
+.mobile-menu {
+  position: fixed;
+  top: 0px;
+  padding: 20px 26px 34px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: $second_color;
+  z-index: 999;
+
+  .main-header-close {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    border-style: solid;
+    border-width: 100px 100px 0 0;
+    border-color: #393745 transparent transparent transparent;
+    background: transparent;
+    transition: .3s all;
+    outline: none;
+      &:hover {
+        opacity: .7;
+      }
+
+    span {
+      top: -85px;
+      left: 20px;
+      position: absolute;
+      font-size: 28px;
+    }
+  }
+
+  .lang-switch {
+    margin-bottom: 40px;
+
+    li {
+      width: 47px;
+      height: 47px;
+
+      a {
+        font-size: 18px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  .mobile-menu-search {
+    margin-bottom: 44px;
+    width: 100%;
+    border: none;
+
+    form {
+      position: relative;
+      display: block;
+
+      input {
+        padding: 11px 15px 11px 45px;
+        width: 100%;
+        color: #BEBEBE;
+        font-size: 20px;
+        outline: none;
+        transition: .3s all;
+        border: 3px solid transparent;
+
+        &:hover {
+          border: 3px solid $third_color;
+        }
+      }
+
+      .submit-search-icon {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        color: #008F7E;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .mobile-menu-items {
+    margin-bottom: 26px;
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 16px 0 14px;
+        display: block;
+        border-top: 1px solid rgba(255,255,255,0.5);
+
+        a {
+          color: #FFFFFF;
+          font-size: 22px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 30px;
+          text-decoration: none;
+          user-select: none;
+
+          span {
+            padding-right: 6px;
+          }
+        }
+
+        ul {
+          &.submenu {
+            margin: 14px 0 10px;
+            display: none;
+
+            li {
+              padding: 0 0 14px 0;
+              border: none;
+              a {
+                color: #FFFFFF;
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: 100;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-top-socials {
+    text-align: center;
+
+    .footer-socials {
+      margin-top: 25px;
+    }
+  }
+}

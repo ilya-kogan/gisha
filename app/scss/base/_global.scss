@@ -27,6 +27,16 @@ body.transparent-header {
   padding-top: 0;
 }
 
+body.mobile-menu-active {
+  border: none;
+  overflow: hidden;
+}
+
+body.mobile-menu-active:after,
+body.mobile-menu-active:before {
+  height: 0;
+}
+
 /* Border */
 body:before,
 body:after {

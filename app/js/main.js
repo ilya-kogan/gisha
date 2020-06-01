@@ -18,10 +18,11 @@ rgb = {
     rgb.contentDropdown();
     rgb.articlesSlider();
     rgb.articleSingleSlideshow();
+    rgb.mainMobileMenu();
 
 
     //Mobile
-    if ( rgb.isMobile ) {
+    if ( rgb.isMobile() ) {
       rgb.mobileTagFilters();
     }
     
@@ -85,6 +86,12 @@ rgb = {
     if ( $('body').hasClass('sticky-header') && ! $('header.main-header').hasClass('_menu-burger_active') ) {
       $('body:not(sticky-header) header.main-header:not(_menu-burger_active) .bottom-menu').hide();
     }
+
+    if ( rgb.isMobile() ) {
+      $('.logo img').attr('src', logoSmall);
+    } else {
+      $('.logo img').attr('src', logoLarge);
+    }
   },
   mobileMenu: function () {
     $('.js-open-mobile-menu').click(function() {
@@ -95,6 +102,16 @@ rgb = {
       } else {
         $('header.main-header .bottom-menu').hide();
       }
+    });
+  },
+  mainMobileMenu: function () {
+    $('.js-open-main-mobile-menu, .js-mobile-menu-close').click(function() {      
+      $('body').toggleClass('mobile-menu-active');
+      $('.js-mobile-menu').stop().toggle();
+    });
+
+    $('.mobile-menu-items a').click(function() {
+      $(this).parents('li').find('.submenu').stop().slideToggle();
     });
   },
   isSpecialArticle: function () {
@@ -147,7 +164,24 @@ rgb = {
         centerMode: true,
         variableWidth: true,
         prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>',
-        nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>'
+        nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>',
+        responsive: [
+          {
+            breakpoint: 500,
+            settings: {
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: false,
+              infinite: false,
+              speed: 300,
+              centerMode: false,
+              variableWidth: false,
+              //prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>',
+             // nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>',
+            }
+          }
+        ]
       });
     }
   },

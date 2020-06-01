@@ -96,3 +96,9 @@
 	-webkit-box-shadow: 1px 1px 0 0 $second_color, 5px 5px 15px 5px rgba(0, 0, 0, 0); 
 	box-shadow: 1px 1px 0 0 $second_color, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
+
+/* Mobile */
+body.mobile-menu-active header.main-header {
+	position: static;
+	border: none;
+}
