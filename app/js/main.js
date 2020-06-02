@@ -111,6 +111,7 @@ rgb = {
     });
 
     $('.mobile-menu-items a').click(function() {
+      $(this).find('span').toggleClass('active-arrow');
       $(this).parents('li').find('.submenu').stop().slideToggle();
     });
   },

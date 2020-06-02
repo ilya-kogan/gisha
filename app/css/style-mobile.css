@@ -251,6 +251,11 @@ footer.main-footer .inner-footer .footer-subscription input[type=text] {
   width: 100%;
 }
 
+.footer-middle-subscribe p {
+  font-weight: 100;
+  text-align: center;
+}
+
 footer.main-footer .inner-footer .footer-bottom .copyright {
   margin: 40px 0 0;
 }
@@ -580,7 +585,9 @@ main.page .page-header h1 {
   position: static;
 }
 
-
+.homepage .latest-articles-header {
+  margin-bottom: 0;
+}
 
 .homepage .latest-articles-header-text {
   margin-bottom: 0;
@@ -589,6 +596,20 @@ main.page .page-header h1 {
 
 .homepage .latest-articles-header-link {
   display: none;
+}
+
+.homepage .latest-articles-header-mobile-link {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.homepage .latest-articles-header-mobile-link a {
+  display: block;
+}
+
+.latest-articles {
+  margin: 30px auto;
 }
 
 
@@ -639,9 +660,34 @@ main.page .page-header h1 {
 
 
 /* Slider */
+.articles-slider._backround_gray {
+  margin-top: 30px;
+}
+
 .homepage .articles-slider {
-  padding: 25px 0 70px;
+  padding: 75px 0 70px;
   width: 100%;
+}
+
+.homepage .articles-slider .articles-slider-arrow {
+  top: -49px;
+  color: #0DBFA7;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+}
+
+.homepage  .articles-slider .slick-initialized .slick-arrow.slick-disabled {
+  color: #BEBEBE;
+  opacity: 1;
+}
+
+.homepage .articles-slider .articles-slider-arrow-left {
+  left: 20px;
+}
+
+.homepage .articles-slider .articles-slider-arrow-right {
+  right: 20px;
 }
 
 .homepage .articles-slide.home-article-full {
@@ -679,6 +725,7 @@ main.page .page-header h1 {
 
 .homepage .home-article-full .date {
   position: static;
+  color: #BEBEBE;
 }
 
 

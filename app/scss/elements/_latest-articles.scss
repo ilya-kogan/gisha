@@ -33,6 +33,10 @@
   transition: .3s all;
 }
 
+.homepage .latest-articles-header-mobile-link {
+  display: none;
+}
+
 .latest-articles-header-link-text {
   border-bottom: 2px solid transparent;
   transition: .3s all;
