@@ -728,4 +728,12 @@ main.page .page-header h1 {
   color: #BEBEBE;
 }
 
-
+.homepage .articles-slider-dots {
+  position: absolute;
+  top: -58px;
+  left: 0;
+  right: 0;
+  margin: 16px auto 0;
+  padding: 0;
+  width: 70%;
+}

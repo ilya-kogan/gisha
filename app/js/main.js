@@ -156,16 +156,18 @@ rgb = {
   articlesSlider: function () {
     if ( $('.js-articles-slider').length ) {
       $('.js-articles-slider').slick({
+        rtl: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: false,
+        dots: true,
+        dotsClass: 'articles-slider-dots',
         infinite: false,
         speed: 300,
         centerMode: true,
         variableWidth: true,
-        prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>',
-        nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>',
+        prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>',
+        nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>',
         responsive: [
           {
             breakpoint: 500,
@@ -173,13 +175,12 @@ rgb = {
               infinite: true,
               slidesToShow: 1,
               slidesToScroll: 1,
-              dots: false,
+              dots: true,
+              //appendDots: $('.articles-slider'),
               infinite: false,
               speed: 300,
               centerMode: false,
-              variableWidth: false,
-              //prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>',
-             // nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>',
+              variableWidth: false
             }
           }
         ]
