@@ -243,7 +243,7 @@ rgb = {
   mobileTagFilters : function() {
     $('.js-mobile-filter-open').prependTo('.filters-selected-list');
 
-    $('.js-mobile-filter-open').click(function(){
+    $('.js-mobile-filter-open').click(function() {
       $('body').css('overflow', 'hidden');
       $('aside.filters').fadeIn();
     });
@@ -253,7 +253,8 @@ rgb = {
       $('aside.filters').fadeOut();
     });
 
-    $('.js-mobile-filter-reset').click(function(){
+    $('.js-mobile-filter-reset').click(function() {
+      $('body').css('overflow', 'unset');
       $('.js-remove-filters').trigger('click');
       $('aside.filters').fadeOut();
     });
