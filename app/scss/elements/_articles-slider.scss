@@ -12,6 +12,10 @@
             .underline {
                 color: #000;
             }
+
+            .date {
+                color: #74737D;
+            }
         }
     }
 
@@ -66,7 +70,7 @@
     margin-top: 25px;
     padding: 0;
     text-align: center;    
-    list-style: none;
+    list-style: none;    
 
     li {
         margin: 0 0 0 15px;
@@ -75,9 +79,11 @@
         height: 10px;
         background-color: #BEBEBE;
         border-radius: 50%;
+        cursor: pointer;
 
         &.slick-active {
             background-color: $second_color;
+            cursor: default;
         }
 
         button {

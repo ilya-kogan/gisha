@@ -2,6 +2,9 @@
 	position: relative;
 	text-align: center;
 	padding-top: 17px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	&._type_white {
 		.home-header-inner {
 			margin: auto;
