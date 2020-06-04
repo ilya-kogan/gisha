@@ -19,6 +19,7 @@ rgb = {
     rgb.articlesSlider();
     rgb.articleSingleSlideshow();
     rgb.mainMobileMenu();
+    rgb.rgbFilters();
 
 
     //Mobile
@@ -278,6 +279,175 @@ rgb = {
     });
   },
 
+  //Tags
+  rgbFilters: function () {
+    // Remove All Filters
+    $(document).on('click', '.js-remove-filters', function() {
+      var $loadMoreButton = $('.js-load-more');
+      var loadingType = 'removeFilter';
+
+      $loadMoreButton.data('page', '1');
+      $loadMoreButton.data('tag_ids', '');
+      $loadMoreButton.data('year', '');
+      $loadMoreButton.data('publication_ids', '');
+
+      $('.filters-selected').hide();
+      $('.filter-selected-item').remove();
+      $('.filters-list li').removeClass('active');
+      rgb.rgbAjaxArticlesOrdering($loadMoreButton, loadingType, '');
+    });
+
+    // Remove Filter
+    $(document).on('click', '.filter-selected-item', function() {
+      var $this = $(this);
+      var $loadMoreButton = $('.js-load-more');
+      var loadingType = 'removeFilter';
+      var filterType = $this.data('filter_type');
+      var itemId = $this.data('id');
+      var dataAttrName = '';
+
+      switch(filterType) {
+        case 'tags':
+          dataAttrName = 'term_id';
+          break;
+        case 'year':
+          dataAttrName = 'year';
+          break;
+        case 'publication_type':
+          dataAttrName = 'publication_id';
+          break;
+      }
+
+      if ( filterType == 'tags' || filterType == 'publication_type' ) {
+        $('.filter-item[data-filter-type="' + filterType + '"]').find('a[data-' + dataAttrName + '=' + itemId + ']').parents('li').toggleClass('active');
+      } else if ( filterType == 'year' ) {
+        $loadMoreButton.data('year', '');
+        $('.filter-item[data-filter-type="' + filterType + '"]').find('.custom-select-title').text('שנה');
+      }
+
+      rgb.rgbAjaxArticlesOrdering($this, loadingType, filterType);
+      $this.remove();
+
+      if ( $('.filter-selected-item').length == 0 ) {
+        $('.filters-selected').hide();
+      }
+    });
+
+    // Load More & Filtering Tags
+    $('.js-load-more, .filter-item a').click(function(e) {
+      e.preventDefault();
+
+      var $this = $(this);
+      var loadingType = $this.parents('.filter-item').length ? 'isFiltering' : 'loadMore';        
+      var filterType = $this.parents('.filter-item').data('filter-type');
+      rgb.rgbAjaxArticlesOrdering($this, loadingType, filterType);
+    });
+  },
+
+  rgbAjaxArticlesOrdering: function ($this, loadingType, filterType) {
+    var $loadMoreButton = $('.js-load-more');
+    var $ajaxLoaderFilters = $('.js-ajax-loader-filters');
+    var page = $loadMoreButton.data('page');
+    var tagId = $loadMoreButton.data('tag_id');
+    var tagIds = [$loadMoreButton.data('tag_ids')];
+    var year = $loadMoreButton.data('year');
+    var publicationIds = [$loadMoreButton.data('publication_ids')];
+
+    if ( loadingType == 'isFiltering' || loadingType == 'removeFilter' ) {
+      var $filtersSelected = $('.filters-selected');
+      var $filtersSelectedList = $('.filters-selected-list');          
+      var filtersList = $('.filter-item[data-filter-type="'+ filterType +'"]').find('.filters-list li');
+      var currentItemId = '';          
+
+      if ( filterType == 'tags' ) {
+        currentItemId = $this.data('term_id');
+        tagIds = [tagId];
+        if ( $this.parents('li').hasClass('active') ) return;
+        $this.parents('li').toggleClass('active');
+
+        filtersList.each(function(index, item) {
+          var $item = $(item).find('a');
+          var itemId = $item.data('term_id');
+
+          if ( $(item).hasClass('active') ) {
+            tagIds.push(itemId);
+          }
+        });
+      } else if ( filterType == 'year' ) {
+        currentItemId = $this.data('year');
+        year = currentItemId;
+      } else if ( filterType == 'publication_type' ) {
+        currentItemId = $this.data('publication_id');
+        publicationIds = [];
+        if ( $this.parents('li').hasClass('active') ) return;
+        $this.parents('li').toggleClass('active');
+        
+        filtersList.each(function(index, item) {
+          var $item = $(item).find('a');
+          var itemId = $item.data('publication_id');
+
+          if ( $(item).hasClass('active') ) {
+            publicationIds.push(itemId);
+          }
+        });
+      }
+
+      if ( loadingType == 'isFiltering' ) {
+        $filtersSelected.show();
+        $filtersSelectedList.append('<div class="filter-selected-item" data-filter_type="' + filterType + '" data-id="'+ currentItemId +'">' + $this.text() + '</div>');
+      }
+    }
+
+    var data = {
+      'loading_type': loadingType,
+      'page': page,
+      'tag_id': tagId,
+      'tag_ids': tagIds.join(','),
+      'year': year,
+      'publication_ids': publicationIds.join(',')
+    };
+
+    $.ajax({
+      type: 'GET',
+      dataType: 'json',
+      url: '/wp-content/themes/rgb/ajax/ordering_load_content.php',
+      data: data,
+      beforeSend: function() {
+        if ( loadingType == 'isFiltering' || loadingType == 'removeFilter' ) {
+          $loadMoreButton.parents('.btn-load-more').hide();
+          $('.articles-list').html('');
+          $ajaxLoaderFilters.fadeIn();
+        } else {
+          $loadMoreButton.addClass('ajax-loader');
+        }
+      }
+    }).done(function(result) {
+      if ( result ) {
+        if ( loadingType == 'isFiltering' || loadingType == 'removeFilter' ) {
+          $ajaxLoaderFilters.hide();
+          $('.articles-list').html(result.content);
+        } else {
+          $loadMoreButton.removeClass('ajax-loader');
+          $('.articles-list').append(result.content);
+        }
+
+        var queryParams = result.query_params;
+        for (var prop in queryParams) {
+          $loadMoreButton.data(prop, queryParams[prop]);
+        }
+
+        if ($loadMoreButton.data('page') >= $loadMoreButton.data('max_pages')) {
+          $loadMoreButton.parents('.btn-load-more').hide();
+        } else {
+          $loadMoreButton.parents('.btn-load-more').show();
+        }
+
+        $('.js-mobile-filter-submit span').text('(' + result.query_params.total_posts_count + ')');
+        $('.js-mobile-filter-submit span').show();
+      }
+    });
+  },
+
   // infinite scroll
   IS : {
     // params for program menu after article in scroll
@@ -505,7 +675,7 @@ rgb = {
         ga('set', { page: path, title: title });
         ga('send', 'pageview');
       }
-    },
+    }
   }
 };
 jQuery(document).ready(rgb.init);
