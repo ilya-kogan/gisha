@@ -135,3 +135,13 @@
 	font-size: 24px;
 	line-height: 24px;
 }
+
+
+/* English */
+body {
+	&.en {
+		.page-content-section {
+			margin: 0 0 50px 110px;
+		}
+	}
+}

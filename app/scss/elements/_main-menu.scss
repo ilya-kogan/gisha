@@ -102,3 +102,27 @@ body.mobile-menu-active header.main-header {
 	position: static;
 	border: none;
 }
+
+
+/* English */
+body {
+	&.en {
+		.main-menu {
+			>li {
+				&:last-child {
+					padding-right: 0;
+					padding-left: 7px;
+					text-transform: uppercase;
+
+					a {
+						padding: 4px 16px;
+					}
+				}
+			}
+
+			.icon-arrow-down-bold {
+				left: 3px;
+			}
+		}
+	}
+}

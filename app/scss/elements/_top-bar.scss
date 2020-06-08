@@ -31,7 +31,7 @@
 
 .top-bar-item .icon-search {
 	position: relative;
-	top: 2;
+	top: 2px;
 	padding-right: 8px;
 }
 
@@ -124,4 +124,50 @@
 
 .top-bar-item .top-bar-close-search  span {
 	font-size: 28px;
+}
+
+
+/* English */
+body {
+	&.en {
+		.top-bar {
+			margin-right: 40px;		
+
+			.top-bar-item {
+				text-transform: uppercase;
+
+				&:first-child {
+					padding-right: 27px;
+					padding-left: 0;
+					border-right: 1px solid #fff;
+				}
+
+				&:last-child {
+					padding-left: 28px;
+					padding-right: 0;
+					border-right: none;
+				}
+
+				.top-search-text {
+					font-size: 18px;
+					font-weight: bold;
+				}
+
+				.icon-search {
+					padding-right: 0;
+					padding-left: 8px;
+				}
+
+				.icon-facebook {
+					padding-right: 0;
+    			padding-left: 0;
+				}
+
+				.icon-twitter {
+					padding-right: 16px;
+					padding-left: 10px;	
+				}
+			}
+		}
+	}
 }

@@ -49,3 +49,21 @@
 		}
 	}
 }
+
+
+/* English */
+body {
+	&.en {
+		.subscription-widget {
+			h3 {
+				font-size: 30px;
+				line-height: 30px;
+				text-transform: uppercase;
+			}
+
+			input[type="submit"] {
+				text-transform: uppercase;
+			}
+		}
+	}
+}

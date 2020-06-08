@@ -457,3 +457,58 @@
 	font-size: 16px;
 	line-height: 20px;
 }
+
+
+/* English */
+body {
+	&.en {
+		.article-single-sidebar {
+			margin-right: 0;
+			margin-left: 80px;
+		}
+
+		.headline {
+			h1 {
+				font-size: $en_single_headline_font_size;
+				line-height: $en_single_headline_line_height;
+			}
+		}
+
+		.label {
+			text-transform: uppercase;
+		}
+
+		.media-aside {
+			margin-left: 0;
+			margin-right: 70px;
+
+			.article-share {
+				ul {
+					li {
+						&:first-child {
+							margin-left: -4px;
+							margin-right: 15px;
+						}
+
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+
+			.article-media {
+				li {
+					padding: 21px 0 18px;
+
+					span {
+						float: left;
+						top: -3px;
+						padding-left: 0;
+						padding-right: 17px;
+					}
+				}
+			}
+		}
+	}
+}

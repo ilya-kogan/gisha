@@ -11,7 +11,11 @@
 
 html {
 	font-family: 'Narkiss Block';
-	direction: $direction;
+  direction: $direction;
+
+  &[lang="en"] {
+    direction: ltr;
+  }
 }
 
 body {

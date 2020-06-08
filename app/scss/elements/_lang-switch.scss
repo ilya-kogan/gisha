@@ -1,5 +1,4 @@
 .lang-switch li {
-	margin-left: -4px;
 	padding: 5px;
 	width: 30px;
 	height: 30px;
@@ -31,4 +30,14 @@
 	font-family: Gisha;
 	font-size: 14px;
 	line-height: 19px;
+}
+
+
+/* English */
+body {
+	&.en {
+		.lang-switch {
+			direction: rtl;
+		}
+	}
 }

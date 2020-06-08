@@ -89,3 +89,28 @@
 		}
 	}
 }
+
+
+/* English */
+body {
+	&.en {
+		.posts-widget {
+			h2 {
+				text-transform: uppercase;
+			}
+
+			.post-item {
+				span {
+					left: 0;
+					right: unset;
+
+					&:before {
+						left: unset;
+						right: -10px;
+						border-width: 0 10px 30px 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -158,3 +158,23 @@ header {
 		background-color: $main_color;
 	}
 }
+
+
+/* English */
+body {
+	&.en {
+		header {
+			&.main-header {
+				.inner-header {
+					padding: 20px 35px 17px 28px;
+
+					.menu-burger,
+					.menu-burger-mobile {
+						padding-left: 35px;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -18,3 +18,23 @@
 		line-height: 21px;
 	}
 }
+
+
+/* English */
+body {
+	&.en {
+		.donation-widget {
+			padding: 20px 15px 30px;
+
+			h3 {
+				font-size: 30px;
+				line-height: 30px;
+				text-transform: uppercase;
+			}
+
+			.btn-donation {
+				text-transform: uppercase;
+			}
+		}
+	}
+}

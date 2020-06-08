@@ -69,3 +69,38 @@
 	text-decoration: none;
 	transition: .3s all;
 }
+
+
+/* English */
+body {
+	&.en {
+		.article-labels {
+			p {
+				text-transform: uppercase;
+			}
+
+			.labels {
+				li {
+					&:before {
+						left: unset;
+						right: 0;
+						border-width: 28px 0 0 10px;
+					}
+
+					&:last-child {
+						margin-left: 10px;
+					}
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					a {
+						padding: 4px 18px 4px 10.3px;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}
