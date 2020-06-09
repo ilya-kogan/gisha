@@ -81,3 +81,34 @@
 .filters-selected-inner span:hover {
   border-color: $second_color;
 }
+
+
+body {
+	&.en {
+    .filters {
+      .filter-title {
+        text-transform: uppercase;
+      }
+    }
+
+    .filters-selected {
+      .filters-selected-inner {
+        .filters-selected-list {
+          .filter-selected-item {
+            margin: 0 17px 10px 0;
+            padding: 5px 34px 5px 14px;
+
+            &:before {
+              left: unset;
+              right: 11px;
+            }
+          }
+        }
+
+        span {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

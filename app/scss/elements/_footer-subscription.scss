@@ -36,3 +36,17 @@
 .footer-subscription input[type="submit"]:hover {
 	opacity: .7;
 }
+
+
+/* English */
+body {
+	&.en {
+		.footer-subscription {
+			input {
+				&[type=text] {
+					left: 3px;
+				}
+			}
+		}
+	}
+}

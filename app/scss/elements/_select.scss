@@ -65,3 +65,29 @@
 .custom-select-item:hover {
   background-color: $main_color; 
 }
+
+body {
+	&.en {
+    .custom-select-inner {
+      margin-left: 0;
+      margin-right: 6px;
+      padding: 5px 45px 5px 16px;
+
+      &:before {
+        left: unset;
+        right: 0;
+        border-width: 28px 0 0 10px;
+      }
+
+      .custom-select-arrow {
+        left: unset;
+        right: 15px;
+      }
+
+      .custom-select-list {
+        left: 0;
+        right: unset;
+      }
+    }
+  }
+}

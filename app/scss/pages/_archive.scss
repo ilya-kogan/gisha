@@ -186,3 +186,25 @@
 		}
 	}
 }
+
+body {
+	&.en {
+		.archive-articles {
+			margin-left: 110px;
+			margin-right: 0;
+
+			.archive-article {
+				.img-preview {
+					margin-left: 0;
+					margin-right: 30px;
+				}
+
+				.info {
+					a {
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}

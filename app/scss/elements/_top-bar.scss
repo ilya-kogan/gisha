@@ -167,6 +167,24 @@ body {
 					padding-right: 16px;
 					padding-left: 10px;	
 				}
+
+				&.top-bar-search {
+					form {
+						input {
+							padding: 10px 30px 6px 10px;
+						}
+	
+						.submit-search-icon {
+							left: unset;
+							right: 10px;
+						}
+
+						.top-bar-close-search {
+							right: unset;
+							left: -22px;
+						}
+					}
+				}
 			}
 		}
 	}

@@ -53,3 +53,24 @@ ul.socials-list._color_white li:hover {
 ul.socials-list._color_white li:hover a {
   color: rgba(0, 0, 0, 0.5);
 }
+
+
+/* English */
+body {
+	&.en {
+    ul {
+      &.socials-list {
+        li {
+          &:first-child {
+            margin-left: 0;
+            margin-right: 15px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+	}
+}

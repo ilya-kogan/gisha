@@ -63,3 +63,28 @@
 .content-dropdown.current .content-dropdown-text {
   display: block;
 }
+
+
+/* English */
+body {
+	&.en {
+    .content-dropdown {
+      .content-dropdown-header {
+        &:before {
+          left: -45px;
+          right: unset;
+          transform: rotate(270deg);
+        }
+
+        &.active {
+          .content-dropdown-header {
+            &:before {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}

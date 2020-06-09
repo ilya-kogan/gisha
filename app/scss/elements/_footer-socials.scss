@@ -28,3 +28,31 @@ footer.main-footer .footer-socials {
 .footer-socials li:hover {
 	opacity: .7;
 }
+
+
+/* English */
+body {
+	&.en {
+		footer {
+			&.main-footer {
+				ul {
+					&.footer-socials {
+						margin-left: 34px;
+						margin-right: 0;
+						
+						li {
+							&:first-child {
+								margin-left: 0;
+								margin-right: 18px;
+							}
+
+							&:last-child {
+								margin-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
