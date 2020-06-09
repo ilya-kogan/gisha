@@ -61,3 +61,20 @@
 	text-decoration: none;
 	transition: .3s all;
 }
+
+
+/* English */
+body {
+	&.en {
+		.labels-home {
+			li {
+				&:before {
+					left: unset;
+					right: -10px;
+					border-width: 28px 0 0 10px;
+					border-color: transparent transparent transparent #0dbfa7;
+				}
+			}
+		}
+	}
+}

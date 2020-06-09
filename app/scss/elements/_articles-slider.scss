@@ -107,3 +107,13 @@
         opacity: 1;
     }
 }
+
+
+/* English */
+body {
+	&.en {
+        .articles-slider .slick-initialized .slick-slide {
+            direction: ltr;
+        }
+    }
+}

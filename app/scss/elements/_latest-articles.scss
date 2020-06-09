@@ -52,3 +52,14 @@
   padding-right: 10px;
   font-size: 20px;
 }
+
+
+/* English */
+body {
+	&.en {
+		.latest-articles-header-icon {
+      display: inline-block;
+      transform: scaleX(-1);      
+		}
+	}
+}

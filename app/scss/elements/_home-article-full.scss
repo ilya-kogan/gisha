@@ -72,3 +72,21 @@
     font-weight: normal;
     line-height: 15px;
 }
+
+
+/* English */
+body {
+	&.en {
+        .home-article-full {
+            .home-article-full-img {
+                margin-left: 0;
+                margin-right: 40px;
+
+            }
+
+            .underline {
+                text-align: left;
+            }
+        }
+	}
+}

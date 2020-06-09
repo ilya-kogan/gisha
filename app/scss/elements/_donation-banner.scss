@@ -90,3 +90,15 @@
     line-height: 24px;
     text-align: right;
 }
+
+/* English */
+body {
+	&.en {
+		.donation-banner {
+            p {
+                font-size: 17px;
+                line-height: 19px;
+            }
+        }
+	}
+}

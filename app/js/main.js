@@ -156,8 +156,18 @@ rgb = {
   },
   articlesSlider: function () {
     if ( $('.js-articles-slider').length ) {
+      if ( $('body').hasClass('en') ) {
+        var rtl = false;
+        var prev = 'left';
+        var next = 'right';
+      } else {
+        var rtl = true;
+        var prev = 'right';
+        var next = 'left';
+      }
+
       $('.js-articles-slider').slick({
-        rtl: true,
+        rtl: rtl,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -167,8 +177,8 @@ rgb = {
         speed: 300,
         centerMode: true,
         variableWidth: true,
-        prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>',
-        nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>',
+        prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-' + prev + ' icon-slider-arrow-' + prev + '"></div>',
+        nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-' + next + ' icon-slider-arrow-' + next + '"></div>',
         responsive: [
           {
             breakpoint: 500,
@@ -177,7 +187,6 @@ rgb = {
               slidesToShow: 1,
               slidesToScroll: 1,
               dots: true,
-              //appendDots: $('.articles-slider'),
               infinite: false,
               speed: 300,
               centerMode: false,

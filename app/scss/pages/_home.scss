@@ -67,3 +67,13 @@
 .home-banners {
 	margin: 75px auto 115px;
 }
+
+
+/* English */
+body {
+	&.en {
+		.home-banners {
+			direction: rtl;
+		}
+	}
+}

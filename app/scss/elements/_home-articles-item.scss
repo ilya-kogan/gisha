@@ -96,3 +96,33 @@
     font-size: 14px;
     line-height: 15px;
 }
+
+
+/* English */
+body {
+	&.en {
+        .home-articles-item {
+            &:first-child {
+                margin-right: 40px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .img {
+                span {
+                    left: 0;
+                    right: unset;
+
+                    &:before {
+                        left: unset;
+                        right: -10px;
+                        border-width: 30px 0 0 10px;
+                        border-color: transparent transparent transparent #0dbfa7;
+                    }
+                }
+            }
+        }
+    }
+}
