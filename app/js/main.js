@@ -199,12 +199,22 @@ rgb = {
   },
   articlesWidgetSlider: function () {
     if ( $('.js-posts-widget-slider').length ) {
+      if ( $('body').hasClass('en') ) {
+        var rtl = false;
+        var prev = 'left';
+        var next = 'right';
+      } else {
+        var rtl = true;
+        var prev = 'right';
+        var next = 'left';
+      }
+
       $('.js-posts-widget-slider').slick({
-        rtl: true,
+        rtl: rtl,
         infinite: false,
         slidesToShow: 1.5,
-        prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-right"></div>',
-        nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-left"></div>'        
+        prevArrow: '<div class="articles-slider-arrow articles-slider-arrow-right icon-slider-arrow-' + prev + '"></div>',
+        nextArrow: '<div class="articles-slider-arrow articles-slider-arrow-left icon-slider-arrow-' + next + '"></div>'        
       });
 
       var slideHeight = $('.js-posts-widget-slider .slick-track').height();

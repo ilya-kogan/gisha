@@ -58,11 +58,6 @@ header.main-header .inner-header .menu-burger-mobile {
   width: 100%;
 }
 
-.article-single-sidebar {
-  margin: 0;
-  max-width: 335px;
-}
-
 .article-section {
   flex-direction: column;
 }
@@ -96,8 +91,10 @@ header.main-header .inner-header .menu-burger-mobile {
   display: none;
 }
 
-.article-single-sidebar {
+body .article-single-sidebar,
+body.en .article-single-sidebar {
   max-width: 100%;
+  margin: 0;
   width: 100%;
 }
 
@@ -139,10 +136,22 @@ main.article-legal .headline h1 {
   left: 0;
 }
 
+body.en .posts-widget-slider .articles-slider-arrow.articles-slider-arrow-left {
+  right: 0;
+  left: unset;
+  text-align: right;
+}
+
 .posts-widget-slider .articles-slider-arrow.articles-slider-arrow-right {
   left: 37px;
   right: 0;
   text-align: left;
+}
+
+
+body.en .posts-widget-slider .articles-slider-arrow.articles-slider-arrow-right {
+  right: 37px;
+  left: unset;
 }
 
 .posts-widget h2 {
