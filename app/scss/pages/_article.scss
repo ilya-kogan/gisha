@@ -3,6 +3,12 @@
 .article-legal {
 	margin-top: 70px;
 	display: flex;
+
+	&._type_graph {
+		.article-feature-col {		
+				width: 100%;
+			}
+		}
 }
 
 .article-single-col,

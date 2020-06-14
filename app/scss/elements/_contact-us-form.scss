@@ -52,3 +52,31 @@
   font-size: 16px;
   line-height: 23px;
 }
+
+
+/* English */
+body {
+	&.en {
+    .contact-us-form {
+      direction: ltr;
+
+      .contact-us-form-row {
+        &:first-child {
+          span {
+            margin: 0 20px 40px 0;
+
+            &:nth-child(2n) {
+              margin-right: 0;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        direction: ltr;
+      }
+    }
+  }
+}
