@@ -590,6 +590,10 @@ body.en .filter-mobile-open-filters-btn {
   width: 100%;
 }
 
+.homepage .home-articles-list .home-articles-item img {
+  width: 100%;
+}
+
 .homepage .home-articles-list .home-articles-item .headline {
   margin-bottom: 10px;
   font-size: 22px;
