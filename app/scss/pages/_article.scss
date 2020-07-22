@@ -5,7 +5,7 @@
 .infinite-scrolling main::before {
 	content: "";
 	position: absolute;
-	left: 0;
+	left: 12px;
 	right: 12px;
 	width: calc(100% - 24px);
 	height: 2px;
@@ -270,7 +270,7 @@
 
 .main-content {
 	margin-bottom: 100px;
-	max-width: 600px;
+	width: 600px;
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 30px;
@@ -563,6 +563,13 @@ body {
 
 		.label {
 			text-transform: uppercase;
+		}
+
+		.article-header {
+			.slick-slider.slideshow div,
+			.slick-slide.slideshow img {
+				direction: ltr; 
+			}
 		}
 
 		.media-aside {

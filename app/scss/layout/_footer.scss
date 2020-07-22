@@ -58,3 +58,21 @@ footer {
 		}
 	}
 }
+
+/* English */
+body {
+	&.en {
+		footer {
+			&.main-footer {
+				.inner-footer {
+					.footer-bottom {
+						.copyright {
+							margin: auto;
+							max-width: 650px;
+						}
+					}
+				}
+			}
+		}		
+	}
+}
