@@ -41,6 +41,23 @@ body.mobile-menu-active:before {
   height: 0;
 }
 
+/* Input */
+input[type="text"],
+input[type="email"],
+textarea {
+  color: #000 !important;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
 /* Border */
 body:before,
 body:after {
@@ -125,7 +142,7 @@ a {
 
 ._backround_gray {
   margin-top: 60px;
-  margin-bottom: 83px;
+  margin-bottom: 60px;
   background-color: #EDF1EE;
 }
 

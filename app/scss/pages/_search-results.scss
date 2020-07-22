@@ -36,10 +36,6 @@
 		transition: .3s all;
 	}
 
-	input[type="text"]:focus {
-		box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.75);
-	}
-
 	button[type="submit"] {
 		position: relative;
 		top: 2px;
@@ -80,6 +76,9 @@
 		}
 
 		img {
+			width: 130px;
+			height: 130px;
+			object-fit: cover;
 			transition: transform .5s ease;
 			&:hover {
 				transform: scale(1.15);

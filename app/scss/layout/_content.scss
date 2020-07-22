@@ -1,5 +1,17 @@
 .text-content {
-	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+
+	.alignright {
+		float: right;
+		margin-left: 20px;
+    width: 50%;    
+	}
+
+	.alignleft {
+		float: left;
+		margin-right: 20px;
+    width: 50%;    
+	}
 
 	p {
 		margin: 0 0 30px;
@@ -35,6 +47,45 @@
 		font-size: 20px;
 		font-weight: bold;
 		line-height: 30px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.media {
+		&.media-video {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 25px;
+			max-width: 100%;
+
+			embed,
+			iframe,
+			object {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&.media-map {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 25px;
+			max-width: 100%;
+
+			iframe {
+				position: absolute;
+    		top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
 	}
 
 	ul {

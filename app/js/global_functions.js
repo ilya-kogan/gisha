@@ -9,7 +9,7 @@ rgb = {
     return $("body").hasClass("single");
   },
   subdomain : 'dev',
-  init: function () {
+  init: function () { 
     rgb.topBarSearchForm();
     rgb.activateStickyHeader();
     rgb.stickyHeaderOnScroll();
@@ -115,6 +115,16 @@ rgb = {
       $(this).find('span').toggleClass('active-arrow');
       $(this).parents('li').find('.submenu').stop().slideToggle();
     });
+
+    $('.js-mobile-menu').on('wheel', function(e) {
+      var scrollTop = $('.mobile-menu-items').offset().top + 50;
+
+      if ( scrollTop < 150 ) {
+        $('.js-mobile-menu-close').addClass('sticky-mobile-menu-close');
+      } else {
+        $('.js-mobile-menu-close').removeClass('sticky-mobile-menu-close');
+      }
+    });
   },
   isSpecialArticle: function () {
     if ( $('body').hasClass('article-type-special') ) {
@@ -128,7 +138,7 @@ rgb = {
 
     $('.custom-select-item').click(function() {
       var optionText = $(this).text();
-      var optionVal = $(this).data('val');
+      var optionVal = $(this).data('year');
       var option = '<option value="' + optionVal + '">' + optionText + '</option>';
       
       $(this).parents('.custom-select').find('select option').remove();
@@ -136,7 +146,7 @@ rgb = {
       $(this).parents('.custom-select').find('.custom-select-title').text( optionText );
       $(this).parents('.custom-select').find('select').val( optionVal );
 
-      if ( optionVal == '' ) {
+      if ( optionVal == '' || optionVal == 'שנה' ) {
         $(this).parents('.custom-select').removeClass('_type_selected');
       } else {
         $(this).parents('.custom-select').addClass('_type_selected');
@@ -223,15 +233,22 @@ rgb = {
   },
   articleSingleSlideshow: function () {
     if ( $('.media.rslides').length ) {
+      if ( $('body').hasClass('en') ) {
+        var rtl = false;
+      } else {
+        var rtl = true;
+      }
+
       $('.media.rslides').slick({
         autoplay: true,
         autoplaySpeed: 3000,
         arrows: false,
         dots: false,
+        adaptiveHeight: true,
         speed: 500,
         fade: true,
         cssEase: 'linear',
-        rtl: false
+        rtl: rtl
       });
     }
   },
@@ -275,7 +292,7 @@ rgb = {
     $('.js-mobile-filter-reset').click(function() {
       $('body').css('overflow', 'unset');
       $('.js-remove-filters').trigger('click');
-      $('aside.filters').fadeOut();
+      //$('aside.filters').fadeOut();
     });
   },
 
@@ -314,6 +331,8 @@ rgb = {
       $('.filters-selected').hide();
       $('.filter-selected-item').remove();
       $('.filters-list li').removeClass('active');
+      $('.filter-item[data-filter-type="year"]').find('.custom-select-title').text('שנה');
+      $('.filter-item[data-filter-type="year"]').find('.js-filter-year').removeClass('_type_selected');
       rgb.rgbAjaxArticlesOrdering($loadMoreButton, loadingType, '');
     });
 
@@ -414,6 +433,11 @@ rgb = {
 
       if ( loadingType == 'isFiltering' ) {
         $filtersSelected.show();
+
+        if ( filterType == 'year' ) {
+          $('.filter-selected-item[data-filter_type="year"]').remove();
+        }
+
         $filtersSelectedList.append('<div class="filter-selected-item" data-filter_type="' + filterType + '" data-id="'+ currentItemId +'">' + $this.text() + '</div>');
       }
     }

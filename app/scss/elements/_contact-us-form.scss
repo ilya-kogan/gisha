@@ -1,4 +1,5 @@
 .contact-us-form {
+  margin-top: 20px;
   padding: 43px 34px;
   background-color: #C4EBE7;
   direction: $direction;
@@ -22,6 +23,7 @@
   color: #8C8C8C;
   font-size: 16px;
   line-height: 16px;
+  border: none;
 }
 
 .contact-us-form .contact-us-form-row:first-child span {
@@ -35,12 +37,12 @@
 }
 
 .contact-us-form .contact-us-form-row {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
 }
 
 .contact-us-form textarea {
-  margin-bottom: 40px;
   padding: 18px 15px;
   width: 100%;
   min-height: 150px;

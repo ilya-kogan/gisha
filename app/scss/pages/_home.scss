@@ -9,10 +9,10 @@
 		.home-header-inner {
 			margin: auto;
 			margin-bottom: 60px;
-			padding-bottom: 60px;
+			padding-bottom: 50px;
 			position: relative;
 			max-width: 1160px;
-		    min-height: 75vh;
+		  min-height: 703px;
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
@@ -33,7 +33,7 @@
 			left: 0;
 			height: 100%;
 			width: 100%;
-			background-color: rgba(0, 0, 0, .5);
+			background-color: rgba(0, 0, 0, .35);
 			z-index: 10;
     }
     
@@ -44,15 +44,15 @@
   
 	h1 {
 		position: relative;
-    	top: 17px;
-		margin: 0 0 10px;
+		margin: 0;
 		color: $second_color;
 		font-size: 70px;
 		font-weight: 900;
-		line-height: 74px;
+		line-height: 62px;
   }
   
 	.underline {
+		margin: 0;
 		color: #fff;
 		font-size: 32px;
 		font-weight: normal;
@@ -65,7 +65,7 @@
 }
 
 .home-banners {
-	margin: 75px auto 115px;
+	margin: 60px auto;
 }
 
 

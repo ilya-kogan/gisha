@@ -9,3 +9,15 @@
 .wp-caption img {
   width: 100%;
 }
+
+div.wpcf7 .ajax-loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}

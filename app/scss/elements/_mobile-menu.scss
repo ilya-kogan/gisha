@@ -9,7 +9,7 @@
   z-index: 999;
 
   .main-header-close {
-    position: absolute;
+    position: fixed;
     padding: 0;
     top: 0;
     left: 0;
@@ -22,16 +22,22 @@
     background: transparent;
     transition: .3s all;
     outline: none;
+    z-index: 10;
       &:hover {
         opacity: .7;
       }
 
-    span {
-      top: -85px;
-      left: 20px;
-      position: absolute;
-      font-size: 28px;
-    }
+      &.sticky-mobile-menu-close {
+        position: fixed;
+        z-index: 20;
+      }
+
+      span {
+        top: -85px;
+        left: 20px;
+        position: absolute;
+        font-size: 28px;
+      }
   }
 
   .lang-switch {
