@@ -86,6 +86,10 @@
 body {
 	&.en {
     .filters {
+      h2 {
+        text-transform: uppercase;
+      }
+
       .filter-title {
         text-transform: uppercase;
       }

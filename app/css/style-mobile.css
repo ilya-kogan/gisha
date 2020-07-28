@@ -573,6 +573,14 @@ body.en .filter-mobile-open-filters-btn {
   text-align: center;
   border: 1px solid #FFFFFF;
   background-color: #000000;
+
+  /* Additional */
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  max-width: none;
+  left: 40px;
+  right: 40px;
 }
 
 .filters-selected-remove-btn {
@@ -913,6 +921,10 @@ body.en .filter-mobile-open-filters-btn {
 
 body.en footer.main-footer .inner-footer .footer-subscription input[type=text] {
   max-width: 200px;
+}
+
+body.en .filters .filter-title {
+  text-transform: none;
 }
 
 

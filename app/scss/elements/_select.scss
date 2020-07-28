@@ -89,5 +89,16 @@ body {
         right: unset;
       }
     }
+
+    .filters-selected-inner {
+      .filter-mobile-open-filters-btn {
+        padding: 5px 40px 5px 16px;
+      }
+
+      .custom-select-arrow {
+        left: unset;
+        right: 15px;
+      }
+    }
   }
 }
