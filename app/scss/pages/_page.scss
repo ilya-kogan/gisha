@@ -137,7 +137,7 @@
 }
 
 .page-type-404 {
-	padding: 130px 0 100px;
+	padding: 120px 0 90px;
 	background-color: #71E1C5;
 	color: #333;
 	font-size: 24px;
@@ -150,6 +150,19 @@ body {
 	&.en {
 		.page-content-section {
 			margin: 0 0 0 110px;
+		}
+	}
+}
+
+
+/* Arabic */
+body {
+	&.ar {
+		.page-content {
+			h3 {
+				font-size: 26px;
+				line-height: 36px;
+			}
 		}
 	}
 }

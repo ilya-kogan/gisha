@@ -1,7 +1,4 @@
 .lang-switch li {
-	padding: 5px;
-	width: 30px;
-	height: 30px;
 	text-align: center;
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	border-left: none;
@@ -25,6 +22,10 @@
 }
 
 .lang-switch li a {
+	padding: 5px;
+	display: inline-block;
+	width: 29px;
+	height: 28px;
 	color: #fff;
 	text-decoration: none;
 	font-family: Gisha;

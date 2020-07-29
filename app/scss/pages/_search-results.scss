@@ -124,3 +124,19 @@
 	margin: 10px;
 	text-align: center;
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+    .search-results-items {
+			.item-content {
+				.headline {
+					h2 {
+						font-size: 22px;
+					}
+				}
+			}
+		}
+  }
+}

@@ -49,11 +49,20 @@ footer {
 				.copyright {
 					margin: 52px 0 0;
 					color: #FFFFFF;
-					font-family: "Narkiss Block";
 					font-size: 12px;
 					line-height: 16px;
 					text-align: center;
 				}
+			}
+		}
+	}
+}
+
+body {
+	&.error404 {
+		footer {
+			&.main-footer {
+				margin-top: 0;
 			}
 		}
 	}
@@ -74,5 +83,23 @@ body {
 				}
 			}
 		}		
+	}
+}
+
+/* Arabic */
+body {
+	&.ar {
+		footer {
+			&.main-footer {
+				.inner-footer {
+					.footer-bottom {
+						.copyright {
+							font-size: 11px;
+							line-height: 21px;
+						}
+					}
+				}
+			}
+		}
 	}
 }

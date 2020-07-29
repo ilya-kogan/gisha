@@ -77,19 +77,19 @@
 body {
 	&.en {
     .content-dropdown {
+      margin-right: 0;
+      margin-left: 40px;
+      &.active {
+        .content-dropdown-header::before {
+          transform: rotate(360deg);
+        }
+      }
+
       .content-dropdown-header {
         &:before {
           left: -45px;
           right: unset;
           transform: rotate(270deg);
-        }
-
-        &.active {
-          .content-dropdown-header {
-            &:before {
-              transform: rotate(360deg);
-            }
-          }
         }
       }
     }

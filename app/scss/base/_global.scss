@@ -10,11 +10,20 @@
 }
 
 html {
-	font-family: 'Narkiss Block';
+	font-family: $main_font;
   direction: $direction;
 
   &[lang="en"] {
     direction: ltr;
+  }
+
+  &[lang="ar"] {
+    font-family: $ar_main_font;
+
+    input,
+    textarea {
+      font-family: $ar_main_font;
+    }
   }
 }
 
@@ -80,7 +89,7 @@ body:after {
 
 input,
 textarea {
-  font-family: 'Narkiss Block';
+  font-family: $main_font;
 }
 
 a {

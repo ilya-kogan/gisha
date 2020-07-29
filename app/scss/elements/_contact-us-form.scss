@@ -32,6 +32,14 @@
   flex: 0 48.5%;
 }
 
+.contact-us-form .contact-us-form-row:first-child span input ~ span {
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  margin: 0 !important;
+  font-size: 13px;
+}
+
 .contact-us-form .contact-us-form-row:first-child span:nth-child(2n) {
   margin-left: 0;
 }

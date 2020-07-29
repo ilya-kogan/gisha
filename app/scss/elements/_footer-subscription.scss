@@ -1,7 +1,6 @@
 .footer-middle-subscribe p {
 	margin: 0;
 	color: #fff;
-	font-family: "Narkiss Block";
 	font-size: 18px;
 	letter-spacing: 2px;
 	line-height: 20px;
@@ -9,15 +8,15 @@
 
 .footer-subscription input[type="text"] {
 	position: relative;
-    top: -1px;
+	top: -1px;
 	margin-left: -3px;
 	padding: 12px 16px 10px;
 	width: 264px;
 	height: 36px;
 	border: none;
 	color: #8C8C8C;
-  	font-size: 16px;
-  	transition: .3s all;
+	font-size: 16px;
+	transition: .3s all;
 }
 
 .footer-subscription input[type="submit"] {
@@ -41,10 +40,34 @@
 /* English */
 body {
 	&.en {
-		.footer-subscription {
-			input {
-				&[type=text] {
-					left: 3px;
+		.footer-middle-subscribe {
+			p {
+				position: relative;
+				top: 3px;
+			}
+
+			.footer-subscription {
+				position: relative;
+				top: 7px;
+				
+				input {
+					&[type=text] {
+						left: 3px;
+					}
+				}
+			}
+		}
+
+		footer {
+			&.main-footer  {
+				.inner-footer {
+					.footer-bottom {
+						padding-top: 40px;
+
+						.copyright {
+							line-height: 14px;
+						}
+					}
 				}
 			}
 		}

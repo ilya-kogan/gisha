@@ -216,3 +216,20 @@ body {
     }
   }
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+    .mobile-menu-items {  
+      ul {
+        li {
+          a {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -606,3 +606,26 @@ body {
 		}
 	}
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+		.headline {
+			h1 {
+				font-size: $ar_single_headline_font_size;
+				line-height: $ar_single_headline_line_height;
+			}
+		}
+
+		.underline {
+			font-size: $ar_single_underline_font_size;
+			line-height: $ar_single_underline_line_height;
+		}
+
+		.date {
+			font-size: 13px;
+			line-height: 15px;
+		}
+	}
+}
