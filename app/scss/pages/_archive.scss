@@ -254,6 +254,8 @@
 	}
 }
 
+
+/* English */
 body {
 	&.en {
 		.archive-articles {
@@ -271,6 +273,19 @@ body {
 						text-transform: uppercase;
 					}
 				}
+			}
+		}
+	}
+}
+
+
+/* Arabic */
+body {
+	&.ar {
+		.archive-header {
+			h1 {
+				font-size: 60px;
+				line-height: 90px;
 			}
 		}
 	}

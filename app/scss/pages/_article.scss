@@ -627,5 +627,30 @@ body {
 			font-size: 13px;
 			line-height: 15px;
 		}
+
+		.article-feature {
+			.headline {
+				h1 {
+					font-size: 60px;
+					line-height: 90px;
+				}
+			}
+		}
+
+		.special-header {
+			.title {
+				font-size: 60px;
+				line-height: 90px;
+			}
+		}
+
+		.article-legal {
+			.headline {
+				h1 {					
+					font-size: 42px;
+					line-height: 66px;
+				}
+			}
+		}
 	}
 }

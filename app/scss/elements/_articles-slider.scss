@@ -128,6 +128,17 @@ body {
 }
 
 
+/* Arabic */
+body {
+	&.ar {
+        .articles-slider-arrow {
+            font-size: 32px;
+            line-height: 42px;
+        }
+    }
+}
+
+
 /* Media Queries */
 @media (max-width: 1470px) {
     .articles-slider {

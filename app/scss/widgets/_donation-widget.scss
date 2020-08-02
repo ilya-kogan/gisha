@@ -38,3 +38,16 @@ body {
 		}
 	}
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+		.donation-widget {		
+			h3 {
+				font-size: 32px;
+				line-height: 42px;
+			}
+		}
+	}
+}

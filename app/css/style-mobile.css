@@ -26,6 +26,10 @@ header.main-header .inner-header,
   height: 60px;
 }
 
+body.en header.main-header .inner-header {
+  padding: 20px 14px 17px;
+}
+
 header.main-header .inner-header .menu {
   display: none;
 }
@@ -292,6 +296,8 @@ footer.main-footer .inner-footer .footer-item {
 }
 
 footer.main-footer .inner-footer .footer-top {
+  margin-bottom: 35px;
+  padding-bottom: 30px;
   border: none;
 }
 
@@ -333,6 +339,7 @@ footer.main-footer .inner-footer .footer-subscription input[type=text] {
 }
 
 .footer-middle-subscribe p {
+  margin-bottom: 10px;
   font-weight: 100;
   text-align: center;
 }
@@ -419,15 +426,14 @@ body.en .aside-page-navigation-list.about-nav-slider ul {
 
 /* Btn */
 .btn-large {
-  margin: 0 0 40px 0;
-  padding: 30px;
+  margin: 0 auto 40px !important;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75px;
   font-size: 35px !important;
   line-height: 35px !important;
-}
-
-.btn-large:nth-child(2n+1) {
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .btn-large br {
@@ -786,8 +792,7 @@ body.en .filter-mobile-open-filters-btn {
 }
 
 .homepage .subscription-banner h3 {
-  font-size: 40px;
-  line-height: 40px;
+  line-height: 48px !important;
 }
 
 .homepage .subscription-banner p {
@@ -866,6 +871,7 @@ body.en .filter-mobile-open-filters-btn {
 .homepage .home-article-full-content .labels-list {
   position: relative;
   top: -28px;
+  left: -15px;
 }
 
 .homepage .home-article-full-content .labels-list .labels-home {
@@ -975,20 +981,18 @@ body.en .filters .filter-title {
     margin-left: 10px;
   }
 
-  .en .homepage .home-banners .donation-banner,
-  .en .article-sidebar-widgets .donation-widget {
-    margin-right: 0;
-    margin-left: 10px;
-  }
-
   .filters .filter-mobile-submit-btn {
     width: 99.5%;
   }
 
-  .en .homepage .home-banners .subscription-banner,
   .en .article-sidebar-widgets .subscription-widget {
     margin-right: 10px;
     margin-left: 0;
+  }
+
+  .en .homepage .home-banners .subscription-banner {
+    margin-left: 10px;
+    margin-right: 0;
   }
 
   .article-header,
@@ -1059,6 +1063,14 @@ body.en .filters .filter-title {
     width: 33.33%;
   }
 
+  body.en .home-articles-list .home-articles-item:last-child {
+    margin-right: 0 !important;
+  }
+
+  body.en .home-articles-list .home-articles-item:first-child {
+    margin-right: 15px !important;
+  }
+
   .homepage .home-articles-list .home-articles-item:not(.featured) .img,
   .homepage .home-articles-list .home-articles-item:not(.featured) .img img {
     height: 133px;
@@ -1086,8 +1098,8 @@ body.en .filters .filter-title {
 
   /* Donation Page */
   .btn-large:nth-child(2n+1) {
-    margin-left: 40px;
-    margin-right: 0;
+    margin: 0 auto 40px !important;
+    display: flex;
   }
 
   .page-dontation-content {

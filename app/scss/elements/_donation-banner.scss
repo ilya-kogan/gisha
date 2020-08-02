@@ -95,9 +95,34 @@
 body {
 	&.en {
 		.donation-banner {
-            p {
-                font-size: 17px;
-                line-height: 19px;
+            .donation-banner-triangle {
+                transform: scale(-1, 1);
+                filter: FlipH;
+                order: 1;
+
+                .triangle-1:before,
+                .triangle-2:before,
+                .triangle-3:before {
+                    top: -10px;
+                    border-width: 140px 70px 140px 0;
+                }
+            }
+
+            .donation-banner-content {
+                padding: 25px 0 30px 25px;
+                text-align: left;
+
+                h3 {
+                    font-size: 46px;
+                    line-height: 40px;
+                }
+
+                p {
+                    margin-bottom: 11px;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: left;
+                }
             }
         }
 	}

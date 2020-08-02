@@ -67,3 +67,16 @@ body {
 		}
 	}
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+		.subscription-widget {
+			h3 {
+				font-size: 32px;
+				line-height: 42px;
+			}
+		}
+	}
+}

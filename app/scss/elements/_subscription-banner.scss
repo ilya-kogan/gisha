@@ -45,3 +45,22 @@
 .subscription-banner input[type="submit"]:hover {
     opacity:.7
 }
+
+
+/* English */
+body {
+	&.en {
+        .subscription-banner {
+            h3 {
+                font-size: 46px;
+                line-height: 70px;
+            }
+
+            form {
+                input[type=email] {
+                    order: 1;
+                }
+            }
+        }
+    }
+}

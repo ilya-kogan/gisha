@@ -125,6 +125,25 @@
 	text-align: center;
 }
 
+/* English */
+body {
+	&.en {
+		.search-results-form {
+			input[type=text] {
+				margin-left: 0;
+				margin-right: -4px;
+			}
+		}
+
+    .search-results-items {
+			.img-preview {
+				margin-left: 0;
+				margin-right: 20px;
+			}
+		}
+	}
+}
+
 
 /* Arabic */
 body {
@@ -134,8 +153,21 @@ body {
 				.headline {
 					h2 {
 						font-size: 22px;
+						line-height: 30px;
 					}
 				}
+			}
+		}
+
+		.search-results-header {
+			h2 {
+				font-size: 46px;
+				line-height: 70px;
+			}
+		
+			span {
+				font-size: 46px;
+				line-height: 70px;
 			}
 		}
   }

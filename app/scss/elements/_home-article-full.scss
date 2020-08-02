@@ -91,3 +91,18 @@ body {
         }
 	}
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+        .home-article-full {
+            .headline {
+                h2 {
+                    font-size: 38px;
+                    line-height: 60px;
+                }
+            }
+        }
+	}
+}
