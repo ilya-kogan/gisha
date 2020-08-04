@@ -175,11 +175,26 @@ body {
 				font-size: 26px;
 				line-height: 36px;
 			}
+
+			h4 {
+				font-size: 20px;
+				line-height: 30px;
+			}
+
+			._bold_content {
+				font-size: 20px;
+				line-height: 30px;
+			}
 		}
 
 		.page-title {
 			font-size: 42px;
 			line-height: 66px;
+		}
+
+		.page-type-404 {
+			font-size: 20px;
+			line-height: 30px;
 		}
 	}
 }

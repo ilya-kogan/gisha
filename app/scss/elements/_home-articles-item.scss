@@ -128,3 +128,16 @@ body {
         }
     }
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+        .home-articles-item {
+            .headline {
+                font-size: 20px;
+			    line-height: 30px;
+            }
+        }
+    }
+}

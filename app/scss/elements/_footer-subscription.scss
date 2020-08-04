@@ -73,3 +73,15 @@ body {
 		}
 	}
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+		.footer-middle-subscribe p,
+		.footer-subscription input[type="submit"] {
+			font-size: 16px;
+			line-height: 24px;
+    }
+  }
+}

@@ -64,3 +64,28 @@
 		}
 	}
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+		.related-posts-widget {
+			h2 {
+				font-size: 20px;
+      	line-height: 30px;
+			}
+					
+			.post-item {				
+				.post-item-link {
+					font-size: 16px;
+					line-height: 24px;
+
+					p {
+						font-size: 16px;
+						line-height: 24px;
+					}
+				}
+			}
+		}
+	}
+}

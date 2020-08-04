@@ -96,3 +96,19 @@ body {
     
   }
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+		.content-dropdown-title {
+			font-size: 20px;
+			line-height: 30px;
+    }
+    
+    .content-dropdown-header::before {
+      font-size: 20px;
+			line-height: 30px;
+    }
+	}
+}

@@ -57,3 +57,14 @@ body {
 		}
 	}
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+    .footer-socials li a {
+			font-size: 16px;
+			line-height: 24px;
+    }
+  }
+}

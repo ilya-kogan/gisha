@@ -127,3 +127,16 @@ body {
         }
 	}
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+        .donation-banner {
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
