@@ -117,3 +117,31 @@
   font-style: normal;
   font-display: swap;
 }
+
+
+/* Droid Arabic Nask */
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  src: url('../fonts/droid-arabic-naskh/DroidArabicNaskh-Bold.eot');
+  src: url('../fonts/droid-arabic-naskh/DroidArabicNaskh-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/droid-arabic-naskh/DroidArabicNaskh-Bold.woff2') format('woff2'),
+      url('../fonts/droid-arabic-naskh/DroidArabicNaskh-Bold.woff') format('woff'),
+      url('../fonts/droid-arabic-naskh/DroidArabicNaskh-Bold.ttf') format('truetype'),
+      url('../fonts/droid-arabic-naskh/DroidArabicNaskh-Bold.svg#DroidArabicNaskh-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  src: url('../fonts/droid-arabic-naskh/DroidArabicNaskh.eot');
+  src: url('../fonts/droid-arabic-naskh/DroidArabicNaskh.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/droid-arabic-naskh/DroidArabicNaskh.woff2') format('woff2'),
+      url('../fonts/droid-arabic-naskh/DroidArabicNaskh.woff') format('woff'),
+      url('../fonts/droid-arabic-naskh/DroidArabicNaskh.ttf') format('truetype'),
+      url('../fonts/droid-arabic-naskh/DroidArabicNaskh.svg#DroidArabicNaskh') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

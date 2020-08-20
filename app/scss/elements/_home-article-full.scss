@@ -3,7 +3,7 @@
 }
 
 .home-article-full {
-    margin-top: 89px;
+    margin-top: 0;
     margin-bottom: 0;
     display: flex;
 }
@@ -100,8 +100,17 @@ body {
             .headline {
                 h2 {
                     font-size: 38px;
-                    line-height: 60px;
+                    line-height: 56px;
                 }
+            }
+
+            .underline {
+                font-size: 14px;
+			    line-height: 26px;
+            }
+
+            .date {
+                font-family: $ar_main_font;
             }
         }
 	}

@@ -53,7 +53,7 @@
 	position: relative;
 	top: 2px;
 	font-size: 16px;
-  	line-height: 18px;
+	line-height: 18px;
 	color: #fff;
 	text-decoration: none;
 	border-bottom: 1px solid transparent;
@@ -188,4 +188,29 @@ body {
 			}
 		}
 	}
+}
+
+
+/* Arabic */
+body {
+	&.ar {
+    .top-bar-item a,
+		.top-bar-item span {
+			font-size: 13px;
+			line-height: 21px;
+		}
+
+		.top-bar-search {
+      .submit-search-icon {
+				top: 3px;
+			}
+
+			form {
+				input {
+					font-size: 13px;
+					line-height: 21px;
+				}
+			}
+    }
+  }
 }

@@ -4,6 +4,14 @@
 		line-height: 22px;
 	}
 
+	.posts-widget-slider {
+		&.only-one-slide {
+			.slick-track {
+				width: 100% !important;
+			}
+		}
+	}
+
 	.post-item {
 		padding: 30px 0 10px;
 		border-top: 1px solid #ccc;
@@ -112,6 +120,31 @@ body {
 						right: -10px;
 						border-width: 0 10px 30px 0;
 					}
+				}
+			}
+		}
+	}
+}
+
+
+/* Arabic */
+body {
+	&.ar {
+		.posts-widget {
+			h2 {
+				font-size: 20px;
+				line-height: 30px;
+			}
+
+			.post-item {
+				span {
+					font-size: 13px;
+					line-height: 21px;
+				}
+
+				p {
+					font-size: 16px;
+					line-height: 24px;
 				}
 			}
 		}

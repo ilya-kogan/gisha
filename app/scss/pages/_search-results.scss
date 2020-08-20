@@ -156,6 +156,13 @@ body {
 						line-height: 30px;
 					}
 				}
+
+				.text-content {
+					p {
+						font-size: 13px;
+						line-height: 21px;
+					}
+				}
 			}
 		}
 
@@ -168,6 +175,20 @@ body {
 			span {
 				font-size: 46px;
 				line-height: 70px;
+			}
+		}
+
+		.search-results-form {
+			input[type="text"] {
+				width: calc(100% - 85px);
+				font-size: 13px;
+				line-height: 21px;
+			}
+
+			button[type=submit] {
+		    top: 1px;
+				right: -2px;
+				height: 43px;
 			}
 		}
   }

@@ -78,10 +78,28 @@ body {
 /* Arabic */
 body {
 	&.ar {
-		.footer-middle-subscribe p,
-		.footer-subscription input[type="submit"] {
+		.footer-middle-subscribe p {
+			margin-bottom: 10px;
 			font-size: 16px;
 			line-height: 24px;
-    }
+			letter-spacing: 0;
+		}
+
+		.footer-subscription {
+			input[type="submit"] {
+				font-size: 16px;
+				line-height: 24px;
+				letter-spacing: 0;
+			}
+
+			input[type="text"] {
+				position: relative;
+				top: 0;
+				margin-left: -5px;
+				font-size: 13px;
+				line-height: 21px;
+				letter-spacing: 0;
+			}
+		}
   }
 }

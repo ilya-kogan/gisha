@@ -160,6 +160,7 @@ body {
 	&.ar {
 		.page-header {
 			h1 {
+				margin-bottom: 20px;
 				font-size: 60px;
 				line-height: 90px;
 			}
@@ -183,6 +184,13 @@ body {
 
 			._bold_content {
 				font-size: 20px;
+				line-height: 30px;
+			}
+
+			a,
+			p {
+				font-family: 'Droid Arabic Naskh';
+				font-size: 18px;
 				line-height: 30px;
 			}
 		}

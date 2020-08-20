@@ -8,3 +8,16 @@
 		text-align: center;
 	}
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+		.contact-us-text {			
+			p {
+				font-size: 15px;
+				line-height: 30px;
+			}
+		}
+	}
+}

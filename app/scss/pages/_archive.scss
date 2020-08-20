@@ -53,12 +53,12 @@
 
 .archive-description {
 	position: relative;
-	margin: 0 auto 88px;
+	margin: 0 auto 50px;
 	max-width: 750px;
   text-align: center;
   
 	p {
-		height: 145px;
+		max-height: 145px;
 		overflow: hidden;
 		font-size: 20px;
 		font-weight: 300;
@@ -282,11 +282,56 @@ body {
 /* Arabic */
 body {
 	&.ar {
+		.archive-description {
+			p {
+				font-size: 15px;
+				line-height: 30px;
+			}
+
+			.archive-read-more a {
+				font-size: 15px;
+				line-height: 30px;
+			}
+		}
+
 		.archive-header {
 			h1 {
-				font-size: 60px;
-				line-height: 90px;
+				font-size: 42px;
+				line-height: 66px;
 			}
+		}
+
+		.archive-article {
+			.img-preview {	
+				span {					
+					font-size: 13px;
+      		line-height: 21px;
+				}
+			}
+		}
+
+		.article-content {
+			.info {
+				font-size: 13px;
+				line-height: 21px;
+				
+				a {
+					font-size: 13px;
+      		line-height: 21px;
+				}
+			}
+
+			.headline {
+				h2 {
+					font-size: 22px;
+					line-height: 30px;
+				}
+			}
+			
+			.article-text {
+				font-size: 13px;
+				line-height: 21px;
+			}			
 		}
 	}
 }

@@ -43,10 +43,22 @@ body {
 /* Arabic */
 body {
 	&.ar {
-		.donation-widget {		
+		.donation-widget {
+			padding: 30px 15px 45px;
+
 			h3 {
-				font-size: 32px;
-				line-height: 42px;
+				font-size: 24px;
+				line-height: 38px;
+			}
+
+			p {
+				margin-bottom: 25px;
+				font-size: 13px;
+				line-height: 21px;
+			}
+
+			.btn-donation {
+				padding: 1px 25px;
 			}
 		}
 	}

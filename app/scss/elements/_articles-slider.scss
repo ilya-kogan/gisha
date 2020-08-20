@@ -4,7 +4,7 @@
 
     &._backround_gray {
         margin-top: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
         background-color: #EDF1EE;
         
         .home-article-full {
@@ -99,6 +99,10 @@
             display: none;
         }
     }
+
+    li:only-child {
+        display: none;
+    }
 }
 
 
@@ -136,6 +140,16 @@ body {
             line-height: 42px;
         }
     }
+}
+
+
+/* Custom */
+.articles-slider ~ .home-articles {
+    margin-top: 50px;
+}
+
+.articles-slider._backround_gray ~ .home-articles {
+    margin-top: 50px;
 }
 
 

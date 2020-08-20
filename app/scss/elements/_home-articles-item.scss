@@ -100,6 +100,11 @@
     line-height: 15px;
 }
 
+/* Salamandra */
+.salamandra > div.home-articles:nth-child(2) .home-article-full {
+    margin-top: 0;
+}
+
 /* English */
 body {
 	&.en {
@@ -134,9 +139,22 @@ body {
 body {
 	&.ar {
         .home-articles-item {
-            .headline {
+            .headline {                
+                margin-bottom: 10px;
                 font-size: 20px;
 			    line-height: 30px;
+            }
+
+            .underline {
+                font-size: 14px;
+                line-height: 26px;
+            }
+
+            .img {
+                span {
+                    font-size: 13px;
+			        line-height: 21px;
+                }
             }
         }
     }

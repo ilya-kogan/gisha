@@ -100,7 +100,7 @@ a {
 }
 
 .container {
-  margin: 60px auto;
+  margin: 60px auto 40px;
 	width: 100%;
   max-width: 1160px;
 }
@@ -165,4 +165,8 @@ a.underline-link {
 
 a.underline-link:hover {
   text-decoration: none !important;
+}
+
+.salamandra > div:last-child {
+  margin-bottom: 40px !important;
 }

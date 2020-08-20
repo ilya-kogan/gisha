@@ -38,3 +38,14 @@
 .aside-page-navigation-list ul li a.active:hover {
   border-bottom: 1px solid transparent;
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+    .aside-page-navigation-list ul li a {
+      font-size: 13px;
+      line-height: 21px;
+    }
+  }
+}

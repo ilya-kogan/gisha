@@ -90,3 +90,21 @@ body {
     }
   }
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+    .contact-us-form input[type="text"],
+    .contact-us-form input[type="email"],
+    .contact-us-form input[type="submit"],
+    .contact-us-form textarea {
+      font-size: 13px;
+      line-height: 21px;
+    }
+
+    .contact-us-form input[type="submit"] {
+      padding: 5px 36px;
+    }
+  }
+}

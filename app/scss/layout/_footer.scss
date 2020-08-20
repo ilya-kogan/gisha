@@ -1,6 +1,6 @@
 footer {
 	&.main-footer {
-		margin-top: 80px;
+		margin-top: 40px;
 		width: 100%;
 		background-color: $main_color;
 
@@ -96,6 +96,12 @@ body {
 						.copyright {
 							font-size: 11px;
 							line-height: 21px;
+						}
+					}
+
+					ul {
+						li {
+							line-height: 42px;
 						}
 					}
 				}

@@ -66,6 +66,8 @@
   background-color: $main_color; 
 }
 
+
+/* English */
 body {
 	&.en {
     .custom-select-inner {
@@ -99,6 +101,18 @@ body {
         left: unset;
         right: 15px;
       }
+    }
+  }
+}
+
+
+/* Arabic */
+body {
+	&.ar {
+    .custom-select-inner {
+      font-size: 15px;
+      line-height: 17px;
+      font-weight: 700;
     }
   }
 }

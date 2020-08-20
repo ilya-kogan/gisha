@@ -1,6 +1,4 @@
 .text-content {
-	border-bottom: 1px solid #ccc;
-
 	.alignright {
 		float: right;
 		margin-left: 20px;
@@ -139,6 +137,26 @@ body {
 				font-size: 26px;
 				line-height: 36px;
 			}
+
+			h4 {
+				font-size: 15px;
+				line-height: 30px;
+			}
+
+			p {
+				font-size: 18px;
+				line-height: 30px;
+
+				&.small {
+					font-size: 13px;
+					line-height: 21px;
+				}				
+			}
+		}
+
+		.wp-caption-text {
+			font-size: 13px;
+			line-height: 21px;
 		}
 	}
 }

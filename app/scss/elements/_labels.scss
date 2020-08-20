@@ -1,7 +1,7 @@
 /* Labels */
 .article-footer {
 	.article-labels p {
-	    margin: 22px auto 19px;
+		margin: 22px auto 19px;
 	}
 }
 
@@ -110,8 +110,19 @@ body {
 body {
 	&.ar {
     .article-labels p {
+			font-family: $ar_main_font;
 			font-size: 16px;
 			line-height: 24px;
-    }
+			letter-spacing: 0;
+		}
+		
+		.labels li a {
+			position: relative;
+			top: -2px;
+			padding: 0 10.3px 4px 18px;
+			font-family: $ar_main_font;
+			font-size: 15px;
+			line-height: 33px;
+		}
   }
 }

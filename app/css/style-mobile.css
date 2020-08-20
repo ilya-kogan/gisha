@@ -42,6 +42,9 @@ header.main-header .inner-header .menu-burger-mobile {
   display: block;
 }
 
+.mobile-menu .mobile-menu-items ul li ul.submenu li a {
+  font-size: 16px;
+}
 
 /* Article */
 .article-feature,
@@ -62,6 +65,11 @@ header.main-header .inner-header .menu-burger-mobile {
   width: 100%;
 }
 
+body.ar .headline h1 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
 .article-section {
   flex-direction: column;
 }
@@ -77,7 +85,6 @@ header.main-header .inner-header .menu-burger-mobile {
 .article-footer {
   margin-bottom: 0;
   padding-bottom: 20px;
-  /* border-bottom: 1px solid #ccc; */
 }
 
 .infinite-scrolling main::before {
@@ -87,7 +94,7 @@ header.main-header .inner-header .menu-burger-mobile {
 }
 
 .infinite-scrolling article .article-single-sidebar {
-  margin-top: 74px;
+  margin-top: 60px !important;
   overflow: hidden;
 }
 
@@ -139,6 +146,16 @@ main.article-feature .headline h1 {
   line-height: 52px;
 }
 
+body.ar main.article-feature .headline h1 {
+  font-size: 42px;
+  line-height: 58px;
+}
+
+body.ar main.article-feature .underline {
+  font-size: 16px;
+  line-height: 28px;
+}
+
 main.article-feature .main-content,
 main.article-feature .media-aside {
   order: unset;
@@ -157,6 +174,11 @@ main.article-feature .media-aside ul.socials-list {
 main.article-legal .headline h1 {
   font-size: 34px;
   line-height: 36px;
+}
+
+body.ar main.article-legal .headline h1 {
+  font-size: 36px;
+  line-height: 52px;
 }
 
 
@@ -189,14 +211,14 @@ main.article-legal .headline h1 {
   width: 100%;
 }
 
-.posts-widget-slider .post-item {
-  height: 280px !important;
-}
-
 .posts-widget-slider .articles-slider-arrow {
   top: -50px;
   font-size: 28px;
   color: #0DBFA7;
+}
+
+body.ar .posts-widget-slider .articles-slider-arrow {
+  top: -56px;
 }
 
 .posts-widget-slider .articles-slider-arrow.slick-disabled {
@@ -208,7 +230,7 @@ main.article-legal .headline h1 {
 }
 
 body.en .posts-widget-slider .articles-slider-arrow.articles-slider-arrow-left {
-  right: 0;
+  right: 15px;
   left: unset;
   text-align: right;
 }
@@ -221,13 +243,13 @@ body.en .posts-widget-slider .articles-slider-arrow.articles-slider-arrow-left {
 
 
 body.en .posts-widget-slider .articles-slider-arrow.articles-slider-arrow-right {
-  right: 37px;
+  right: 45px;
   left: unset;
 }
 
 /* Article Info */
 .article-media {
-  margin-bottom: 60px;
+  margin-bottom: 0;
   border-top: 1px solid #ccc;
 }
 
@@ -663,18 +685,30 @@ body.en .filter-mobile-open-filters-btn {
 }
 
 .homepage .home-header-inner > .headline {
-  margin: 0 0 15px 0;
+  margin: 0 0 5px 0;
   padding: 28px 0 0;
   font-size: 50px;
   line-height: 45px;
   text-align: center;
 }
 
+body.ar .homepage .home-header-inner > .headline {
+  margin: 0 0 15px 0;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+body.ar .homepage .home-header-inner > .underline {
+  padding-bottom: 40px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
 .homepage .home-header-inner > .underline {
   margin: 0;
   padding: 0 0 30px;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 22px;
   color: #000;
   text-align: center;
   font-weight: normal;
@@ -714,9 +748,17 @@ body.en .filter-mobile-open-filters-btn {
   line-height: 37px;
 }
 
+body.ar .homepage .home-articles-list .home-articles-item.featured .headline {
+  margin-bottom: 11px;
+}
+
 .homepage .home-articles-list .home-articles-item.featured .underline {
   margin-bottom: 9px;
   display: block;
+}
+
+body.ar .homepage .home-articles-list .home-articles-item.featured .underline {
+  margin-bottom: 20px;
 }
 
 .homepage .home-articles-list .home-articles-item {
@@ -730,6 +772,7 @@ body.en .filter-mobile-open-filters-btn {
 }
 
 .homepage .home-articles-list .home-articles-item img {
+  max-width: 100%;
   width: 100%;
 }
 
@@ -737,6 +780,11 @@ body.en .filter-mobile-open-filters-btn {
   margin-bottom: 10px;
   font-size: 22px;
   line-height: 24px;
+}
+
+body.ar .homepage .home-articles-list .home-articles-item .headline {
+  font-size: 20px;
+  line-height: 30px; 
 }
 
 .homepage .home-articles-list .home-articles-item .underline {
@@ -791,6 +839,10 @@ body.en .filter-mobile-open-filters-btn {
   padding: 23px 24px 23px;
 }
 
+body.en .homepage .subscription-banner {
+  padding: 20px;
+}
+
 .homepage .subscription-banner h3 {
   line-height: 48px !important;
 }
@@ -798,6 +850,34 @@ body.en .filter-mobile-open-filters-btn {
 .homepage .subscription-banner p {
   font-size: 16px;
   line-height: 21px;
+}
+
+body.ar .homepage .subscription-banner {
+  padding: 25px;
+}
+
+body.ar .homepage .subscription-banner h3 {
+  padding: 0 15px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 38px !important;
+}
+
+body.ar .homepage .subscription-banner p {
+  padding: 0 15px;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+}
+
+body.ar .homepage .subscription-banner form {
+  padding: 0;
+}
+
+.homepage .donation-banner-wrapper {
+  overflow: unset;
 }
 
 .homepage .donation-banner-content {
@@ -820,14 +900,36 @@ body.en .filter-mobile-open-filters-btn {
   text-align: center;
 }
 
-
-/* Slider */
-.articles-slider._backround_gray {
-  margin-top: 30px;
-  margin-bottom: 30px;
+body.ar .homepage .donation-banner {
+  padding: 25px;
 }
 
+body.ar .donation-banner .donation-banner-content {
+  padding: 0;
+}
+
+body.ar .homepage .donation-banner h3 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 38px;
+}
+
+body.ar .homepage .donation-banner p {
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+}
+
+body.ar .donation-banner .btn-donation {
+  padding: 2px 26px;
+}
+
+/* Slider */
 .homepage .articles-slider {
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 75px 0 30px;
   width: 100%;
 }
@@ -858,7 +960,7 @@ body.en .filter-mobile-open-filters-btn {
 }
 
 .homepage .articles-slide.home-article-full .home-article-full-img {
-  margin: 0;
+  margin: 0 0 20px;
   width: 100%;
 }
 
@@ -868,10 +970,20 @@ body.en .filter-mobile-open-filters-btn {
   border-bottom: none;
 }
 
+body.en  .homepage .home-article-full-content {
+  padding-left: 0;
+}
+
 .homepage .home-article-full-content .labels-list {
   position: relative;
   top: -28px;
   left: -15px;
+}
+
+body.ar .homepage .home-article-full-content .labels-list {
+  height: 0;
+  top: -48px;
+  left: 0px;
 }
 
 .homepage .home-article-full-content .labels-list .labels-home {
@@ -881,6 +993,11 @@ body.en .filter-mobile-open-filters-btn {
 .homepage .home-article-full .headline h2 {
   font-size: 24px;
   line-height: 26px;
+}
+
+body.ar .homepage .home-article-full .headline h2 {
+  font-size: 30px;
+  line-height: 42px;
 }
 
 .homepage .home-article-full .underline {
@@ -952,6 +1069,27 @@ body.en .filters .filter-title {
   text-transform: none;
 }
 
+body .subscription-widget input[type=submit] {
+  position: relative;
+  top: 3px;
+  left: 4px;
+  padding: 4px 16px 0;
+  font-size: 16px;
+  line-height: 31px;
+}
+
+body.en .subscription-widget input[type=submit] {
+  left: -4px;
+}
+
+body.ar .subscription-widget input[type=submit] {
+  padding: 4px 16px 7px;
+  position: relative;
+  top: -1px;
+  left: 7px;
+  font-size: 16px;
+  line-height: 31px;
+}
 
 /* Tablet Styles */
 @media (max-width: 768px) and (min-width: 500px) {
@@ -1082,8 +1220,12 @@ body.en .filters .filter-title {
 
   /* Homepage Articles Slider */
   .homepage  .articles-slider {
-    margin: auto;
+    margin: 0 auto 30px;
     width: 100%;
+  }
+
+  .homepage  .articles-slider._backround_gray {
+    margin-bottom: 0;
   }
 
   .homepage .articles-slider .slick-list {
@@ -1119,21 +1261,26 @@ body.en .filters .filter-title {
     height: 34px;
   }
 
-  body .subscription-widget input[type=submit] {
-    height: 34px;
-    position: relative;
-    top: 2px;
-    left: 4px;
-    font-size: 16px;
-    line-height: 31px;
-  }
-
   body.en .subscription-widget form input[type=text] {
     width: 152px;
     height: 34px;
   }
 
+  body .subscription-widget input[type=submit] {
+    padding: 3px 16px 0;
+    top: 2px;
+  }
+  
   body.en .subscription-widget input[type=submit] {
-    left: -4px;
+    padding: 2px 16px 1px;
+    position: relative;
+    top: 1px;
+    left: -5px;
+    font-size: 16px;
+    line-height: 31px;
+  }
+  
+  body.ar .subscription-widget input[type=submit] {
+    padding: 3px 16px 7px;
   }
 }

@@ -241,6 +241,11 @@
 		max-width: 1160px;
 		margin: auto;
 	}
+
+	.underline {
+		margin-bottom: 20px;
+		font-weight: bold;
+	}
 }
 
 .media {
@@ -311,6 +316,7 @@
 			transition: .3s all ease-in-out;
 
 			a {
+				display: flex;
 				position: relative;
 				color: $second_color;
 				font-size: 16px;
@@ -320,7 +326,7 @@
 
 				span {
 					position: relative;
-					top: 2px;
+					top: 1px;
 					padding-left: 17px;
 					font-size: 20px;
 					line-height: 20px;
@@ -328,6 +334,12 @@
 				&._type_empty {
 					span {
 						padding-left: 0;
+					}
+				}
+
+				div {
+					&.text-media {
+						display: inline;
 					}
 				}
 			}
@@ -341,6 +353,7 @@
 .article-footer {
 	margin: 10px auto 60px;
 	max-width: 600px;
+	border-top: 1px solid #ccc;
 }
 
 .article-feature {
@@ -611,6 +624,59 @@ body {
 /* Arabic */
 body {
 	&.ar {
+		.article-special-main {
+			font-size: 15px;
+			line-height: 30px;
+		}
+
+		.main-content {
+			font-family: "Droid Arabic Naskh";
+			font-size: 18px;
+			line-height: 30px;
+		}
+
+		.date {
+			font-family: $ar_main_font;
+		}
+
+		.label {		
+			a {
+				font-size: 15px;
+				line-height: 21px;
+			}
+		}
+
+		.media {
+			.caption {
+				font-size: 13px;
+				line-height: 21px;
+			}
+		}
+
+		.article-media {
+			ul {		
+				li {
+					a {
+						font-family: $ar_main_font;
+						font-size: 13px;
+						line-height: 21px;
+					}
+				}
+			}
+		}
+
+		.full-width-caption {
+			font-size: 13px;
+			line-height: 21px;
+		}
+
+		.article-special {
+			.special-img-caption {
+				font-size: 13px;
+				line-height: 21px;
+			}
+		}
+
 		.headline {
 			h1 {
 				font-size: $ar_single_headline_font_size;
@@ -621,11 +687,13 @@ body {
 		.underline {
 			font-size: $ar_single_underline_font_size;
 			line-height: $ar_single_underline_line_height;
+			font-weight: normal;
 		}
 
 		.date {
 			font-size: 13px;
 			line-height: 15px;
+			letter-spacing: 0;
 		}
 
 		.article-feature {
@@ -641,6 +709,18 @@ body {
 			.title {
 				font-size: 60px;
 				line-height: 90px;
+			}
+
+			.header-image {
+				.caption {
+					font-size: 13px;
+					line-height: 21px;
+				}
+			}
+
+			.pre-title {
+				font-size: 15px;
+				line-height: 30px;
 			}
 		}
 
@@ -658,6 +738,23 @@ body {
 				font-size: 20px;
 				line-height: 30px;
 			}
+		}
+	
+		&.single-graph {
+			main {
+				&.article-feature {
+					.headline {
+						padding: 0 14px;
+					}
+
+					.underline {
+						padding: 0 14px;
+						font-size: 15px;
+						line-height: 30px;
+						font-weight: bold;
+					}
+				}
+			}			
 		}
 	}
 }

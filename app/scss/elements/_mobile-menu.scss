@@ -48,7 +48,7 @@
       height: 47px;
       
       &.active {
-        background-color: #008F7E;
+        background-color: $main_color;
       }
 
       a {
@@ -85,7 +85,7 @@
         position: absolute;
         top: 15px;
         left: 15px;
-        color: #008F7E;
+        color: $main_color;
         font-size: 20px;
         line-height: 20px;
       }
@@ -229,6 +229,15 @@ body {
             line-height: 30px;
           }
         }
+
+        &.submenu {          
+          li {            
+            a {
+              font-size: 15px;
+              line-height: 30px;
+            }
+          }
+        }
       }
     }
 
@@ -237,8 +246,21 @@ body {
         li {    
           a {
             font-size: 16px;
-			      line-height: 24px;
           }
+        }
+      }
+    }
+
+    .mobile-menu-search {
+      form {
+        input {          
+          font-size: 15px;
+          line-height: 30px;
+        }
+  
+        .submit-search-icon {         
+          font-size: 15px;
+          line-height: 30px;
         }
       }
     }

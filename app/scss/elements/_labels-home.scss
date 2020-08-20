@@ -78,3 +78,18 @@ body {
 		}
 	}
 }
+
+
+/* Arabic */
+body {
+	&.ar {
+		.labels-home {
+			li {
+				a {
+					font-size: 13px;
+      		line-height: 21px;
+				}
+			}
+		}
+	}
+}
