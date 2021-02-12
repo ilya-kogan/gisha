@@ -66,13 +66,14 @@
 		transition: all .3s;
 
 		&.active {
+			max-height: none;
 			height: auto;
 			overflow: auto;
 		}
 	}
 
 	.archive-read-more {
-		position: absolute;
+		position: relative;
 		left: 0;
 		right: 0;
 		display: none;

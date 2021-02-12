@@ -47,14 +47,25 @@
       width: 47px;
       height: 47px;
       
-      &.active {
-        background-color: $main_color;
-      }
-
-      a {
+      a,
+      span {
         font-size: 18px;
         line-height: 35px;
       }
+    }
+
+    .lang-disabled-message {
+      right: 0;
+      left: unset;
+      padding: 7px 10px;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: unset;
+      white-space: nowrap;
+    }
+
+    .lang-disabled-message[data-lang="en"] {
+      font-size: 11px;
     }
   }
 
@@ -244,7 +255,8 @@ body {
     .mobile-menu {
       .lang-switch {    
         li {    
-          a {
+          a,
+          span {
             font-size: 16px;
           }
         }
